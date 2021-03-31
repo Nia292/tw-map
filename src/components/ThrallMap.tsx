@@ -71,8 +71,8 @@ const data: Thrall[] = [
     makeThrall('Fass the Torturer', ThrallType.TASKMASTER),
     makeThrall('Landora the Groomer', ThrallType.GROOMER),
     // TeleportPlayer 131140.3125 202741.0 -19914.181641
-    makeThrall('Beast the Breaker', ThrallType.TASKMASTER, [ceCoordinateToLatLng( 131140.3125, 202741.0)]),
-    makeThrall('Floki the Tinkerer', ThrallType.ARMORER, [ceCoordinateToLatLng( 131140.3125, 202741.0)]),
+    makeThrall('Beast the Breaker', ThrallType.TASKMASTER, [ceCoordinateToLatLng(131140.3125, 202741.0)]),
+    makeThrall('Floki the Tinkerer', ThrallType.ARMORER, [ceCoordinateToLatLng(131140.3125, 202741.0)]),
     makeThrall('Berglind', ThrallType.ARMORER),
     makeThrall('Serpa the Gem Cutter', ThrallType.ALCHEMIST),
     makeThrall('Katla', ThrallType.TASKMASTER),
@@ -113,7 +113,7 @@ export function ThrallMap() {
                       maxBounds={mapBounds}
                       zoomControl={true}
                       zoom={-8.7}>
-            <ImageOverlay url="/fc_assets/full_map_low_quality.jpg" bounds={mapBounds}/>
+            <ImageOverlay url={process.env.PUBLIC_URL + "/fc_assets/full_map_low_quality.jpg"} bounds={mapBounds}/>
             <MapEvents/>
             {makeMarkerForLocations(selectedThrall)}
         </MapContainer>
