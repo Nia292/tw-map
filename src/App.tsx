@@ -5,7 +5,7 @@ import {ThrallMap} from "./components/ThrallMap";
 
 function App() {
   return (
-    <div >
+    <div style={{overflowX: 'hidden'}}>
       <ThrallMap/>
     </div>
   );

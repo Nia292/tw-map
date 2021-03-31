@@ -1,0 +1,27 @@
+.thrall-list {
+    position: absolute;
+    right: 0;
+    width: var(--sidebar-width);
+}
+
+.thrall-list-sliding-in {
+    right: 400px;
+    animation: thrall-list-slide-in var(--sidebar-slide-anim-duration) both;
+}
+
+.thrall-list-sliding-out {
+    right: 0px;
+    animation: thrall-list-slide-out var(--sidebar-slide-anim-duration) both;
+}
+
+@keyframes thrall-list-slide-in {
+    100% {
+        right: 0px;
+    }
+}
+
+@keyframes thrall-list-slide-out {
+    100% {
+        right: 400px;
+    }
+}

@@ -1,0 +1,59 @@
+
+.thrall-details-container {
+    position: absolute;
+    width: var(--sidebar-width);
+    right: -400px;
+}
+
+.thrall-details-sliding-in {
+    right: -400px;
+    animation: thrall-details-slide-in var(--sidebar-slide-anim-duration) both;
+}
+
+.thrall-details-sliding-out {
+    right: 0px;
+    animation: thrall-details-slide-out var(--sidebar-slide-anim-duration) both;
+}
+
+@keyframes thrall-details-slide-in {
+    100% {
+        right: 0px;
+    }
+}
+
+@keyframes thrall-details-slide-out {
+    100% {
+        right: -400px;
+    }
+}
+
+
+.thrall-wars-thrall-details {
+    margin-left: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    color: #cec7af;
+    right: 400px;
+}
+
+.thrall-wars-thrall-details .thrall-name {
+    font-size: 16pt;
+}
+
+.thrall-location-list {
+    margin-top: 16px;
+    font-size: 12pt;
+    display: flex;
+    flex-direction: row;
+}
+
+.thrall-wars-thrall-details .header:hover {
+    color: #eee9d8;
+    cursor: pointer;
+}
+
+.thrall-wars-thrall-details .thrall-type {
+    font-size: 10pt;
+}

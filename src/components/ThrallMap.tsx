@@ -1,6 +1,6 @@
 import {Circle, ImageOverlay, MapContainer, Popup, useMapEvents} from "react-leaflet";
 import {CRS, LatLng, LatLngBounds, LatLngBoundsExpression, LatLngLiteral} from "leaflet";
-import {ThrallList} from "./ThrallList";
+import {ThrallList} from "./thrall-list/ThrallList";
 import {Thrall, ThrallType} from "../model/Thrall";
 import React, {useState} from "react";
 import {ceCoordinateToLatLng} from "../util/conversions";
@@ -92,7 +92,7 @@ function makeMarkerForLocation(thrall: Thrall, location: LatLngLiteral) {
     </Circle>
 }
 
-function makeMarkerForLocations(thrall: Thrall) {
+function makeMarkerForLocations(thrall?: Thrall) {
     return thrall?.locations.map(location => makeMarkerForLocation(thrall, location));
 }
 
@@ -100,11 +100,23 @@ function makeMarkerForLocations(thrall: Thrall) {
 export function ThrallMap() {
 
     const [thralls] = useState(data);
-    const [selectedThrall, setSelectedThrall] = useState(undefined as unknown as Thrall);
+    const [selectedThrall, setSelectedThrall] = useState(undefined as unknown as Thrall | undefined);
+    const [thrallFocused, setThrallFocused] = useState(false);
+
+    function handleSelectThrall(thrall: Thrall) {
+        setSelectedThrall(thrall)
+        setThrallFocused(true)
+    }
+
+    function handleDeselectThrall() {
+        // While animating, we still want the thrall details visible until
+        // it has slide out.
+        setThrallFocused(false)
+    }
 
     return <div className="thrall-map-wrapper">
         <MapContainer center={[0, 0]}
-                      style={{height: '100vh', width: 'calc(100vw - 400px)'}}
+                      style={{height: '100vh', width: 'calc(100vw - var(--sidebar-width))'}}
                       minZoom={-8.7}
                       maxZoom={-4}
                       zoomSnap={0.1}
@@ -118,7 +130,11 @@ export function ThrallMap() {
             {makeMarkerForLocations(selectedThrall)}
         </MapContainer>
         <div className="sidebar-right">
-            <ThrallList thralls={thralls} selectedThrall={selectedThrall} onSelectThrall={setSelectedThrall}/>
+            <ThrallList thralls={thralls}
+                        selectedThrallFocused={thrallFocused}
+                        selectedThrall={selectedThrall}
+                        onDeselectThrall={handleDeselectThrall}
+                        onSelectThrall={handleSelectThrall}/>
         </div>
     </div>
 }
