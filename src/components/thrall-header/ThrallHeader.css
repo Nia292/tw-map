@@ -1,0 +1,20 @@
+.thrall-header {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    color: var(--primary-sidebar-color);
+}
+
+.thrall-header:hover {
+    color: #eee9d8;
+    cursor: pointer;
+}
+
+.thrall-header-name {
+    font-size: 16pt;
+}
+
+.thrall-header-type {
+    font-size: 10pt;
+}

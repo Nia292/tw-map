@@ -24,7 +24,7 @@ export class App extends React.Component<any, AppState> {
 
     render() {
         return (
-            <div style={{overflowX: 'hidden'}}>
+            <div>
                 <ThrallMap data={this.state.data}/>
             </div>
         );
