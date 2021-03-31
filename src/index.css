@@ -1,0 +1,40 @@
+.thrall-map-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar-right {
+  background-color: #292829;
+  width: 400px;
+}
+
+.thrall-wars-thrall {
+  margin-left: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  color: #cec7af;
+}
+
+.thrall-wars-thrall .thrall-name {
+  font-size: 16pt;
+}
+
+.thrall-wars-thrall .thrall-type {
+  font-size: 10pt;
+}
+
+.thrall-wars-thrall:hover {
+  color: #eee9d8;
+  cursor: pointer;
+}
+
+.thrall-selected {
+  color: #eee9d8;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+}
