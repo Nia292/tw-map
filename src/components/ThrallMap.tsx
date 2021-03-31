@@ -1,7 +1,7 @@
 import {Circle, ImageOverlay, MapContainer, Popup, useMapEvents} from "react-leaflet";
 import {CRS, LatLng, LatLngBounds, LatLngBoundsExpression, LatLngLiteral} from "leaflet";
 import {ThrallList} from "./thrall-list/ThrallList";
-import {Thrall, ThrallType} from "../model/Thrall";
+import {Thrall} from "../model/Thrall";
 import React, {useState} from "react";
 import {ceCoordinateToLatLng} from "../util/conversions";
 
@@ -52,36 +52,6 @@ function MapEvents() {
     return null
 }
 
-function makeThrall(name: string, type: ThrallType, locations: LatLngLiteral[] = []): Thrall {
-    return {
-        name,
-        id: name,
-        type,
-        locations
-    }
-}
-
-const data: Thrall[] = [
-    makeThrall('Viek the Spire', ThrallType.TASKMASTER),
-    makeThrall('Hekla', ThrallType.CARPENTER),
-    makeThrall('Thorunn', ThrallType.ARMORER),
-    makeThrall('Lady Elizabeth Killigrew', ThrallType.TASKMASTER),
-    makeThrall('Julia the Chaste', ThrallType.TASKMASTER),
-    makeThrall('Queen Julia the Chaste', ThrallType.TASKMASTER),
-    makeThrall('Fass the Torturer', ThrallType.TASKMASTER),
-    makeThrall('Landora the Groomer', ThrallType.GROOMER),
-    // TeleportPlayer 131140.3125 202741.0 -19914.181641
-    makeThrall('Beast the Breaker', ThrallType.TASKMASTER, [ceCoordinateToLatLng(131140.3125, 202741.0)]),
-    makeThrall('Floki the Tinkerer', ThrallType.ARMORER, [ceCoordinateToLatLng(131140.3125, 202741.0)]),
-    makeThrall('Berglind', ThrallType.ARMORER),
-    makeThrall('Serpa the Gem Cutter', ThrallType.ALCHEMIST),
-    makeThrall('Katla', ThrallType.TASKMASTER),
-    makeThrall('Gabriela the Alchemist', ThrallType.TASKMASTER),
-    makeThrall('Ivar the Crafty One', ThrallType.TASKMASTER),
-    makeThrall('Akasuki the Binder', ThrallType.ARMORER),
-]
-
-
 function makeMarkerForLocation(thrall: Thrall, location: LatLngLiteral) {
     return <Circle key={location.lat + '_' + location.lng}
                    radius={1000}
@@ -93,14 +63,20 @@ function makeMarkerForLocation(thrall: Thrall, location: LatLngLiteral) {
 }
 
 function makeMarkerForLocations(thrall?: Thrall) {
-    return thrall?.locations.map(location => makeMarkerForLocation(thrall, location));
+    return thrall?.locations.map(location => makeMarkerForLocation(thrall, ceCoordinateToLatLng(location)));
 }
 
+interface ThrallMapProps {
+    data: Thrall[];
+}
 
-export function ThrallMap() {
-
-    const [thralls] = useState(data);
+export function ThrallMap(props: ThrallMapProps) {
+    // console.log(JSON.stringify(data));
+    //
+    // const [thralls] = useState(data);
     const [selectedThrall, setSelectedThrall] = useState(undefined as unknown as Thrall | undefined);
+    // Use a separate focus flag to control whether the detail display or the list display is used
+    // This avoids having an undefined name while the element with the details is sliding out
     const [thrallFocused, setThrallFocused] = useState(false);
 
     function handleSelectThrall(thrall: Thrall) {
@@ -130,7 +106,7 @@ export function ThrallMap() {
             {makeMarkerForLocations(selectedThrall)}
         </MapContainer>
         <div className="sidebar-right">
-            <ThrallList thralls={thralls}
+            <ThrallList thralls={props.data}
                         selectedThrallFocused={thrallFocused}
                         selectedThrall={selectedThrall}
                         onDeselectThrall={handleDeselectThrall}

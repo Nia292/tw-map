@@ -18,8 +18,17 @@ export const ThrallDetails = (props: ThrallDetailsProps) => {
                     {props.thrall?.type}
                 </div>
             </div>
-            <div className="thrall-location-list">
-                {props.thrall?.locations.map(value => <div>{value.lat + " " + value.lng}</div>)}
+            <div className="thrall-location-description">
+                {props.thrall?.locationDescription}
+            </div>
+            <div className="thrall-location-list-container">
+                <div className="thrall-location-list-header">
+                    Locations
+                </div>
+                <div className="thrall-location-list-subheader">
+                    Click a location to jump to it
+                </div>
+                {props.thrall?.locations.map(value => <div>{value.x + " " + value.y}</div>)}
             </div>
         </div>
     </div>

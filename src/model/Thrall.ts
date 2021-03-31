@@ -1,10 +1,11 @@
-import {LatLngLiteral} from "leaflet";
+import {CeCoordinate} from "./CeCoordinate";
 
 export interface Thrall {
     id: string;
     name: string;
     type: ThrallType;
-    locations: LatLngLiteral[];
+    locationDescription?: string;
+    locations: CeCoordinate[];
 }
 
 export enum ThrallType {
