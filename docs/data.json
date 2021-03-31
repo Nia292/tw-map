@@ -1,0 +1,111 @@
+[
+  {
+    "name": "Viek the Spire",
+    "id": "Viek the Spire",
+    "type": "TASKMASTER",
+    "locations": []
+  },
+  {
+    "name": "Hekla",
+    "id": "Hekla",
+    "type": "CARPENTER",
+    "locations": []
+  },
+  {
+    "name": "Thorunn",
+    "id": "Thorunn",
+    "type": "ARMORER",
+    "locations": []
+  },
+  {
+    "name": "Lady Elizabeth Killigrew",
+    "id": "Lady Elizabeth Killigrew",
+    "type": "TASKMASTER",
+    "locations": []
+  },
+  {
+    "name": "Julia the Chaste",
+    "id": "Julia the Chaste",
+    "type": "TASKMASTER",
+    "locations": []
+  },
+  {
+    "name": "Queen Julia the Chaste",
+    "id": "Queen Julia the Chaste",
+    "type": "TASKMASTER",
+    "locations": []
+  },
+  {
+    "name": "Fass the Torturer",
+    "id": "Fass the Torturer",
+    "type": "TASKMASTER",
+    "locations": []
+  },
+  {
+    "name": "Landora the Groomer",
+    "id": "Landora the Groomer",
+    "type": "GROOMER",
+    "locations": []
+  },
+  {
+    "name": "Beast the Breaker",
+    "id": "Beast the Breaker",
+    "type": "TASKMASTER",
+    "locationDescription": "Spawns in J4 at the Big River. Shares a spawn point with Viek the Spire",
+    "locations": [
+      {
+        "x": 131140.3125,
+        "y": 202741,
+        "z": -19914.181641
+      }
+    ]
+  },
+  {
+    "name": "Floki the Tinkerer",
+    "id": "Floki the Tinkerer",
+    "type": "ARMORER",
+    "locations": [
+      {
+        "x": 131140.3125,
+        "y": 202741,
+        "z": -19914.181641
+      }
+    ]
+  },
+  {
+    "name": "Berglind",
+    "id": "Berglind",
+    "type": "ARMORER",
+    "locations": []
+  },
+  {
+    "name": "Serpa the Gem Cutter",
+    "id": "Serpa the Gem Cutter",
+    "type": "ALCHEMIST",
+    "locations": []
+  },
+  {
+    "name": "Katla",
+    "id": "Katla",
+    "type": "TASKMASTER",
+    "locations": []
+  },
+  {
+    "name": "Gabriela the Alchemist",
+    "id": "Gabriela the Alchemist",
+    "type": "TASKMASTER",
+    "locations": []
+  },
+  {
+    "name": "Ivar the Crafty One",
+    "id": "Ivar the Crafty One",
+    "type": "TASKMASTER",
+    "locations": []
+  },
+  {
+    "name": "Akasuki the Binder",
+    "id": "Akasuki the Binder",
+    "type": "ARMORER",
+    "locations": []
+  }
+]
