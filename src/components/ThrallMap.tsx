@@ -1,18 +1,10 @@
-import {Circle, ImageOverlay, MapContainer, Popup, Tooltip, useMap, useMapEvents} from "react-leaflet";
-import {
-    control,
-    CRS,
-    LatLng,
-    LatLngBounds,
-    LatLngBoundsExpression,
-    LatLngLiteral,
-    Map as LeafletMap,
-} from "leaflet";
+import {ImageOverlay, MapContainer, Marker, Tooltip, useMap, useMapEvents} from "react-leaflet";
+import {CRS, icon, LatLng, LatLngBounds, LatLngBoundsExpression, LatLngLiteral,} from "leaflet";
 import {ThrallList} from "./thrall-list/ThrallList";
 import {Thrall} from "../model/Thrall";
 import React, {useState} from "react";
-import {ceCoordinateToLatLng, zoomToIconSize} from "../util/conversions";
-import {CeCoordinate} from "../model/CeCoordinate";
+import {ceCoordinateToLatLng} from "../util/conversions";
+import {ThrallLocation} from "../model/ThrallLocation";
 
 // Coordiantes are [y,x]
 // Teleport player locates them as [x, y, z]
@@ -60,15 +52,18 @@ function MapEvents() {
     return null
 }
 
+const locationIcon = icon({
+    iconUrl: process.env.PUBLIC_URL + '/fc_assets/icon_camp.png',
+    iconSize: [24, 24],
+    tooltipAnchor: [0, 12],
+});
+
 function makeMarkerForLocation(thrall: Thrall, location: LatLngLiteral, zoom: number) {
-    return <Circle key={location.lat + '_' + location.lng}
-                   radius={500}
-                   center={location}>
-        <Tooltip>{thrall.name}</Tooltip>
-        {/*<Popup>*/}
-        {/*    {thrall.name}*/}
-        {/*</Popup>*/}
-    </Circle>
+    return <Marker key={location.lat + '_' + location.lng}
+                   icon={locationIcon}
+                   position={location}>
+        <Tooltip direction="bottom">{thrall.name}</Tooltip>
+    </Marker>
 }
 
 
@@ -126,7 +121,7 @@ export function ThrallMap(props: ThrallMapProps) {
         setLocation(undefined);
     }
 
-    function handleSelectLocation(location: CeCoordinate): void {
+    function handleSelectLocation(location: ThrallLocation): void {
         setLocation(ceCoordinateToLatLng(location));
         setZoom(-7);
     }

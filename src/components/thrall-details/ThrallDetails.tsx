@@ -3,13 +3,13 @@ import React from "react";
 import './ThrallDetails.css';
 import {ThrallHeader} from "../thrall-header/ThrallHeader";
 import {ThrallDetailsLocations} from "./thrall-details-locations/ThrallDetailsLocations";
-import {CeCoordinate} from "../../model/CeCoordinate";
+import {ThrallLocation} from "../../model/ThrallLocation";
 
 interface ThrallDetailsProps {
     focused: boolean;
     thrall?: Thrall;
     onDeSelect(): void;
-    onSelectLocation(location: CeCoordinate): void;
+    onSelectLocation(location: ThrallLocation): void;
 }
 
 export const ThrallDetails = (props: ThrallDetailsProps) => {

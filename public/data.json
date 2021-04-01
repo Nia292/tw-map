@@ -3,14 +3,18 @@
     "name": "Viek the Spire",
     "id": "Viek the Spire",
     "type": "TASKMASTER",
-    "locationDescription": "Viek the Spire spawns in taskmaster spots around Westwall Prison in Sepermeru",
+    "locationDescription": "Viek the Spire spawns in taskmaster spots around Westwall Prison in Sepermeru.",
     "locations": [
       {
+        "location": "Sepermeru",
+        "spawnSpot": "Taskmaster",
         "x": -264883.53125,
         "y": 90236.59375,
         "z": -3865.577881
       },
       {
+        "location": "Sepermeru",
+        "spawnSpot": "Taskmaster",
         "x": -267129.40625,
         "y": 90784.5625,
         "z": -3915.528564
@@ -67,6 +71,8 @@
     "locationDescription": "Spawns in J4 at the Big River. Shares a spawn point with Floki the Tinkerer.",
     "locations": [
       {
+        "location": "Exile Camp",
+        "spawnSpot": "Taskmaster",
         "x": 131140.3125,
         "y": 202741,
         "z": -19914.181641
@@ -80,6 +86,8 @@
     "locationDescription": "Spawns in J4 at the Big River. Shares a spawn with Beast the Breaker.",
     "locations": [
       {
+        "location": "Exile Camp",
+        "spawnSpot": "Taskmaster",
         "x": 131140.3125,
         "y": 202741,
         "z": -19914.181641
@@ -99,6 +107,8 @@
     "locationDescription": "Spawns in alchemist spots around Sepermeru.",
     "locations": [
       {
+        "location": "Sepermeru",
+        "spawnSpot": "Alchemist",
         "x": -250389.15625,
         "y": 109424.632813,
         "z": -4416.668457
@@ -128,7 +138,33 @@
     "name": "Akasuki the Binder",
     "id": "Akasuki the Binder",
     "type": "ARMORER",
-    "locationDescription": "Spawns in Nordheimer armorer locations.",
-    "locations": []
+    "locationDescription": "Akasuki spawns in various Nordheimer settlements including New Asgarth. Spawns are shared with the blacksmith thralls.",
+    "locations": [
+      {
+        "x": 8768.533203,
+        "y": -20387.482422,
+        "z": 1779.414551,
+        "location": "Freya's Hovel",
+        "spawnSpot": "Blacksmith"
+      },
+      {
+        "source": "TeleportPlayer -39971.699219 -63372.089844 2621.061035",
+        "x": -39971.699219,
+        "y": -63372.089844,
+        "z": 2621.061035,
+        "location": "Meadowwatch",
+        "spawnSpot": "Blacksmith",
+        "comment": "At the Blacksmith Bench"
+      },
+      {
+        "source": "TeleportPlayer -73266.140625 -66190.148438 2354.510498",
+        "x": -73266.140625,
+        "y": -66190.148438,
+        "z": 2354.510498,
+        "location": "Nordhof",
+        "spawnSpot": "Blacksmith",
+        "comment": "At the Blacksmith Bench"
+      }
+    ]
   }
 ]

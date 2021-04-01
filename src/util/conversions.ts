@@ -1,7 +1,7 @@
 import {LatLngLiteral} from "leaflet";
-import {CeCoordinate} from "../model/CeCoordinate";
+import {ThrallLocation} from "../model/ThrallLocation";
 
-export function ceCoordinateToLatLng(ceCoordinate: CeCoordinate): LatLngLiteral {
+export function ceCoordinateToLatLng(ceCoordinate: ThrallLocation): LatLngLiteral {
     return {
         // Because coordinates are in pixel space, the y-axis goes from negative (bot) to positive (top),
         // where as in CE it goes from positive(bot) to negative(top)
@@ -34,6 +34,6 @@ export function zoomToIconSize(zoom: number): number {
     return r;
 }
 
-export function ceCoordinate(x: number, y: number, z: number): CeCoordinate {
+export function ceCoordinate(x: number, y: number, z: number): ThrallLocation {
     return {x, y, z}
 }

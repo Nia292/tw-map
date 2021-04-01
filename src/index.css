@@ -40,3 +40,15 @@ body {
 body {
     margin: 0;
 }
+
+.display-in-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.display-in-center {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}

@@ -3,7 +3,7 @@ import {ThrallListItem} from "../ThrallListItem";
 import React from "react";
 import {ThrallDetails} from "../thrall-details/ThrallDetails";
 import './ThrallList.css';
-import {CeCoordinate} from "../../model/CeCoordinate";
+import {ThrallLocation} from "../../model/ThrallLocation";
 
 export interface ThrallListProps {
     selectedThrall?: Thrall;
@@ -13,7 +13,7 @@ export interface ThrallListProps {
     onSelectThrall(thrall: Thrall): void;
     onDeselectThrall(): void;
 
-    onSelectLocation(location: CeCoordinate): void;
+    onSelectLocation(location: ThrallLocation): void;
 }
 
 export const ThrallList = (props: ThrallListProps) => {
