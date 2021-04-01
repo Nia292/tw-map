@@ -2,6 +2,7 @@
     --sidebar-width: 400px;
     --sidebar-slide-anim-duration: 0.4s;
     --primary-sidebar-color: #cec7af;
+    --primary-sidebar-color-highlight: #eee9d8;
 }
 
 body {

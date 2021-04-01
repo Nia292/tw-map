@@ -17,11 +17,13 @@
 @keyframes thrall-list-slide-in {
     100% {
         right: 0px;
+        visibility: unset;
     }
 }
 
 @keyframes thrall-list-slide-out {
     100% {
         right: 400px;
+        visibility: hidden;
     }
 }

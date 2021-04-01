@@ -31,22 +31,6 @@
     color: var(--primary-sidebar-color)
 }
 
-.thrall-location-list-container {
-    margin-top: 16px;
-    font-size: 12pt;
-    display: flex;
-    flex-direction: column;
-}
-
-.thrall-location-list-header {
-    font-size: 14pt;
-}
-
-.thrall-location-list-subheader {
-    font-size: 12pt;
-    margin-bottom: 8px;
-}
-
 .thrall-location-description {
     margin-top: 16px;
 }

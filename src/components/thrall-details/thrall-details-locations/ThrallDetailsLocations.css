@@ -1,0 +1,30 @@
+.thrall-details.locations {
+    display: flex;
+    flex-direction: column;
+}
+
+.thrall-detail-single-location {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+.thrall-detail-single-location:hover {
+    color: var(--primary-sidebar-color-highlight);
+}
+
+.thrall-location-list-container {
+    margin-top: 16px;
+    font-size: 12pt;
+    display: flex;
+    flex-direction: column;
+}
+
+.thrall-location-list-header {
+    font-size: 14pt;
+}
+
+.thrall-location-list-subheader {
+    font-size: 12pt;
+    margin-bottom: 8px;
+}

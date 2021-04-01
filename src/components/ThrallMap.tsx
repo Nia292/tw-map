@@ -1,9 +1,18 @@
-import {Circle, ImageOverlay, MapContainer, Popup, useMapEvents} from "react-leaflet";
-import {CRS, LatLng, LatLngBounds, LatLngBoundsExpression, LatLngLiteral} from "leaflet";
+import {Circle, ImageOverlay, MapContainer, Popup, Tooltip, useMap, useMapEvents} from "react-leaflet";
+import {
+    control,
+    CRS,
+    LatLng,
+    LatLngBounds,
+    LatLngBoundsExpression,
+    LatLngLiteral,
+    Map as LeafletMap,
+} from "leaflet";
 import {ThrallList} from "./thrall-list/ThrallList";
 import {Thrall} from "../model/Thrall";
 import React, {useState} from "react";
-import {ceCoordinateToLatLng} from "../util/conversions";
+import {ceCoordinateToLatLng, zoomToIconSize} from "../util/conversions";
+import {CeCoordinate} from "../model/CeCoordinate";
 
 // Coordiantes are [y,x]
 // Teleport player locates them as [x, y, z]
@@ -39,7 +48,6 @@ function MapEvents() {
             console.log(event.latlng);
         },
         zoom: event => {
-
             console.log(event.target._zoom);
         },
         drag: () => {
@@ -52,23 +60,48 @@ function MapEvents() {
     return null
 }
 
-function makeMarkerForLocation(thrall: Thrall, location: LatLngLiteral) {
+function makeMarkerForLocation(thrall: Thrall, location: LatLngLiteral, zoom: number) {
     return <Circle key={location.lat + '_' + location.lng}
-                   radius={1000}
-                   center={{lat: location.lat, lng: location.lng}}>
-        <Popup>
-            {thrall.name}
-        </Popup>
+                   radius={500}
+                   center={location}>
+        <Tooltip>{thrall.name}</Tooltip>
+        {/*<Popup>*/}
+        {/*    {thrall.name}*/}
+        {/*</Popup>*/}
     </Circle>
 }
 
-function makeMarkerForLocations(thrall?: Thrall) {
-    return thrall?.locations.map(location => makeMarkerForLocation(thrall, ceCoordinateToLatLng(location)));
+
+function MarkerForLocations(props: {thrall?: Thrall}): any {
+    let zoom = useMap().getZoom();
+    const thrall = props.thrall;
+    if (!thrall) {
+        return <React.Fragment/>;
+    }
+    return thrall.locations.map(location => makeMarkerForLocation(thrall, ceCoordinateToLatLng(location), zoom));
 }
 
 interface ThrallMapProps {
     data: Thrall[];
 }
+
+function SetViewOnClick(props: { location?: LatLngLiteral }) {
+    const map = useMap();
+    if (props.location) {
+        // map.setView(props.location);
+        map.setView(props.location, map.getZoom());
+    }
+    return null;
+}
+
+function SetZoomOnClick(props: {zoom: number}) {
+    // const map = useMap();
+    // if (props.zoom) {
+    //    map.setZoom(props.zoom)
+    // }
+    return null;
+}
+
 
 export function ThrallMap(props: ThrallMapProps) {
     // console.log(JSON.stringify(data));
@@ -78,6 +111,8 @@ export function ThrallMap(props: ThrallMapProps) {
     // Use a separate focus flag to control whether the detail display or the list display is used
     // This avoids having an undefined name while the element with the details is sliding out
     const [thrallFocused, setThrallFocused] = useState(false);
+    const [location, setLocation] = useState(undefined as unknown as LatLngLiteral | undefined);
+    const [zoom, setZoom] = useState(-8.7);
 
     function handleSelectThrall(thrall: Thrall) {
         setSelectedThrall(thrall)
@@ -88,6 +123,12 @@ export function ThrallMap(props: ThrallMapProps) {
         // While animating, we still want the thrall details visible until
         // it has slide out.
         setThrallFocused(false)
+        setLocation(undefined);
+    }
+
+    function handleSelectLocation(location: CeCoordinate): void {
+        setLocation(ceCoordinateToLatLng(location));
+        setZoom(-7);
     }
 
     return <div className="thrall-map-wrapper">
@@ -103,10 +144,13 @@ export function ThrallMap(props: ThrallMapProps) {
                       zoom={-8.7}>
             <ImageOverlay url={process.env.PUBLIC_URL + "/fc_assets/full_map_low_quality.jpg"} bounds={mapBounds}/>
             <MapEvents/>
-            {makeMarkerForLocations(selectedThrall)}
+            <SetViewOnClick location={location}/>
+            <SetZoomOnClick zoom={zoom}/>
+            <MarkerForLocations thrall={selectedThrall}/>
         </MapContainer>
         <div className="sidebar-right">
             <ThrallList thralls={props.data}
+                        onSelectLocation={handleSelectLocation}
                         selectedThrallFocused={thrallFocused}
                         selectedThrall={selectedThrall}
                         onDeselectThrall={handleDeselectThrall}

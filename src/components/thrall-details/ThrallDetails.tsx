@@ -2,11 +2,14 @@ import {Thrall, ThrallType} from "../../model/Thrall";
 import React from "react";
 import './ThrallDetails.css';
 import {ThrallHeader} from "../thrall-header/ThrallHeader";
+import {ThrallDetailsLocations} from "./thrall-details-locations/ThrallDetailsLocations";
+import {CeCoordinate} from "../../model/CeCoordinate";
 
 interface ThrallDetailsProps {
     focused: boolean;
     thrall?: Thrall;
     onDeSelect(): void;
+    onSelectLocation(location: CeCoordinate): void;
 }
 
 export const ThrallDetails = (props: ThrallDetailsProps) => {
@@ -17,15 +20,7 @@ export const ThrallDetails = (props: ThrallDetailsProps) => {
             <div className="thrall-location-description">
                 {props.thrall?.locationDescription}
             </div>
-            <div className="thrall-location-list-container">
-                <div className="thrall-location-list-header">
-                    Locations
-                </div>
-                <div className="thrall-location-list-subheader">
-                    Click a location to jump to it
-                </div>
-                {props.thrall?.locations.map(value => <div>{value.x + " " + value.y}</div>)}
-            </div>
+            <ThrallDetailsLocations thrall={props.thrall} onSelectLocation={props.onSelectLocation}/>
         </div>
     </div>
 }

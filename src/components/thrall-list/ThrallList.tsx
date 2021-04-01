@@ -3,6 +3,7 @@ import {ThrallListItem} from "../ThrallListItem";
 import React from "react";
 import {ThrallDetails} from "../thrall-details/ThrallDetails";
 import './ThrallList.css';
+import {CeCoordinate} from "../../model/CeCoordinate";
 
 export interface ThrallListProps {
     selectedThrall?: Thrall;
@@ -11,12 +12,16 @@ export interface ThrallListProps {
     thralls: Thrall[];
     onSelectThrall(thrall: Thrall): void;
     onDeselectThrall(): void;
+
+    onSelectLocation(location: CeCoordinate): void;
 }
 
 export const ThrallList = (props: ThrallListProps) => {
     const additionalListClass = props.selectedThrallFocused ? 'thrall-list-sliding-out' : 'thrall-list-sliding-in';
     return <React.Fragment>
-        <ThrallDetails focused={props.selectedThrallFocused} thrall={props.selectedThrall} onDeSelect={props.onDeselectThrall}/>
+        <ThrallDetails focused={props.selectedThrallFocused}
+                       onSelectLocation={props.onSelectLocation}
+                       thrall={props.selectedThrall} onDeSelect={props.onDeselectThrall}/>
         <div className={'thrall-list ' + additionalListClass}>
             {props.thralls
                 .sort((a, b) => a.name.localeCompare(b.name))
