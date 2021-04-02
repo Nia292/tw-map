@@ -1,5 +1,5 @@
 import {Thrall} from "../../model/Thrall";
-import {ThrallListItem} from "../ThrallListItem";
+import {ThrallListItem} from "./ThrallListItem";
 import React from "react";
 import {ThrallDetails} from "../thrall-details/ThrallDetails";
 import './ThrallList.css';
