@@ -1,10 +1,14 @@
-import {ImageOverlay, MapContainer, Marker, Tooltip, useMap, useMapEvents} from "react-leaflet";
-import {CRS, icon, LatLng, LatLngBounds, LatLngBoundsExpression, LatLngLiteral,} from "leaflet";
+import {ImageOverlay, MapContainer} from "react-leaflet";
+import {CRS, LatLng, LatLngBounds, LatLngBoundsExpression,} from "leaflet";
 import {ThrallList} from "./thrall-list/ThrallList";
 import {Thrall} from "../model/Thrall";
 import React, {useState} from "react";
 import {ceCoordinateToLatLng, findCenter} from "../util/conversions";
 import {ThrallLocation} from "../model/ThrallLocation";
+import {ZoomCenter} from "../model/ZoomCenter";
+import {SetViewOnClick} from "./thrall-map-utils/SetViewOnClick";
+import {MarkerForLocations} from "./thrall-map-utils/MarkerForLocations";
+import {MapEvents} from "./thrall-map-utils/MapEvents";
 
 // Coordiantes are [y,x]
 // Teleport player locates them as [x, y, z]
@@ -34,68 +38,8 @@ const mapBounds: LatLngBoundsExpression = new LatLngBounds(
     northEast
 );
 
-function MapEvents() {
-    const map = useMapEvents({
-        click: (event) => {
-            console.log(event.latlng);
-        },
-        zoom: event => {
-            console.log(event.target._zoom);
-        },
-        drag: () => {
-            map.panInsideBounds(mapBounds, {animate: false});
-        },
-        locationfound: (location) => {
-            console.log('location found:', location)
-        },
-    })
-    return null
-}
-
-const locationIcon = icon({
-    iconUrl: process.env.PUBLIC_URL + '/fc_assets/icon_camp.png',
-    iconSize: [24, 24],
-    tooltipAnchor: [0, 12],
-});
-
-function makeMarkerForLocation(thrall: Thrall, location: LatLngLiteral, zoom: number) {
-    return <Marker key={location.lat + '_' + location.lng}
-                   icon={locationIcon}
-                   position={location}>
-        <Tooltip direction="bottom">{thrall.name}</Tooltip>
-    </Marker>
-}
-
-
-function MarkerForLocations(props: {thrall?: Thrall, focused: boolean}): any {
-    let zoom = useMap().getZoom();
-    if (!props.focused) {
-        return [];
-    }
-    const thrall = props.thrall;
-    if (!thrall) {
-        return <React.Fragment/>;
-    }
-    return thrall.locations.map(location => makeMarkerForLocation(thrall, ceCoordinateToLatLng(location), zoom));
-}
-
 interface ThrallMapProps {
     data: Thrall[];
-}
-
-function SetViewOnClick(props: { location?: ZoomCenter }) {
-    const map = useMap();
-    if (props.location) {
-        const zoom = props.location.zoom ? props.location.zoom : map.getZoom();
-        const center = props.location.center ? props.location.center : map.getCenter()
-        map.flyTo(center, zoom);
-    }
-    return null;
-}
-
-interface ZoomCenter {
-    zoom?: number;
-    center?: LatLngLiteral;
 }
 
 export function ThrallMap(props: ThrallMapProps) {
@@ -140,7 +84,7 @@ export function ThrallMap(props: ThrallMapProps) {
                       zoomControl={true}
                       zoom={-8.7}>
             <ImageOverlay url={process.env.PUBLIC_URL + "/fc_assets/full_map_low_quality.jpg"} bounds={mapBounds}/>
-            <MapEvents/>
+            <MapEvents mapBounds={mapBounds}/>
             <SetViewOnClick location={zoomCenter}/>
             <MarkerForLocations thrall={selectedThrall} focused={thrallFocused}/>
         </MapContainer>

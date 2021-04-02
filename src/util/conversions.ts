@@ -1,4 +1,4 @@
-import {LatLng, LatLngLiteral, LineUtil, Polygon, Polyline} from "leaflet";
+import {LatLngLiteral, Polygon, Polyline} from "leaflet";
 import {ThrallLocation} from "../model/ThrallLocation";
 
 export function ceCoordinateToLatLng(ceCoordinate: ThrallLocation): LatLngLiteral {
