@@ -66,3 +66,7 @@ body {
     color: var(--background-color-lighter);
     cursor: pointer;
 }
+
+a:visited {
+    color: var(--primary-sidebar-color-highlight);
+}

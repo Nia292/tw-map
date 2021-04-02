@@ -1,5 +1,5 @@
 import {ImageOverlay, MapContainer, ZoomControl} from "react-leaflet";
-import {CRS, LatLng, LatLngBounds, LatLngBoundsExpression, Zoom,} from "leaflet";
+import {CRS, LatLng, LatLngBounds, LatLngBoundsExpression,} from "leaflet";
 import {ThrallList} from "./thrall-list/ThrallList";
 import {Thrall} from "../model/Thrall";
 import React, {useState} from "react";
@@ -9,6 +9,7 @@ import {ZoomCenter} from "../model/ZoomCenter";
 import {SetViewOnClick} from "./thrall-map-utils/SetViewOnClick";
 import {MarkerForLocations} from "./thrall-map-utils/MarkerForLocations";
 import {MapEvents} from "./thrall-map-utils/MapEvents";
+import {InfoDialog} from "./info-dialog/InfoDialog";
 
 // Coordiantes are [y,x]
 // Teleport player locates them as [x, y, z]
@@ -48,6 +49,7 @@ export function ThrallMap(props: ThrallMapProps) {
     // This avoids having an undefined name while the element with the details is sliding out
     const [thrallFocused, setThrallFocused] = useState(false);
     const [zoomCenter, setZoomCenter] = useState(undefined as unknown as ZoomCenter | undefined);
+    const [infoDialogOpen, setInfoDialogOpen] = useState(false);
 
     function handleSelectThrall(thrall: Thrall) {
         let center = findCenter(thrall.locations);
@@ -73,11 +75,12 @@ export function ThrallMap(props: ThrallMapProps) {
     }
 
     return <div className="thrall-map-wrapper">
-        <div id="info-button" className={"display-in-center"}>
+        <div id="info-button" className={"display-in-center"} onClick={event => setInfoDialogOpen(true)}>
             <span className="material-icons" style={{fontSize: '18pt'}}>
                 help_outline
             </span>
         </div>
+        <InfoDialog open={infoDialogOpen} onClose={() => setInfoDialogOpen(false)}/>
         <MapContainer center={[0, 0]}
                       style={{height: '100vh', width: 'calc(100vw - var(--sidebar-width))'}}
                       minZoom={-8.7}

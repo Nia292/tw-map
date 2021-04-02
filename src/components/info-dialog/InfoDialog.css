@@ -1,0 +1,32 @@
+.info-dialog-container {
+    z-index: 1100;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(0,0,0, 0.7);
+}
+
+.info-dialog {
+    background-color: var(--background-color);
+    color: var(--primary-sidebar-color);
+    z-index: 1100;
+    width: 500px;
+    border-radius: 2px;
+    padding: 16px 16px 32px;
+}
+
+.info-dialog-header {
+    font-size: 16pt;
+}
+
+.info-dialog-subheader {
+    margin-top: 16px;
+    margin-bottom: 4px;
+    font-size: 14pt;
+}
