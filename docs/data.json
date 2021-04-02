@@ -132,7 +132,34 @@
     "name": "Ivar the Crafty One",
     "id": "Ivar the Crafty One",
     "type": "TASKMASTER",
-    "locations": []
+    "locationDescription": "Ivar spawns in various Nordheimer settlements including New Asgarth. Spawns are shared with the blacksmith thralls.",
+    "locations": [
+      {
+        "x": 8768.533203,
+        "y": -20387.482422,
+        "z": 1779.414551,
+        "location": "Freya's Hovel",
+        "spawnSpot": "Blacksmith"
+      },
+      {
+        "source": "TeleportPlayer -39971.699219 -63372.089844 2621.061035",
+        "x": -39971.699219,
+        "y": -63372.089844,
+        "z": 2621.061035,
+        "location": "Meadowwatch",
+        "spawnSpot": "Blacksmith",
+        "comment": "At the Blacksmith Bench"
+      },
+      {
+        "source": "TeleportPlayer -73266.140625 -66190.148438 2354.510498",
+        "x": -73266.140625,
+        "y": -66190.148438,
+        "z": 2354.510498,
+        "location": "Nordhof",
+        "spawnSpot": "Blacksmith",
+        "comment": "At the Blacksmith Bench"
+      }
+    ]
   },
   {
     "name": "Akasuki the Binder",
