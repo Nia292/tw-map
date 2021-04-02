@@ -27,5 +27,5 @@ map.png
 .idea
 *.iml
 
-docs/**.css.map
-docs/**.js.map
+*.css.map
+*.js.map
