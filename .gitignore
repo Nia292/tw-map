@@ -26,3 +26,6 @@ public/map.png
 map.png
 .idea
 *.iml
+
+docs/**.css.map
+docs/**.js.map
