@@ -1,4 +1,4 @@
-import {LatLngLiteral} from "leaflet";
+import {LatLng, LatLngLiteral, LineUtil, Polygon, Polyline} from "leaflet";
 import {ThrallLocation} from "../model/ThrallLocation";
 
 export function ceCoordinateToLatLng(ceCoordinate: ThrallLocation): LatLngLiteral {
@@ -36,4 +36,20 @@ export function zoomToIconSize(zoom: number): number {
 
 export function ceCoordinate(x: number, y: number, z: number): ThrallLocation {
     return {x, y, z}
+}
+
+export function findCenter(locations: ThrallLocation[]): LatLngLiteral| null {
+    if (locations.length <= 0) {
+        return null;
+    }
+    if (locations.length <= 1) {
+        return ceCoordinateToLatLng(locations[0])
+    }
+    if (locations.length <= 2) {
+        const latLngs = locations.map(value => ceCoordinateToLatLng(value));
+        return new Polyline(latLngs).getBounds().getCenter();
+    }
+    const latLngs = locations.map(value => ceCoordinateToLatLng(value));
+    const polygon = new Polygon(latLngs);
+    return polygon.getBounds().getCenter();
 }

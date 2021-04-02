@@ -1,4 +1,5 @@
 import React from 'react';
+import './css/variables.css'
 import './App.css';
 import {ThrallMap} from "./components/ThrallMap";
 import {Thrall} from "./model/Thrall";

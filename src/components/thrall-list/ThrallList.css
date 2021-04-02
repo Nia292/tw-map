@@ -2,6 +2,25 @@
     position: absolute;
     right: 0;
     width: var(--sidebar-width);
+    height: calc(100vh - 16px);
+    overflow-x: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--background-color-lighter);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-sidebar-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:  var(--primary-sidebar-color-highlight);
 }
 
 .thrall-list-sliding-in {
@@ -15,15 +34,26 @@
 }
 
 @keyframes thrall-list-slide-in {
+    1% {
+        overflow: hidden;
+    }
+    99% {
+        overflow: hidden;
+    }
     100% {
         right: 0px;
         visibility: unset;
+        overflow: auto;
     }
 }
 
 @keyframes thrall-list-slide-out {
+    1% {
+        overflow: hidden;
+    }
     100% {
         right: 400px;
         visibility: hidden;
+        overflow: hidden;
     }
 }

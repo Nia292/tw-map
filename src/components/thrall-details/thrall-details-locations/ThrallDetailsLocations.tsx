@@ -18,7 +18,7 @@ const ThrallDetailsLocation = (props: ThrallDetailsLocationProps) => <div
     className="thrall-detail-single-location">
     <div className="display-in-row display-in-center ">
         <div style={{marginRight: '16px'}}>
-            <img src={process.env.PUBLIC_URL + "/fc_assets/icon_camp.png"}/>
+            <img alt="icon camp" src={process.env.PUBLIC_URL + "/fc_assets/icon_camp.png"}/>
         </div>
         <div style={{marginRight: 'auto'}}>
             <div style={{fontSize: '14pt'}}>{props.location.location}</div>

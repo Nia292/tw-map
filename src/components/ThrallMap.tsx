@@ -3,7 +3,7 @@ import {CRS, icon, LatLng, LatLngBounds, LatLngBoundsExpression, LatLngLiteral,}
 import {ThrallList} from "./thrall-list/ThrallList";
 import {Thrall} from "../model/Thrall";
 import React, {useState} from "react";
-import {ceCoordinateToLatLng} from "../util/conversions";
+import {ceCoordinateToLatLng, findCenter} from "../util/conversions";
 import {ThrallLocation} from "../model/ThrallLocation";
 
 // Coordiantes are [y,x]
@@ -67,8 +67,11 @@ function makeMarkerForLocation(thrall: Thrall, location: LatLngLiteral, zoom: nu
 }
 
 
-function MarkerForLocations(props: {thrall?: Thrall}): any {
+function MarkerForLocations(props: {thrall?: Thrall, focused: boolean}): any {
     let zoom = useMap().getZoom();
+    if (!props.focused) {
+        return [];
+    }
     const thrall = props.thrall;
     if (!thrall) {
         return <React.Fragment/>;
@@ -110,6 +113,10 @@ export function ThrallMap(props: ThrallMapProps) {
     const [zoom, setZoom] = useState(-8.7);
 
     function handleSelectThrall(thrall: Thrall) {
+        let center = findCenter(thrall.locations);
+        if (center) {
+            setLocation(center);
+        }
         setSelectedThrall(thrall)
         setThrallFocused(true)
     }
@@ -141,7 +148,7 @@ export function ThrallMap(props: ThrallMapProps) {
             <MapEvents/>
             <SetViewOnClick location={location}/>
             <SetZoomOnClick zoom={zoom}/>
-            <MarkerForLocations thrall={selectedThrall}/>
+            <MarkerForLocations thrall={selectedThrall} focused={thrallFocused}/>
         </MapContainer>
         <div className="sidebar-right">
             <ThrallList thralls={props.data}

@@ -1,0 +1,8 @@
+:root {
+    --sidebar-width: 400px;
+    --sidebar-slide-anim-duration: 0.4s;
+    --primary-sidebar-color: #cec7af;
+    --primary-sidebar-color-highlight: #eee9d8;
+    --background-color: #292829;
+    --background-color-lighter: #565356;
+}

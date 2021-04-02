@@ -1,13 +1,7 @@
-:root {
-    --sidebar-width: 400px;
-    --sidebar-slide-anim-duration: 0.4s;
-    --primary-sidebar-color: #cec7af;
-    --primary-sidebar-color-highlight: #eee9d8;
-}
-
 body {
     /* For slide in animations */
     overflow-x: hidden;
+    margin: 0;
 }
 
 .thrall-map-wrapper {
@@ -23,23 +17,6 @@ body {
     padding-right: 16px;
 }
 
-.thrall-wars-thrall:hover {
-    color: #eee9d8;
-    cursor: pointer;
-}
-
-.thrall-wars-thrall .thrall-name {
-    font-size: 16pt;
-}
-
-.thrall-wars-thrall .thrall-type {
-    font-size: 10pt;
-}
-
-
-body {
-    margin: 0;
-}
 
 .display-in-row {
     display: flex;
