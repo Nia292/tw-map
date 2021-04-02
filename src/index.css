@@ -29,3 +29,40 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+/* Overwrites leaflet style */
+.leaflet-bar a {
+    background-color: var(--background-color) !important;
+    color: var(--primary-sidebar-color) !important;
+}
+
+.leaflet-bar a:hover {
+    background-color: var(--background-color) !important;
+    color: var(--primary-sidebar-color-highlight) !important;
+}
+
+.leaflet-bar a.leaflet-disabled {
+    color: var(--primary-sidebar-color-disabled) !important;
+}
+
+.leaflet-control-zoom {
+    border: none !important;
+}
+
+#info-button {
+    position: absolute;
+    border-radius: 2px;
+    z-index: 800;
+    left: 10px;
+    top: 72px;
+    width: 30px;
+    height: 30px;
+    border-top: 1px solid var(--primary-sidebar-color);
+    background-color: var(--background-color);
+    color: var(--primary-sidebar-color);
+}
+
+#info-button:hover {
+    color: var(--background-color-lighter);
+    cursor: pointer;
+}

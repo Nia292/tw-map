@@ -1,5 +1,5 @@
-import {ImageOverlay, MapContainer} from "react-leaflet";
-import {CRS, LatLng, LatLngBounds, LatLngBoundsExpression,} from "leaflet";
+import {ImageOverlay, MapContainer, ZoomControl} from "react-leaflet";
+import {CRS, LatLng, LatLngBounds, LatLngBoundsExpression, Zoom,} from "leaflet";
 import {ThrallList} from "./thrall-list/ThrallList";
 import {Thrall} from "../model/Thrall";
 import React, {useState} from "react";
@@ -73,6 +73,11 @@ export function ThrallMap(props: ThrallMapProps) {
     }
 
     return <div className="thrall-map-wrapper">
+        <div id="info-button" className={"display-in-center"}>
+            <span className="material-icons" style={{fontSize: '18pt'}}>
+                help_outline
+            </span>
+        </div>
         <MapContainer center={[0, 0]}
                       style={{height: '100vh', width: 'calc(100vw - var(--sidebar-width))'}}
                       minZoom={-8.7}
@@ -81,8 +86,9 @@ export function ThrallMap(props: ThrallMapProps) {
                       zoomDelta={0.1}
                       crs={CRS.Simple}
                       maxBounds={mapBounds}
-                      zoomControl={true}
+                      zoomControl={false}
                       zoom={-8.7}>
+            <ZoomControl/>
             <ImageOverlay url={process.env.PUBLIC_URL + "/fc_assets/full_map_low_quality.jpg"} bounds={mapBounds}/>
             <MapEvents mapBounds={mapBounds}/>
             <SetViewOnClick location={zoomCenter}/>
