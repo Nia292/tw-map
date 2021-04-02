@@ -83,39 +83,32 @@ interface ThrallMapProps {
     data: Thrall[];
 }
 
-function SetViewOnClick(props: { location?: LatLngLiteral }) {
+function SetViewOnClick(props: { location?: ZoomCenter }) {
     const map = useMap();
     if (props.location) {
-        // map.setView(props.location);
-        map.setView(props.location, map.getZoom());
+        const zoom = props.location.zoom ? props.location.zoom : map.getZoom();
+        const center = props.location.center ? props.location.center : map.getCenter()
+        map.flyTo(center, zoom);
     }
     return null;
 }
 
-function SetZoomOnClick(props: {zoom: number}) {
-    // const map = useMap();
-    // if (props.zoom) {
-    //    map.setZoom(props.zoom)
-    // }
-    return null;
+interface ZoomCenter {
+    zoom?: number;
+    center?: LatLngLiteral;
 }
 
-
 export function ThrallMap(props: ThrallMapProps) {
-    // console.log(JSON.stringify(data));
-    //
-    // const [thralls] = useState(data);
     const [selectedThrall, setSelectedThrall] = useState(undefined as unknown as Thrall | undefined);
     // Use a separate focus flag to control whether the detail display or the list display is used
     // This avoids having an undefined name while the element with the details is sliding out
     const [thrallFocused, setThrallFocused] = useState(false);
-    const [location, setLocation] = useState(undefined as unknown as LatLngLiteral | undefined);
-    const [zoom, setZoom] = useState(-8.7);
+    const [zoomCenter, setZoomCenter] = useState(undefined as unknown as ZoomCenter | undefined);
 
     function handleSelectThrall(thrall: Thrall) {
         let center = findCenter(thrall.locations);
         if (center) {
-            setLocation(center);
+            setZoomCenter({zoom: -8, center});
         }
         setSelectedThrall(thrall)
         setThrallFocused(true)
@@ -125,12 +118,14 @@ export function ThrallMap(props: ThrallMapProps) {
         // While animating, we still want the thrall details visible until
         // it has slide out.
         setThrallFocused(false)
-        setLocation(undefined);
+        setZoomCenter({zoom: -8.7});
     }
 
     function handleSelectLocation(location: ThrallLocation): void {
-        setLocation(ceCoordinateToLatLng(location));
-        setZoom(-7);
+        setZoomCenter({
+            center: ceCoordinateToLatLng(location),
+            zoom: -7,
+        });
     }
 
     return <div className="thrall-map-wrapper">
@@ -146,8 +141,7 @@ export function ThrallMap(props: ThrallMapProps) {
                       zoom={-8.7}>
             <ImageOverlay url={process.env.PUBLIC_URL + "/fc_assets/full_map_low_quality.jpg"} bounds={mapBounds}/>
             <MapEvents/>
-            <SetViewOnClick location={location}/>
-            <SetZoomOnClick zoom={zoom}/>
+            <SetViewOnClick location={zoomCenter}/>
             <MarkerForLocations thrall={selectedThrall} focused={thrallFocused}/>
         </MapContainer>
         <div className="sidebar-right">
