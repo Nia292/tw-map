@@ -32,7 +32,8 @@ import {InfoDialog} from "./info-dialog/InfoDialog";
 // To correct my terrible original measurements
 const offsetLat = 0;
 const offsetLng = 0;
-// NOTE: Latitude needs the sign inverted.
+// NOTE: Latitude needs the sign inverted. Y-axis goes from negative (south) to positive (north)
+// CE has the coordinates inverted on that part.
 // southwest teleport: TeleportPlayer -342673.59375 369398.8125 -15273.344727
 const southWest: LatLng = new LatLng(-369398.00000 - offsetLat, -342934.00000 - offsetLng);
 // TeleportPlayer 475140.4375 -444603.34375 27547.671875

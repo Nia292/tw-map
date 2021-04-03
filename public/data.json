@@ -43,6 +43,38 @@
     "locations": []
   },
   {
+    "name": "Talaan",
+    "id": "Talaan",
+    "type": "ARMORER",
+    "locationDescription": "Talaan spawns rather rarely, around Armorer spots by the Black Galleon",
+    "locations": [
+      {
+        "location": "Black Galleon",
+        "spawnSpot": "Armorer",
+        "spawnSpotDetail": "Kneeling by the chest.",
+        "x": 79713.703125,
+        "y": 96798.515625,
+        "z": -6807.172363
+      },
+      {
+        "location": "Black Galleon",
+        "spawnSpot": "Armorer",
+        "spawnSpotDetail": "Kneeling in front of some jugs",
+        "x": 84323.992188,
+        "y": 98072.320313,
+        "z": -7869.47168
+      },
+      {
+        "location": "Black Galleon",
+        "spawnSpot": "Random",
+        "spawnSpotDetail": "Under a single-person tent next to a cage",
+        "x": 89726.953125,
+        "y": 86799.710938,
+        "z": -8761.599609
+      }
+    ]
+  },
+  {
     "name": "Lady Elizabeth Killigrew",
     "id": "Lady Elizabeth Killigrew",
     "type": "TASKMASTER",
@@ -162,9 +194,26 @@
   {
     "name": "Gabriela the Alchemist",
     "id": "Gabriela the Alchemist",
-    "type": "TASKMASTER",
+    "type": "ALCHEMIST",
     "locationDescription": "Spawns in Nordheimer alchemist locations.",
-    "locations": []
+    "locations": [
+      {
+        "location": "The Wardtowers",
+        "spawnSpot": "Alchemist",
+        "spawnSpotDetail": "Kneeling by the campfire",
+        "x": -148921.625,
+        "y": -48929.667969,
+        "z": 2811.639648
+      },
+      {
+        "location": "New Asgarth",
+        "spawnSpot": "Alchemist",
+        "spawnSpotDetail": "With a second alchemist infront of a hut.",
+        "x": -80970.359375  ,
+        "y": -51441.800781,
+        "z": 320.245789
+      }
+    ]
   },
   {
     "name": "Ivar the Crafty One",
@@ -186,7 +235,7 @@
         "z": 2621.061035,
         "location": "Meadowwatch",
         "spawnSpot": "Blacksmith",
-        "comment": "At the Blacksmith Bench"
+        "spawnSpotDetail": "At the Blacksmith Bench"
       },
       {
         "source": "TeleportPlayer -73266.140625 -66190.148438 2354.510498",
@@ -195,14 +244,22 @@
         "z": 2354.510498,
         "location": "Nordhof",
         "spawnSpot": "Blacksmith",
-        "comment": "At the Blacksmith Bench"
+        "spawnSpotDetail": "At the Blacksmith Bench"
+      },
+      {
+        "x": -72772.304688,
+        "y": -41144.503906,
+        "z": 88.618057,
+        "location": "New Asgarth",
+        "spawnSpot": "Blacksmith",
+        "spawnSpotDetail": "Talking with a smelter by the blacksmith bench."
       }
     ]
   },
   {
     "name": "Akasuki the Binder",
     "id": "Akasuki the Binder",
-    "type": "ARMORER",
+    "type": "TASKMASTER",
     "locationDescription": "Akasuki spawns in various Nordheimer settlements including New Asgarth. Spawns are shared with the blacksmith thralls.",
     "locations": [
       {
@@ -219,7 +276,7 @@
         "z": 2621.061035,
         "location": "Meadowwatch",
         "spawnSpot": "Blacksmith",
-        "comment": "At the Blacksmith Bench"
+        "spawnSpotDetail": "At the Blacksmith Bench"
       },
       {
         "source": "TeleportPlayer -73266.140625 -66190.148438 2354.510498",
@@ -228,7 +285,15 @@
         "z": 2354.510498,
         "location": "Nordhof",
         "spawnSpot": "Blacksmith",
-        "comment": "At the Blacksmith Bench"
+        "spawnSpotDetail": "At the Blacksmith Bench"
+      },
+      {
+        "x": -72772.304688,
+        "y": -41144.503906,
+        "z": 88.618057,
+        "location": "New Asgarth",
+        "spawnSpot": "Blacksmith",
+        "spawnSpotDetail": "Talking with a smelter by the blacksmith bench."
       }
     ]
   }
