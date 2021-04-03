@@ -62,6 +62,25 @@ body {
     color: var(--primary-sidebar-color);
 }
 
+#hq-checkbox-wrapper {
+    position: absolute;
+    z-index: 800;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-color);
+    color: var(--primary-sidebar-color);
+    height: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+}
+
+#hq-checkbox {
+    margin-right: 8px;
+}
+
 #info-button:hover {
     color: var(--background-color-lighter);
     cursor: pointer;

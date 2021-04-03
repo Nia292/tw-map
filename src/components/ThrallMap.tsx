@@ -2,7 +2,7 @@ import {ImageOverlay, MapContainer, ZoomControl} from "react-leaflet";
 import {CRS, LatLng, LatLngBounds, LatLngBoundsExpression,} from "leaflet";
 import {ThrallList} from "./thrall-list/ThrallList";
 import {Thrall} from "../model/Thrall";
-import React, {useState} from "react";
+import React, {MouseEvent, useState} from "react";
 import {ceCoordinateToLatLng, findCenter} from "../util/conversions";
 import {ThrallLocation} from "../model/ThrallLocation";
 import {ZoomCenter} from "../model/ZoomCenter";
@@ -79,11 +79,20 @@ export function ThrallMap(props: ThrallMapProps) {
         });
     }
 
+    function handleHqClick(event: MouseEvent<HTMLInputElement>) {
+        let target = event.target as HTMLInputElement;
+        setUseHq(target.checked)
+    }
+
     return <div className="thrall-map-wrapper">
         <div id="info-button" className={"display-in-center"} onClick={event => setInfoDialogOpen(true)}>
             <span className="material-icons" style={{fontSize: '18pt'}}>
                 help_outline
             </span>
+        </div>
+        <div id="hq-checkbox-wrapper" className="display-in-center">
+            <input id="hq-checkbox" type="checkbox" checked={useHq} onClick={handleHqClick}/>
+            <label htmlFor="hq-checkbox">HQ Map (11mb)</label>
         </div>
         <InfoDialog open={infoDialogOpen} onClose={() => setInfoDialogOpen(false)}/>
         <MapContainer center={[0, 0]}
