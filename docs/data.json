@@ -8,6 +8,7 @@
       {
         "location": "Sepermeru",
         "spawnSpot": "Taskmaster",
+        "spawnSpotDetail": "Standing near the Wheel of Pain.",
         "x": -264883.53125,
         "y": 90236.59375,
         "z": -3865.577881
@@ -15,9 +16,26 @@
       {
         "location": "Sepermeru",
         "spawnSpot": "Taskmaster",
+        "spawnSpotDetail": "Standing near the Wheel of Pain.",
         "x": -267129.40625,
         "y": 90784.5625,
         "z": -3915.528564
+      },
+      {
+        "location": "Sepermeru",
+        "spawnSpot": "Taskmaster",
+        "spawnSpotDetail": "Standing around arrogant.",
+        "x": -259441.140625,
+        "y": 106648.53125,
+        "z": -4061.263428
+      },
+      {
+        "location": "Sepermeru",
+        "spawnSpot": "Taskmaster",
+        "spawnSpotDetail": "Standing around arrogant.",
+        "x": -241064.1875,
+        "y": 118416.484375,
+        "z": -3094.070557
       }
     ]
   },
@@ -29,7 +47,7 @@
       {
         "location": "Mounds of the Dead",
         "spawnSpot": "Carpenter",
-        "spawnSpotDetail": "inside the hut",
+        "spawnSpotDetail": "Inside the small hut.",
         "x": -232741.71875,
         "y": -110330.210938,
         "z": -2507.26123
@@ -59,7 +77,7 @@
       {
         "location": "Black Galleon",
         "spawnSpot": "Armorer",
-        "spawnSpotDetail": "Kneeling in front of some jugs",
+        "spawnSpotDetail": "Kneeling in front of some jugs.",
         "x": 84323.992188,
         "y": 98072.320313,
         "z": -7869.47168
@@ -67,7 +85,7 @@
       {
         "location": "Black Galleon",
         "spawnSpot": "Random",
-        "spawnSpotDetail": "Under a single-person tent next to a cage",
+        "spawnSpotDetail": "Under a single-person tent next to a cage. Many thralls sphare this spawn.",
         "x": 89726.953125,
         "y": 86799.710938,
         "z": -8761.599609
@@ -78,7 +96,16 @@
     "name": "Lady Elizabeth Killigrew",
     "id": "Lady Elizabeth Killigrew",
     "type": "TASKMASTER",
-    "locations": []
+    "locations": [
+      {
+        "location": "The Den",
+        "spawnSpot": "Taskmaster",
+        "spawnSpotDetail": "Talking by the cages.",
+        "x": -93053.9375,
+        "y": 29743.224609,
+        "z": -9313.129883
+      }
+    ]
   },
   {
     "name": "Julia the Chaste",
@@ -152,7 +179,7 @@
   {
     "name": "Floki the Tinkerer",
     "id": "Floki the Tinkerer",
-    "type": "ARMORER",
+    "type": "TASKMASTER",
     "locationDescription": "Spawns in J4 at the Big River. Shares a spawn with Beast the Breaker.",
     "locations": [
       {
@@ -168,7 +195,24 @@
     "name": "Berglind",
     "id": "Berglind",
     "type": "ARMORER",
-    "locations": []
+    "locations": [
+      {
+        "location": "Mounds of the Dead",
+        "spawnSpot": "Armorer",
+        "spawnSpotDetail": "Stands in front of the hut.",
+        "x": -230057.109375,
+        "y": -117765.5,
+        "z": -2444.285889
+      },
+      {
+        "location": "Mounds of the Dead",
+        "spawnSpot": "Armorer",
+        "spawnSpotDetail": "Busy working the anvil.",
+        "x": -219712.15625,
+        "y": -122899.203125,
+        "z": -2896.52124
+      }
+    ]
   },
   {
     "name": "Serpa the Gem Cutter",
@@ -179,16 +223,33 @@
       {
         "location": "Sepermeru",
         "spawnSpot": "Alchemist",
+        "spawnSpotDetail": "Near the water at a bridge.",
         "x": -250389.15625,
         "y": 109424.632813,
         "z": -4416.668457
+      },
+      {
+        "location": "Sepermeru",
+        "spawnSpot": "Alchemist",
+        "spawnSpotDetail": "Kneeling by a brazier.",
+        "x": -246149.140625,
+        "y": 85640.9375,
+        "z": -3820.612061
+      },
+      {
+        "location": "Sepermeru",
+        "spawnSpot": "Alchemist",
+        "spawnSpotDetail": "Gossiping with alchemists around a brazier.",
+        "x": -257049.453125,
+        "y": 108548.515625,
+        "z": -3983.835693
       }
     ]
   },
   {
     "name": "Katla",
     "id": "Katla",
-    "type": "TASKMASTER",
+    "type": "SMELTER",
     "locations": []
   },
   {
@@ -218,7 +279,7 @@
   {
     "name": "Ivar the Crafty One",
     "id": "Ivar the Crafty One",
-    "type": "TASKMASTER",
+    "type": "BLACKSMITH",
     "locationDescription": "Ivar spawns in various Nordheimer settlements including New Asgarth. Spawns are shared with the blacksmith thralls.",
     "locations": [
       {
@@ -276,7 +337,7 @@
         "z": 2621.061035,
         "location": "Meadowwatch",
         "spawnSpot": "Blacksmith",
-        "spawnSpotDetail": "At the Blacksmith Bench"
+        "spawnSpotDetail": "At the blacksmith bench."
       },
       {
         "source": "TeleportPlayer -73266.140625 -66190.148438 2354.510498",
@@ -285,7 +346,7 @@
         "z": 2354.510498,
         "location": "Nordhof",
         "spawnSpot": "Blacksmith",
-        "spawnSpotDetail": "At the Blacksmith Bench"
+        "spawnSpotDetail": "At the blacksmith bench."
       },
       {
         "x": -72772.304688,
