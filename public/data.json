@@ -8,6 +8,7 @@
       {
         "location": "Sepermeru",
         "spawnSpot": "Taskmaster",
+        "spawnSpotDetail": "Standing near the Wheel of Pain",
         "x": -264883.53125,
         "y": 90236.59375,
         "z": -3865.577881
@@ -15,9 +16,26 @@
       {
         "location": "Sepermeru",
         "spawnSpot": "Taskmaster",
+        "spawnSpotDetail": "Standing near the Wheel of Pain",
         "x": -267129.40625,
         "y": 90784.5625,
         "z": -3915.528564
+      },
+      {
+        "location": "Sepermeru",
+        "spawnSpot": "Taskmaster",
+        "spawnSpotDetail": "standing arrogant",
+        "x": -259441.140625,
+        "y": 106648.53125,
+        "z": -4061.263428
+      },
+      {
+        "location": "Sepermeru",
+        "spawnSpot": "Taskmaster",
+        "spawnSpotDetail": "standing arrogant",
+        "x": -241064.1875,
+        "y": 118416.484375,
+        "z": -3094.070557
       }
     ]
   },
@@ -78,7 +96,16 @@
     "name": "Lady Elizabeth Killigrew",
     "id": "Lady Elizabeth Killigrew",
     "type": "TASKMASTER",
-    "locations": []
+    "locations": [
+      {
+        "location": "The Den",
+        "spawnSpot": "Taskmaster",
+        "spawnSpotDetail": "Talking by the cages.",
+        "x": -93053.9375,
+        "y": 29743.224609,
+        "z": -9313.129883
+      }
+    ]
   },
   {
     "name": "Julia the Chaste",
@@ -168,7 +195,24 @@
     "name": "Berglind",
     "id": "Berglind",
     "type": "ARMORER",
-    "locations": []
+    "locations": [
+      {
+        "location": "Mounds of the Dead",
+        "spawnSpot": "Armorer",
+        "spawnSpotDetail": "Infront of the hut",
+        "x": -230057.109375,
+        "y": -117765.5,
+        "z": -2444.285889
+      },
+      {
+        "location": "Mounds of the Dead",
+        "spawnSpot": "Armorer",
+        "spawnSpotDetail": "Beating an anvil",
+        "x": -219712.15625,
+        "y": -122899.203125,
+        "z": -2896.52124
+      }
+    ]
   },
   {
     "name": "Serpa the Gem Cutter",
@@ -179,9 +223,26 @@
       {
         "location": "Sepermeru",
         "spawnSpot": "Alchemist",
+        "spawnSpotDetail": "Near the water at a bridge.",
         "x": -250389.15625,
         "y": 109424.632813,
         "z": -4416.668457
+      },
+      {
+        "location": "Sepermeru",
+        "spawnSpot": "Alchemist",
+        "spawnSpotDetail": "Kneeling by a brazier",
+        "x": -246149.140625,
+        "y": 85640.9375,
+        "z": -3820.612061
+      },
+      {
+        "location": "Sepermeru",
+        "spawnSpot": "Alchemist",
+        "spawnSpotDetail": "Gossiping with alchemists around a brazier",
+        "x": -257049.453125,
+        "y": 108548.515625,
+        "z": -3983.835693
       }
     ]
   },
