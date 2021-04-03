@@ -23,6 +23,7 @@ const ThrallDetailsLocation = (props: ThrallDetailsLocationProps) => <div
         <div style={{marginRight: 'auto'}}>
             <div style={{fontSize: '14pt'}}>{props.location.location}</div>
             <div style={{fontSize: '11pt'}}>Spawns at the {props.location.spawnSpot} spot.</div>
+            <div style={{fontSize: '9pt'}}>{props.location.spawnSpotDetail}</div>
             <div style={{fontSize: '9pt'}}>Coordiantes: {props.location.x} / {props.location.y} / {props.location.z}</div>
         </div>
     </div>

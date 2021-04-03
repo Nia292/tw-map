@@ -16,7 +16,7 @@
     background-color: var(--background-color);
     color: var(--primary-sidebar-color);
     z-index: 1100;
-    width: 500px;
+    width: 600px;
     border-radius: 2px;
     padding: 16px 16px 32px;
 }

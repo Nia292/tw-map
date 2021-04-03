@@ -54,6 +54,12 @@ export const InfoDialog = (props: InfoDialogProps) => {
             <div>
                 There is also the <a target="_blank" href="https://nia292.github.io/tw-dice-calc/index.html" rel="noreferrer">TW Dice Calculator</a> to plan your RP characters!
             </div>
+            <div className="info-dialog-subheader">
+                Credits
+            </div>
+            <div>
+                Japata for helping me with the locations and general thrall information. 🐍
+            </div>
         </div>
     </div>
 }

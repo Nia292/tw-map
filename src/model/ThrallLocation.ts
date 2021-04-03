@@ -11,6 +11,7 @@ export interface ThrallLocation {
     z: number;
     // Spawns in place of which thrall type?
     spawnSpot?: string;
+    spawnSpotDetail?: string;
     // Name of the general area
     location?: string;
 }

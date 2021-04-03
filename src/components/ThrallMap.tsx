@@ -1,5 +1,5 @@
 import {ImageOverlay, MapContainer, ZoomControl} from "react-leaflet";
-import {CRS, LatLng, LatLngBounds, LatLngBoundsExpression,} from "leaflet";
+import {CRS, LatLng, LatLngBounds, LatLngBoundsExpression, LatLngLiteral,} from "leaflet";
 import {ThrallList} from "./thrall-list/ThrallList";
 import {Thrall} from "../model/Thrall";
 import React, {MouseEvent, useState} from "react";
@@ -10,6 +10,9 @@ import {SetViewOnClick} from "./thrall-map-utils/SetViewOnClick";
 import {MarkerForLocations} from "./thrall-map-utils/MarkerForLocations";
 import {MapEvents} from "./thrall-map-utils/MapEvents";
 import {InfoDialog} from "./info-dialog/InfoDialog";
+
+const DEFAULT_ZOOM = -8.7;
+const DEFAULT_CENTER: LatLngLiteral = {lat: 0, lng: 0};
 
 // Coordiantes are [y,x]
 // Teleport player locates them as [x, y, z]
@@ -69,7 +72,7 @@ export function ThrallMap(props: ThrallMapProps) {
         // While animating, we still want the thrall details visible until
         // it has slide out.
         setThrallFocused(false)
-        setZoomCenter({zoom: -8.7});
+        setZoomCenter({zoom: -8.7, center: DEFAULT_CENTER});
     }
 
     function handleSelectLocation(location: ThrallLocation): void {
@@ -84,6 +87,9 @@ export function ThrallMap(props: ThrallMapProps) {
         setUseHq(target.checked)
     }
 
+    const center = zoomCenter?.center ? zoomCenter.center : DEFAULT_CENTER;
+    const zoom = zoomCenter?.zoom ? zoomCenter.zoom : DEFAULT_ZOOM
+
     return <div className="thrall-map-wrapper">
         <div id="info-button" className={"display-in-center"} onClick={event => setInfoDialogOpen(true)}>
             <span className="material-icons" style={{fontSize: '18pt'}}>
@@ -95,7 +101,7 @@ export function ThrallMap(props: ThrallMapProps) {
             <label htmlFor="hq-checkbox">HQ Map (11mb)</label>
         </div>
         <InfoDialog open={infoDialogOpen} onClose={() => setInfoDialogOpen(false)}/>
-        <MapContainer center={[0, 0]}
+        <MapContainer center={center}
                       style={{height: '100vh', width: 'calc(100vw - var(--sidebar-width))'}}
                       minZoom={-8.7}
                       maxZoom={-4}
@@ -104,11 +110,11 @@ export function ThrallMap(props: ThrallMapProps) {
                       crs={CRS.Simple}
                       maxBounds={mapBounds}
                       zoomControl={false}
-                      zoom={-8.7}>
+                      zoom={zoom}>
             <ZoomControl/>
             {!useHq && <ImageOverlay url={process.env.PUBLIC_URL + "/fc_assets/full_map_low_quality.jpg"} bounds={mapBounds}/>}
             {useHq && <ImageOverlay url={process.env.PUBLIC_URL + "/fc_assets/full_map_hq.jpg"} bounds={mapBounds}/>}
-            <MapEvents mapBounds={mapBounds}/>
+            <MapEvents mapBounds={mapBounds} onZoomCenterChange={setZoomCenter}/>
             <SetViewOnClick location={zoomCenter}/>
             <MarkerForLocations thrall={selectedThrall} focused={thrallFocused}/>
         </MapContainer>
