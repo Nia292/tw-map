@@ -25,7 +25,16 @@
     "name": "Hekla",
     "id": "Hekla",
     "type": "CARPENTER",
-    "locations": []
+    "locations": [
+      {
+        "location": "Mounds of the Dead",
+        "spawnSpot": "Carpenter",
+        "spawnSpotDetail": "inside the hut",
+        "x": -232741.71875,
+        "y": -110330.210938,
+        "z": -2507.26123
+      }
+    ]
   },
   {
     "name": "Thorunn",
@@ -61,8 +70,37 @@
     "name": "Landora the Groomer",
     "id": "Landora the Groomer",
     "type": "GROOMER",
-    "locationDescription": "Spawns at archer spots at the Pagoda of Boundless Lust.",
-    "locations": []
+    "locationDescription": "Spawns at archer spots at the Pagoda of Boundless Lust, both inside the building and outside at the ledge.",
+    "locations": [
+      {
+        "location": "Pagoda of Boundless Lust",
+        "spawnSpot": "Archer",
+        "x": 346092.4375,
+        "y": 168936.0,
+        "z": -17170.873047
+      },
+      {
+        "location": "Pagoda of Boundless Lust",
+        "spawnSpot": "Archer",
+        "x": 347086.5625,
+        "y": 170193.75,
+        "z": -17142.951172
+      },
+      {
+        "location": "Pagoda of Boundless Lust",
+        "spawnSpot": "Archer",
+        "x": 343701.09375,
+        "y": 173599.046875,
+        "z": -16278.120117
+      },
+      {
+        "location": "Pagoda of Boundless Lust",
+        "spawnSpot": "Archer",
+        "x": 350862.625,
+        "y": 171506.84375,
+        "z": -17191.871094
+      }
+    ]
   },
   {
     "name": "Beast the Breaker",

@@ -29,11 +29,14 @@ import {InfoDialog} from "./info-dialog/InfoDialog";
 // Bottom: 368872.00000
 // const southWest: LatLng = new LatLng(368872.00000, -342934.00000);
 
+// To correct my terrible original measurements
+const offsetLat = 0;
+const offsetLng = 0;
 // NOTE: Latitude needs the sign inverted.
 // southwest teleport: TeleportPlayer -342673.59375 369398.8125 -15273.344727
-const southWest: LatLng = new LatLng(-369398.00000, -342934.00000);
+const southWest: LatLng = new LatLng(-369398.00000 - offsetLat, -342934.00000 - offsetLng);
 // TeleportPlayer 475140.4375 -444603.34375 27547.671875
-const northEast: LatLng = new LatLng(444603.00000, 475140.00000);
+const northEast: LatLng = new LatLng(444603.00000 - offsetLat, 475140.00000 - offsetLng);
 const mapBounds: LatLngBoundsExpression = new LatLngBounds(
     southWest,
     northEast
@@ -50,6 +53,7 @@ export function ThrallMap(props: ThrallMapProps) {
     const [thrallFocused, setThrallFocused] = useState(false);
     const [zoomCenter, setZoomCenter] = useState(undefined as unknown as ZoomCenter | undefined);
     const [infoDialogOpen, setInfoDialogOpen] = useState(false);
+    const [useHq, setUseHq] = useState(false);
 
     function handleSelectThrall(thrall: Thrall) {
         let center = findCenter(thrall.locations);
@@ -92,7 +96,8 @@ export function ThrallMap(props: ThrallMapProps) {
                       zoomControl={false}
                       zoom={-8.7}>
             <ZoomControl/>
-            <ImageOverlay url={process.env.PUBLIC_URL + "/fc_assets/full_map_low_quality.jpg"} bounds={mapBounds}/>
+            {!useHq && <ImageOverlay url={process.env.PUBLIC_URL + "/fc_assets/full_map_low_quality.jpg"} bounds={mapBounds}/>}
+            {useHq && <ImageOverlay url={process.env.PUBLIC_URL + "/fc_assets/full_map_hq.jpg"} bounds={mapBounds}/>}
             <MapEvents mapBounds={mapBounds}/>
             <SetViewOnClick location={zoomCenter}/>
             <MarkerForLocations thrall={selectedThrall} focused={thrallFocused}/>
