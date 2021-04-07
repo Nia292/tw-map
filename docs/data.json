@@ -85,7 +85,7 @@
       {
         "location": "Black Galleon",
         "spawnSpot": "Random",
-        "spawnSpotDetail": "Under a single-person tent next to a cage. Many thralls sphare this spawn.",
+        "spawnSpotDetail": "Under a single-person tent next to a cage. Many thralls share this spawn.",
         "x": 89726.953125,
         "y": 86799.710938,
         "z": -8761.599609
@@ -100,7 +100,7 @@
       {
         "location": "The Den",
         "spawnSpot": "Taskmaster",
-        "spawnSpotDetail": "Talking by the cages.",
+        "spawnSpotDetail": "Talking by the 2 round cages.",
         "x": -93053.9375,
         "y": 29743.224609,
         "z": -9313.129883
@@ -111,13 +111,31 @@
     "name": "Julia the Chaste",
     "id": "Julia the Chaste",
     "type": "TASKMASTER",
-    "locations": []
+    "locations": [
+      {
+        "location": "The Den",
+        "spawnSpot": "Taskmaster",
+        "spawnSpotDetail": "Talking by the 2 round cages.",
+        "x": -93053.9375,
+        "y": 29743.224609,
+        "z": -9313.129883
+      }
+    ]
   },
   {
     "name": "Queen Julia the Chaste",
     "id": "Queen Julia the Chaste",
     "type": "TASKMASTER",
-    "locations": []
+    "locations": [
+      {
+        "location": "Spinebreaker's Flank",
+        "spawnSpot": "Taskmaster",
+        "spawnSpotDetail": "By the campfire with an archer",
+        "x": 35299.515625,
+        "y": 160426.859375,
+        "z": -6930.966309
+      }
+    ]
   },
   {
     "name": "Fass the Torturer",
