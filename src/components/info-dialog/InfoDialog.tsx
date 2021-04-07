@@ -18,12 +18,12 @@ export const InfoDialog = (props: InfoDialogProps) => {
     if (!props.open) {
         return <React.Fragment/>
     }
-    return <div className="info-dialog-container" onClick={props.onClose}>
-        <div className="info-dialog" onClick={preventClose}>
-            <div className="info-dialog-header">
+    return <div className="dialog-container" onClick={props.onClose}>
+        <div className="dialog" onClick={preventClose}>
+            <div className="dialog-header">
                 Information
             </div>
-            <div className="info-dialog-subheader">
+            <div className="dialog-subheader">
                 About
             </div>
             <div>
@@ -32,7 +32,7 @@ export const InfoDialog = (props: InfoDialogProps) => {
                 Check out the mod page for more information!<br/>
                 You can find the source code over on <a target="_blank" href="https://github.com/Nia292/tw-map" rel="noreferrer">GitHub</a>.
             </div>
-            <div className="info-dialog-subheader">
+            <div className="dialog-subheader">
                  Privacy
             </div>
             <div>
@@ -42,19 +42,19 @@ export const InfoDialog = (props: InfoDialogProps) => {
                 Site provided by&nbsp;<a target="_blank" href="https://pages.github.com/" rel="noreferrer">GitHub pages</a>. Check out&nbsp;<a target="_blank" href="https://docs.github.com/en/github/site-policy/github-privacy-statement" rel="noreferrer">GitHub's privacy statement</a>
                 &nbsp;to find out what data GitHub collects.
             </div>
-            <div className="info-dialog-subheader">
+            <div className="dialog-subheader">
                 Contributing
             </div>
             <div>
                 This map is far from completed. Head over to GitHub to find out how to contribute data!
             </div>
-            <div className="info-dialog-subheader">
+            <div className="dialog-subheader">
                 More
             </div>
             <div>
                 There is also the <a target="_blank" href="https://nia292.github.io/tw-dice-calc/index.html" rel="noreferrer">TW Dice Calculator</a> to plan your RP characters!
             </div>
-            <div className="info-dialog-subheader">
+            <div className="dialog-subheader">
                 Credits
             </div>
             <div>

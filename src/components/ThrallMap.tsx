@@ -1,15 +1,16 @@
 import {ImageOverlay, MapContainer, ZoomControl} from "react-leaflet";
-import {CRS, LatLng, LatLngBounds, LatLngBoundsExpression, LatLngLiteral,} from "leaflet";
+import {CRS, LatLngLiteral,} from "leaflet";
 import {ThrallList} from "./thrall-list/ThrallList";
 import {Thrall} from "../model/Thrall";
 import React, {MouseEvent, useState} from "react";
-import {ceCoordinateToLatLng, findCenter} from "../util/conversions";
+import {calculateBounds, ceCoordinateToLatLng, findCenter} from "../util/conversions";
 import {ThrallLocation} from "../model/ThrallLocation";
 import {ZoomCenter} from "../model/ZoomCenter";
 import {SetViewOnClick} from "./thrall-map-utils/SetViewOnClick";
 import {MarkerForLocations} from "./thrall-map-utils/MarkerForLocations";
 import {MapEvents} from "./thrall-map-utils/MapEvents";
 import {InfoDialog} from "./info-dialog/InfoDialog";
+import {SettingsDialog} from "./settings-dialog/SettingsDialog";
 
 const DEFAULT_ZOOM = -8.7;
 const DEFAULT_CENTER: LatLngLiteral = {lat: 0, lng: 0};
@@ -32,19 +33,15 @@ const DEFAULT_CENTER: LatLngLiteral = {lat: 0, lng: 0};
 // Bottom: 368872.00000
 // const southWest: LatLng = new LatLng(368872.00000, -342934.00000);
 
-// To correct my terrible original measurements
-const offsetLat = 0;
-const offsetLng = 0;
+
 // NOTE: Latitude needs the sign inverted. Y-axis goes from negative (south) to positive (north)
 // CE has the coordinates inverted on that part.
 // southwest teleport: TeleportPlayer -342673.59375 369398.8125 -15273.344727
-const southWest: LatLng = new LatLng(-369398.00000 - offsetLat, -342934.00000 - offsetLng);
+const south = -369398.00000;
+const west = -342934.00000;
 // TeleportPlayer 475140.4375 -444603.34375 27547.671875
-const northEast: LatLng = new LatLng(444603.00000 - offsetLat, 475140.00000 - offsetLng);
-const mapBounds: LatLngBoundsExpression = new LatLngBounds(
-    southWest,
-    northEast
-);
+const north = 444603.00000;
+const east = 475140.00000;
 
 interface ThrallMapProps {
     data: Thrall[];
@@ -57,7 +54,14 @@ export function ThrallMap(props: ThrallMapProps) {
     const [thrallFocused, setThrallFocused] = useState(false);
     const [zoomCenter, setZoomCenter] = useState(undefined as unknown as ZoomCenter | undefined);
     const [infoDialogOpen, setInfoDialogOpen] = useState(false);
+    const [settingsDialogOpen, setSettingsDialogOpen] = useState(false);
     const [useHq, setUseHq] = useState(false);
+    const [offset, setOffset] = useState({
+        offsetTop: -2600,
+        offsetBot: 500,
+        offsetLeft: 250,
+        offsetRight: 0
+    });
 
     function handleSelectThrall(thrall: Thrall) {
         let center = findCenter(thrall.locations);
@@ -89,11 +93,17 @@ export function ThrallMap(props: ThrallMapProps) {
 
     const center = zoomCenter?.center ? zoomCenter.center : DEFAULT_CENTER;
     const zoom = zoomCenter?.zoom ? zoomCenter.zoom : DEFAULT_ZOOM
+    const mapBounds = calculateBounds(south, west, north, east, offset);
 
     return <div className="thrall-map-wrapper">
-        <div id="info-button" className={"display-in-center"} onClick={event => setInfoDialogOpen(true)}>
+        <div id="info-button" className={"display-in-center"} onClick={() => setInfoDialogOpen(true)}>
             <span className="material-icons" style={{fontSize: '18pt'}}>
                 help_outline
+            </span>
+        </div>
+        <div id="settings-button" className={"display-in-center"} onClick={() => setSettingsDialogOpen(true)}>
+            <span className="material-icons" style={{fontSize: '18pt'}}>
+                settings
             </span>
         </div>
         <div id="hq-checkbox-wrapper" className="display-in-center">
@@ -101,6 +111,10 @@ export function ThrallMap(props: ThrallMapProps) {
             <label htmlFor="hq-checkbox">HQ Map (11mb)</label>
         </div>
         <InfoDialog open={infoDialogOpen} onClose={() => setInfoDialogOpen(false)}/>
+        <SettingsDialog open={settingsDialogOpen}
+                        offset={offset}
+                        onOffsetChange={setOffset}
+                        onClose={() => setSettingsDialogOpen(false)}/>
         <MapContainer center={center}
                       style={{height: '100vh', width: 'calc(100vw - var(--sidebar-width))'}}
                       minZoom={-8.7}

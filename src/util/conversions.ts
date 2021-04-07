@@ -1,5 +1,6 @@
-import {LatLngLiteral, Polygon, Polyline} from "leaflet";
+import {LatLng, LatLngBounds, LatLngBoundsExpression, LatLngLiteral, Polygon, Polyline} from "leaflet";
 import {ThrallLocation} from "../model/ThrallLocation";
+import {MapOffset} from "../model/MapOffset";
 
 export function ceCoordinateToLatLng(ceCoordinate: ThrallLocation): LatLngLiteral {
     return {
@@ -52,4 +53,14 @@ export function findCenter(locations: ThrallLocation[]): LatLngLiteral| null {
     const latLngs = locations.map(value => ceCoordinateToLatLng(value));
     const polygon = new Polygon(latLngs);
     return polygon.getBounds().getCenter();
+}
+
+
+export function calculateBounds(south: number, west: number, north: number, east: number, offset: MapOffset): LatLngBoundsExpression {
+    const southWest: LatLng = new LatLng(south - offset.offsetBot, west - offset.offsetLeft);
+    const northEast: LatLng = new LatLng(north - offset.offsetTop, east - offset.offsetRight);
+    return  new LatLngBounds(
+        southWest,
+        northEast
+    );
 }
