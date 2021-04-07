@@ -270,7 +270,7 @@
         "location": "New Asgarth",
         "spawnSpot": "Alchemist",
         "spawnSpotDetail": "With a second alchemist infront of a hut.",
-        "x": -80970.359375  ,
+        "x": -80970.359375,
         "y": -51441.800781,
         "z": 320.245789
       }
@@ -355,6 +355,38 @@
         "location": "New Asgarth",
         "spawnSpot": "Blacksmith",
         "spawnSpotDetail": "Talking with a smelter by the blacksmith bench."
+      }
+    ]
+  },
+  {
+    "name": "Alfhild",
+    "id": "Alfhild",
+    "type": "BLACKSMITH",
+    "locationDescription": "Alfhild spawns on blacksmith spots around the Black Galleon",
+    "locations": [
+      {
+        "x": 91962.65625,
+        "y": 97032.265625,
+        "z": -7575.723633,
+        "location": "Black Galleon",
+        "spawnSpot": "Random",
+        "spawnSpotDetail": "With 3 others by the brazier."
+      },
+      {
+        "x": 79043.828125,
+        "y": 96757.203125,
+        "z": -7837.125977,
+        "location": "Black Galleon",
+        "spawnSpot": "Blacksmith",
+        "spawnSpotDetail": "Fiddling with the chest on the bench in the back."
+      },
+      {
+        "x": 108952.351563,
+        "y": 95754.085938,
+        "z": -9755.756836,
+        "location": "The Sandpit",
+        "spawnSpot": "Blacksmith",
+        "spawnSpotDetail": "Sitting next to the anvil under the tent"
       }
     ]
   }
