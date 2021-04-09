@@ -17,6 +17,9 @@ export function MapEvents(props: MapEventProps) {
                 preventPan: true
             })
         },
+        click: event => {
+            console.log(event.latlng.lat, event.latlng.lng)
+        },
         drag: () => {
             map.panInsideBounds(props.mapBounds, {animate: false});
             props.onZoomCenterChange({
