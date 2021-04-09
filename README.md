@@ -39,3 +39,12 @@ Here is what you would do:
 3. Start adapting the application
 
 If you do need help on the third step, feel free to let me know!
+
+## Deploying
+
+For now, it's not automated *at all*. I usually do these steps:
+
+1. Locally, delete the ``docs`` directory
+2. Run ``npm build``
+3. Rename the ``build`` directory to ``docs``
+4. Commit and push
