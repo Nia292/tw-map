@@ -9,6 +9,8 @@ import {MapType} from "./model/MapType";
 interface MapData {
     "map_lq": string;
     "map_hq": string;
+    minZoom: number;
+    maxZoom: number;
     data: Thrall[];
     bounds: {
         south: number,
@@ -20,6 +22,7 @@ interface MapData {
 
 interface AppState {
     data: MapData;
+    loaded: boolean;
 }
 
 
@@ -54,10 +57,13 @@ export class App extends React.Component<any, AppState> {
     constructor(props: any) {
         super(props);
         this.state = {
+            loaded: false,
             data: {
                 data: [],
                 map_hq: '',
                 map_lq: '',
+                minZoom: -12,
+                maxZoom: -4,
                 bounds: {
                     east: 0,
                     north: 0,
@@ -71,15 +77,20 @@ export class App extends React.Component<any, AppState> {
     componentDidMount() {
         fetch(determineDataUrl())
             .then(value => value.json())
-            .then(data => this.setState({data}))
+            .then(data => this.setState({data, loaded: true}))
     }
 
     render() {
+        if (!this.state.loaded) {
+            return <div>Map Loading...</div>
+        }
         const bounds = this.state.data.bounds;
         return (
             <div>
                 <ThrallMap data={this.state.data.data}
                            mapType={determineMapType()}
+                           minZoom={this.state.data.minZoom}
+                           maxZoom={this.state.data.maxZoom}
                            mapHq={this.state.data.map_hq}
                            mapLq={this.state.data.map_lq}
                            north={bounds.north}

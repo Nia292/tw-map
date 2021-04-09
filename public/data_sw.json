@@ -1,12 +1,14 @@
 {
-  "map_lq": "/sw_assets/sw_map_lq.jpg",
-  "map_hq": "/sw_assets/sw_map_hq.png",
+  "map_lq": "/sw_assets/sw_map.png",
+  "map_hq": "/sw_assets/sw_map.png",
   "bounds": {
-    "south": -369398.00000,
-    "west": -342934.00000,
-    "north": 447203.00000,
-    "east":  475140.00000
+    "south": 400000.00000,
+    "west": -400000.00000,
+    "north": -400000.00000,
+    "east":  400000.00000
   },
+  "minZoom": -12,
+  "maxZoom": 0,
   "data": [
     {
       "name": "Viek the Spire",

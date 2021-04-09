@@ -10,6 +10,7 @@ export interface MapEventProps {
 export function MapEvents(props: MapEventProps) {
     const map = useMapEvents({
         zoom: () => {
+            console.log(map.getZoom())
             props.onZoomCenterChange({
                 zoom: map.getZoom(),
                 center: map.getCenter(),

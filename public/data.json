@@ -7,6 +7,8 @@
     "north": 444603.0,
     "east":  475140.0
   },
+  "minZoom": -8.7,
+  "maxZoom": -4,
   "data": [
     {
       "name": "Viek the Spire",

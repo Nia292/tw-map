@@ -42,6 +42,8 @@ interface ThrallMapProps {
     south: number;
     west: number;
     east: number;
+    minZoom: number;
+    maxZoom: number;
     mapType: MapType;
 }
 
@@ -131,8 +133,8 @@ export function ThrallMap(props: ThrallMapProps) {
                         onClose={() => setSettingsDialogOpen(false)}/>
         <MapContainer center={center}
                       style={{height: '100vh', width: 'calc(100vw - var(--sidebar-width))'}}
-                      minZoom={-8.7}
-                      maxZoom={-4}
+                      minZoom={props.minZoom}
+                      maxZoom={props.maxZoom}
                       zoomSnap={0.1}
                       zoomDelta={0.1}
                       crs={CRS.Simple}
@@ -140,7 +142,7 @@ export function ThrallMap(props: ThrallMapProps) {
                       zoomControl={false}
                       zoom={zoom}>
             <ZoomControl/>
-            {!useHq && <ImageOverlay url={process.env.PUBLIC_URL + props.mapLq} bounds={mapBounds}/>}
+            {!useHq && <ImageOverlay url={process.env.PUBLIC_URL + props.mapLq} bounds={mapBounds} />}
             {useHq && <ImageOverlay url={process.env.PUBLIC_URL + props.mapHq} bounds={mapBounds}/>}
             <MapEvents mapBounds={mapBounds} onZoomCenterChange={setZoomCenter}/>
             <SetViewOnClick location={zoomCenter}/>
