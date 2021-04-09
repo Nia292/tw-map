@@ -80,6 +80,7 @@ body {
     z-index: 800;
     left: 10px;
     bottom: 10px;
+    width: 160px;
     display: flex;
     flex-direction: row;
     background-color: var(--background-color);
@@ -106,4 +107,20 @@ body {
 
 a:visited {
     color: var(--primary-sidebar-color-highlight);
+}
+
+
+#map-link {
+    position: absolute;
+    z-index: 800;
+    left: 191px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-color);
+    color: var(--primary-sidebar-color);
+    height: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
 }

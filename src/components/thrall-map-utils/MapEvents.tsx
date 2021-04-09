@@ -9,16 +9,12 @@ export interface MapEventProps {
 
 export function MapEvents(props: MapEventProps) {
     const map = useMapEvents({
-        click: (event) => {
-            console.log(event.latlng);
-        },
-        zoom: event => {
+        zoom: () => {
             props.onZoomCenterChange({
                 zoom: map.getZoom(),
                 center: map.getCenter(),
                 preventPan: true
             })
-            console.log(event.target._zoom);
         },
         drag: () => {
             map.panInsideBounds(props.mapBounds, {animate: false});
@@ -27,9 +23,6 @@ export function MapEvents(props: MapEventProps) {
                 center: map.getCenter(),
                 preventPan: true
             })
-        },
-        locationfound: (location) => {
-            console.log('location found:', location)
         },
     })
     return null

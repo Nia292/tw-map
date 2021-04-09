@@ -11,6 +11,7 @@ import {MarkerForLocations} from "./thrall-map-utils/MarkerForLocations";
 import {MapEvents} from "./thrall-map-utils/MapEvents";
 import {InfoDialog} from "./info-dialog/InfoDialog";
 import {SettingsDialog} from "./settings-dialog/SettingsDialog";
+import {MapType} from "../model/MapType";
 
 const DEFAULT_ZOOM = -8.7;
 const DEFAULT_CENTER: LatLngLiteral = {lat: 0, lng: 0};
@@ -33,18 +34,15 @@ const DEFAULT_CENTER: LatLngLiteral = {lat: 0, lng: 0};
 // Bottom: 368872.00000
 // const southWest: LatLng = new LatLng(368872.00000, -342934.00000);
 
-
-// NOTE: Latitude needs the sign inverted. Y-axis goes from negative (south) to positive (north)
-// CE has the coordinates inverted on that part.
-// southwest teleport: TeleportPlayer -342673.59375 369398.8125 -15273.344727
-const south = -369398.00000;
-const west = -342934.00000;
-// TeleportPlayer 475140.4375 -444603.34375 27547.671875
-const north = 444603.00000;
-const east = 475140.00000;
-
 interface ThrallMapProps {
     data: Thrall[];
+    mapLq: string;
+    mapHq: string;
+    north: number;
+    south: number;
+    west: number;
+    east: number;
+    mapType: MapType;
 }
 
 export function ThrallMap(props: ThrallMapProps) {
@@ -57,9 +55,9 @@ export function ThrallMap(props: ThrallMapProps) {
     const [settingsDialogOpen, setSettingsDialogOpen] = useState(false);
     const [useHq, setUseHq] = useState(false);
     const [offset, setOffset] = useState({
-        offsetTop: -2600,
-        offsetBot: 500,
-        offsetLeft: 250,
+        offsetTop: 0,
+        offsetBot: 0,
+        offsetLeft: 0,
         offsetRight: 0
     });
 
@@ -91,10 +89,23 @@ export function ThrallMap(props: ThrallMapProps) {
         setUseHq(target.checked)
     }
 
+    function otherMapUrl(mapType: MapType): string {
+        if (mapType === 'exiled-lands') {
+            return process.env.PUBLIC_URL + '?map=savage-wilds'
+        }
+        return process.env.PUBLIC_URL + '?map=exiled-lands'
+    }
+
+    function otherMapName(mapType: MapType): string {
+        if (mapType === "exiled-lands") {
+            return "Savage Wilds"
+        }
+        return "Exiled Lands"
+    }
+
     const center = zoomCenter?.center ? zoomCenter.center : DEFAULT_CENTER;
     const zoom = zoomCenter?.zoom ? zoomCenter.zoom : DEFAULT_ZOOM
-    const mapBounds = calculateBounds(south, west, north, east, offset);
-
+    const mapBounds = calculateBounds(props.south, props.west, props.north, props.east, offset);
     return <div className="thrall-map-wrapper">
         <div id="info-button" className={"display-in-center"} onClick={() => setInfoDialogOpen(true)}>
             <span className="material-icons" style={{fontSize: '18pt'}}>
@@ -110,6 +121,9 @@ export function ThrallMap(props: ThrallMapProps) {
             <input id="hq-checkbox" type="checkbox" checked={useHq} onClick={handleHqClick}/>
             <label htmlFor="hq-checkbox">HQ Map (11mb)</label>
         </div>
+        <div id="map-link" className="display-in-center">
+            Switch to&nbsp;<a rel="noreferrer" href={otherMapUrl(props.mapType)} >{otherMapName(props.mapType)}</a>
+        </div>
         <InfoDialog open={infoDialogOpen} onClose={() => setInfoDialogOpen(false)}/>
         <SettingsDialog open={settingsDialogOpen}
                         offset={offset}
@@ -122,12 +136,12 @@ export function ThrallMap(props: ThrallMapProps) {
                       zoomSnap={0.1}
                       zoomDelta={0.1}
                       crs={CRS.Simple}
-                      maxBounds={mapBounds}
+                      bounds={mapBounds}
                       zoomControl={false}
                       zoom={zoom}>
             <ZoomControl/>
-            {!useHq && <ImageOverlay url={process.env.PUBLIC_URL + "/fc_assets/full_map_low_quality.jpg"} bounds={mapBounds}/>}
-            {useHq && <ImageOverlay url={process.env.PUBLIC_URL + "/fc_assets/full_map_hq.jpg"} bounds={mapBounds}/>}
+            {!useHq && <ImageOverlay url={process.env.PUBLIC_URL + props.mapLq} bounds={mapBounds}/>}
+            {useHq && <ImageOverlay url={process.env.PUBLIC_URL + props.mapHq} bounds={mapBounds}/>}
             <MapEvents mapBounds={mapBounds} onZoomCenterChange={setZoomCenter}/>
             <SetViewOnClick location={zoomCenter}/>
             <MarkerForLocations thrall={selectedThrall} focused={thrallFocused}/>
