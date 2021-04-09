@@ -24,3 +24,18 @@ and run these in your command line:
 
 Then open your browser on ``http://localhost:3000``
 
+# Adapting for broader use
+
+I made this map because I was annoyed of having to remember the locations all the time. In theory, this map
+could be adapted to actually display any data you like.
+
+If you would like to do this yourself, you actually just need a little bit of React knowledge. If you want to host yourself,
+no server is required, since GitHub allows you to host it through GH pages as long as your repo is public.
+
+Here is what you would do:
+
+1. Fork this repository
+2. Go to repository settings and enable GH pages on the main branch and the docs directory
+3. Start adapting the application
+
+If you do need help on the third step, feel free to let me know!
