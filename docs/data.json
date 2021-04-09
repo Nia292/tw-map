@@ -1,411 +1,422 @@
-[
-  {
-    "name": "Viek the Spire",
-    "id": "Viek the Spire",
-    "type": "TASKMASTER",
-    "locationDescription": "Viek the Spire spawns in taskmaster spots around Westwall Prison in Sepermeru.",
-    "locations": [
-      {
-        "location": "Sepermeru",
-        "spawnSpot": "Taskmaster",
-        "spawnSpotDetail": "Standing near the Wheel of Pain.",
-        "x": -264883.53125,
-        "y": 90236.59375,
-        "z": -3865.577881
-      },
-      {
-        "location": "Sepermeru",
-        "spawnSpot": "Taskmaster",
-        "spawnSpotDetail": "Standing near the Wheel of Pain.",
-        "x": -267129.40625,
-        "y": 90784.5625,
-        "z": -3915.528564
-      },
-      {
-        "location": "Sepermeru",
-        "spawnSpot": "Taskmaster",
-        "spawnSpotDetail": "Standing around arrogant.",
-        "x": -259441.140625,
-        "y": 106648.53125,
-        "z": -4061.263428
-      },
-      {
-        "location": "Sepermeru",
-        "spawnSpot": "Taskmaster",
-        "spawnSpotDetail": "Standing around arrogant.",
-        "x": -241064.1875,
-        "y": 118416.484375,
-        "z": -3094.070557
-      }
-    ]
+{
+  "map_lq": "/fc_assets/full_map_low_quality.jpg",
+  "map_hq": "/fc_assets/full_map_hq.jpg",
+  "bounds": {
+    "south": -369898.0,
+    "west": -342684.0,
+    "north": 444603.0,
+    "east":  475140.0
   },
-  {
-    "name": "Hekla",
-    "id": "Hekla",
-    "type": "CARPENTER",
-    "locations": [
-      {
-        "location": "Mounds of the Dead",
-        "spawnSpot": "Carpenter",
-        "spawnSpotDetail": "Inside the small hut.",
-        "x": -232741.71875,
-        "y": -110330.210938,
-        "z": -2507.26123
-      }
-    ]
-  },
-  {
-    "name": "Thorunn",
-    "id": "Thorunn",
-    "type": "ARMORER",
-    "locations": []
-  },
-  {
-    "name": "Talaan",
-    "id": "Talaan",
-    "type": "ARMORER",
-    "locationDescription": "Talaan spawns rather rarely, around Armorer spots by the Black Galleon",
-    "locations": [
-      {
-        "location": "Black Galleon",
-        "spawnSpot": "Armorer",
-        "spawnSpotDetail": "Kneeling by the chest.",
-        "x": 79713.703125,
-        "y": 96798.515625,
-        "z": -6807.172363
-      },
-      {
-        "location": "Black Galleon",
-        "spawnSpot": "Armorer",
-        "spawnSpotDetail": "Kneeling in front of some jugs.",
-        "x": 84323.992188,
-        "y": 98072.320313,
-        "z": -7869.47168
-      },
-      {
-        "location": "Black Galleon",
-        "spawnSpot": "Random",
-        "spawnSpotDetail": "Under a single-person tent next to a cage. Many thralls share this spawn.",
-        "x": 89726.953125,
-        "y": 86799.710938,
-        "z": -8761.599609
-      }
-    ]
-  },
-  {
-    "name": "Lady Elizabeth Killigrew",
-    "id": "Lady Elizabeth Killigrew",
-    "type": "TASKMASTER",
-    "locations": [
-      {
-        "location": "The Den",
-        "spawnSpot": "Taskmaster",
-        "spawnSpotDetail": "Talking by the 2 round cages.",
-        "x": -93053.9375,
-        "y": 29743.224609,
-        "z": -9313.129883
-      }
-    ]
-  },
-  {
-    "name": "Julia the Chaste",
-    "id": "Julia the Chaste",
-    "type": "TASKMASTER",
-    "locations": [
-      {
-        "location": "The Den",
-        "spawnSpot": "Taskmaster",
-        "spawnSpotDetail": "Talking by the 2 round cages.",
-        "x": -93053.9375,
-        "y": 29743.224609,
-        "z": -9313.129883
-      }
-    ]
-  },
-  {
-    "name": "Queen Julia the Chaste",
-    "id": "Queen Julia the Chaste",
-    "type": "TASKMASTER",
-    "locations": [
-      {
-        "location": "Spinebreaker's Flank",
-        "spawnSpot": "Taskmaster",
-        "spawnSpotDetail": "By the campfire with an archer",
-        "x": 35299.515625,
-        "y": 160426.859375,
-        "z": -6930.966309
-      }
-    ]
-  },
-  {
-    "name": "Fass the Torturer",
-    "id": "Fass the Torturer",
-    "type": "TASKMASTER",
-    "locations": []
-  },
-  {
-    "name": "Landora the Groomer",
-    "id": "Landora the Groomer",
-    "type": "GROOMER",
-    "locationDescription": "Spawns at archer spots at the Pagoda of Boundless Lust, both inside the building and outside at the ledge.",
-    "locations": [
-      {
-        "location": "Pagoda of Boundless Lust",
-        "spawnSpot": "Archer",
-        "x": 346092.4375,
-        "y": 168936.0,
-        "z": -17170.873047
-      },
-      {
-        "location": "Pagoda of Boundless Lust",
-        "spawnSpot": "Archer",
-        "x": 347086.5625,
-        "y": 170193.75,
-        "z": -17142.951172
-      },
-      {
-        "location": "Pagoda of Boundless Lust",
-        "spawnSpot": "Archer",
-        "x": 343701.09375,
-        "y": 173599.046875,
-        "z": -16278.120117
-      },
-      {
-        "location": "Pagoda of Boundless Lust",
-        "spawnSpot": "Archer",
-        "x": 350862.625,
-        "y": 171506.84375,
-        "z": -17191.871094
-      }
-    ]
-  },
-  {
-    "name": "Beast the Breaker",
-    "id": "Beast the Breaker",
-    "type": "TASKMASTER",
-    "locationDescription": "Spawns in J4 at the Big River. Shares a spawn point with Floki the Tinkerer.",
-    "locations": [
-      {
-        "location": "Exile Camp",
-        "spawnSpot": "Taskmaster",
-        "x": 131140.3125,
-        "y": 202741,
-        "z": -19914.181641
-      }
-    ]
-  },
-  {
-    "name": "Floki the Tinkerer",
-    "id": "Floki the Tinkerer",
-    "type": "TASKMASTER",
-    "locationDescription": "Spawns in J4 at the Big River. Shares a spawn with Beast the Breaker.",
-    "locations": [
-      {
-        "location": "Exile Camp",
-        "spawnSpot": "Taskmaster",
-        "x": 131140.3125,
-        "y": 202741,
-        "z": -19914.181641
-      }
-    ]
-  },
-  {
-    "name": "Berglind",
-    "id": "Berglind",
-    "type": "ARMORER",
-    "locations": [
-      {
-        "location": "Mounds of the Dead",
-        "spawnSpot": "Armorer",
-        "spawnSpotDetail": "Stands in front of the hut.",
-        "x": -230057.109375,
-        "y": -117765.5,
-        "z": -2444.285889
-      },
-      {
-        "location": "Mounds of the Dead",
-        "spawnSpot": "Armorer",
-        "spawnSpotDetail": "Busy working the anvil.",
-        "x": -219712.15625,
-        "y": -122899.203125,
-        "z": -2896.52124
-      }
-    ]
-  },
-  {
-    "name": "Serpa the Gem Cutter",
-    "id": "Serpa the Gem Cutter",
-    "type": "ALCHEMIST",
-    "locationDescription": "Spawns in alchemist spots around Sepermeru.",
-    "locations": [
-      {
-        "location": "Sepermeru",
-        "spawnSpot": "Alchemist",
-        "spawnSpotDetail": "Near the water at a bridge.",
-        "x": -250389.15625,
-        "y": 109424.632813,
-        "z": -4416.668457
-      },
-      {
-        "location": "Sepermeru",
-        "spawnSpot": "Alchemist",
-        "spawnSpotDetail": "Kneeling by a brazier.",
-        "x": -246149.140625,
-        "y": 85640.9375,
-        "z": -3820.612061
-      },
-      {
-        "location": "Sepermeru",
-        "spawnSpot": "Alchemist",
-        "spawnSpotDetail": "Gossiping with alchemists around a brazier.",
-        "x": -257049.453125,
-        "y": 108548.515625,
-        "z": -3983.835693
-      }
-    ]
-  },
-  {
-    "name": "Katla",
-    "id": "Katla",
-    "type": "SMELTER",
-    "locations": []
-  },
-  {
-    "name": "Gabriela the Alchemist",
-    "id": "Gabriela the Alchemist",
-    "type": "ALCHEMIST",
-    "locationDescription": "Spawns in Nordheimer alchemist locations.",
-    "locations": [
-      {
-        "location": "The Wardtowers",
-        "spawnSpot": "Alchemist",
-        "spawnSpotDetail": "Kneeling by the campfire",
-        "x": -148921.625,
-        "y": -48929.667969,
-        "z": 2811.639648
-      },
-      {
-        "location": "New Asgarth",
-        "spawnSpot": "Alchemist",
-        "spawnSpotDetail": "With a second alchemist infront of a hut.",
-        "x": -80970.359375,
-        "y": -51441.800781,
-        "z": 320.245789
-      }
-    ]
-  },
-  {
-    "name": "Ivar the Crafty One",
-    "id": "Ivar the Crafty One",
-    "type": "BLACKSMITH",
-    "locationDescription": "Ivar spawns in various Nordheimer settlements including New Asgarth. Spawns are shared with the blacksmith thralls.",
-    "locations": [
-      {
-        "x": 8768.533203,
-        "y": -20387.482422,
-        "z": 1779.414551,
-        "location": "Freya's Hovel",
-        "spawnSpot": "Blacksmith"
-      },
-      {
-        "source": "TeleportPlayer -39971.699219 -63372.089844 2621.061035",
-        "x": -39971.699219,
-        "y": -63372.089844,
-        "z": 2621.061035,
-        "location": "Meadowwatch",
-        "spawnSpot": "Blacksmith",
-        "spawnSpotDetail": "At the Blacksmith Bench"
-      },
-      {
-        "source": "TeleportPlayer -73266.140625 -66190.148438 2354.510498",
-        "x": -73266.140625,
-        "y": -66190.148438,
-        "z": 2354.510498,
-        "location": "Nordhof",
-        "spawnSpot": "Blacksmith",
-        "spawnSpotDetail": "At the Blacksmith Bench"
-      },
-      {
-        "x": -72772.304688,
-        "y": -41144.503906,
-        "z": 88.618057,
-        "location": "New Asgarth",
-        "spawnSpot": "Blacksmith",
-        "spawnSpotDetail": "Talking with a smelter by the blacksmith bench."
-      }
-    ]
-  },
-  {
-    "name": "Akasuki the Binder",
-    "id": "Akasuki the Binder",
-    "type": "TASKMASTER",
-    "locationDescription": "Akasuki spawns in various Nordheimer settlements including New Asgarth. Spawns are shared with the blacksmith thralls.",
-    "locations": [
-      {
-        "x": 8768.533203,
-        "y": -20387.482422,
-        "z": 1779.414551,
-        "location": "Freya's Hovel",
-        "spawnSpot": "Blacksmith"
-      },
-      {
-        "source": "TeleportPlayer -39971.699219 -63372.089844 2621.061035",
-        "x": -39971.699219,
-        "y": -63372.089844,
-        "z": 2621.061035,
-        "location": "Meadowwatch",
-        "spawnSpot": "Blacksmith",
-        "spawnSpotDetail": "At the blacksmith bench."
-      },
-      {
-        "source": "TeleportPlayer -73266.140625 -66190.148438 2354.510498",
-        "x": -73266.140625,
-        "y": -66190.148438,
-        "z": 2354.510498,
-        "location": "Nordhof",
-        "spawnSpot": "Blacksmith",
-        "spawnSpotDetail": "At the blacksmith bench."
-      },
-      {
-        "x": -72772.304688,
-        "y": -41144.503906,
-        "z": 88.618057,
-        "location": "New Asgarth",
-        "spawnSpot": "Blacksmith",
-        "spawnSpotDetail": "Talking with a smelter by the blacksmith bench."
-      }
-    ]
-  },
-  {
-    "name": "Alfhild",
-    "id": "Alfhild",
-    "type": "BLACKSMITH",
-    "locationDescription": "Alfhild spawns on blacksmith spots around the Black Galleon",
-    "locations": [
-      {
-        "x": 91962.65625,
-        "y": 97032.265625,
-        "z": -7575.723633,
-        "location": "Black Galleon",
-        "spawnSpot": "Random",
-        "spawnSpotDetail": "With 3 others by the brazier."
-      },
-      {
-        "x": 79043.828125,
-        "y": 96757.203125,
-        "z": -7837.125977,
-        "location": "Black Galleon",
-        "spawnSpot": "Blacksmith",
-        "spawnSpotDetail": "Fiddling with the chest on the bench in the back."
-      },
-      {
-        "x": 108952.351563,
-        "y": 95754.085938,
-        "z": -9755.756836,
-        "location": "The Sandpit",
-        "spawnSpot": "Blacksmith",
-        "spawnSpotDetail": "Sitting next to the anvil under the tent"
-      }
-    ]
-  }
-]
+  "data": [
+    {
+      "name": "Viek the Spire",
+      "id": "Viek the Spire",
+      "type": "TASKMASTER",
+      "locationDescription": "Viek the Spire spawns in taskmaster spots around Westwall Prison in Sepermeru.",
+      "locations": [
+        {
+          "location": "Sepermeru",
+          "spawnSpot": "Taskmaster",
+          "spawnSpotDetail": "Standing near the Wheel of Pain.",
+          "x": -264883.53125,
+          "y": 90236.59375,
+          "z": -3865.577881
+        },
+        {
+          "location": "Sepermeru",
+          "spawnSpot": "Taskmaster",
+          "spawnSpotDetail": "Standing near the Wheel of Pain.",
+          "x": -267129.40625,
+          "y": 90784.5625,
+          "z": -3915.528564
+        },
+        {
+          "location": "Sepermeru",
+          "spawnSpot": "Taskmaster",
+          "spawnSpotDetail": "Standing around arrogant.",
+          "x": -259441.140625,
+          "y": 106648.53125,
+          "z": -4061.263428
+        },
+        {
+          "location": "Sepermeru",
+          "spawnSpot": "Taskmaster",
+          "spawnSpotDetail": "Standing around arrogant.",
+          "x": -241064.1875,
+          "y": 118416.484375,
+          "z": -3094.070557
+        }
+      ]
+    },
+    {
+      "name": "Hekla",
+      "id": "Hekla",
+      "type": "CARPENTER",
+      "locations": [
+        {
+          "location": "Mounds of the Dead",
+          "spawnSpot": "Carpenter",
+          "spawnSpotDetail": "Inside the small hut.",
+          "x": -232741.71875,
+          "y": -110330.210938,
+          "z": -2507.26123
+        }
+      ]
+    },
+    {
+      "name": "Thorunn",
+      "id": "Thorunn",
+      "type": "ARMORER",
+      "locations": []
+    },
+    {
+      "name": "Talaan",
+      "id": "Talaan",
+      "type": "ARMORER",
+      "locationDescription": "Talaan spawns rather rarely, around Armorer spots by the Black Galleon",
+      "locations": [
+        {
+          "location": "Black Galleon",
+          "spawnSpot": "Armorer",
+          "spawnSpotDetail": "Kneeling by the chest.",
+          "x": 79713.703125,
+          "y": 96798.515625,
+          "z": -6807.172363
+        },
+        {
+          "location": "Black Galleon",
+          "spawnSpot": "Armorer",
+          "spawnSpotDetail": "Kneeling in front of some jugs.",
+          "x": 84323.992188,
+          "y": 98072.320313,
+          "z": -7869.47168
+        },
+        {
+          "location": "Black Galleon",
+          "spawnSpot": "Random",
+          "spawnSpotDetail": "Under a single-person tent next to a cage. Many thralls share this spawn.",
+          "x": 89726.953125,
+          "y": 86799.710938,
+          "z": -8761.599609
+        }
+      ]
+    },
+    {
+      "name": "Lady Elizabeth Killigrew",
+      "id": "Lady Elizabeth Killigrew",
+      "type": "TASKMASTER",
+      "locations": [
+        {
+          "location": "The Den",
+          "spawnSpot": "Taskmaster",
+          "spawnSpotDetail": "Talking by the 2 round cages.",
+          "x": -93053.9375,
+          "y": 29743.224609,
+          "z": -9313.129883
+        }
+      ]
+    },
+    {
+      "name": "Julia the Chaste",
+      "id": "Julia the Chaste",
+      "type": "TASKMASTER",
+      "locations": [
+        {
+          "location": "The Den",
+          "spawnSpot": "Taskmaster",
+          "spawnSpotDetail": "Talking by the 2 round cages.",
+          "x": -93053.9375,
+          "y": 29743.224609,
+          "z": -9313.129883
+        }
+      ]
+    },
+    {
+      "name": "Queen Julia the Chaste",
+      "id": "Queen Julia the Chaste",
+      "type": "TASKMASTER",
+      "locations": [
+        {
+          "location": "Spinebreaker's Flank",
+          "spawnSpot": "Taskmaster",
+          "spawnSpotDetail": "By the campfire with an archer",
+          "x": 35299.515625,
+          "y": 160426.859375,
+          "z": -6930.966309
+        }
+      ]
+    },
+    {
+      "name": "Fass the Torturer",
+      "id": "Fass the Torturer",
+      "type": "TASKMASTER",
+      "locations": []
+    },
+    {
+      "name": "Landora the Groomer",
+      "id": "Landora the Groomer",
+      "type": "GROOMER",
+      "locationDescription": "Spawns at archer spots at the Pagoda of Boundless Lust, both inside the building and outside at the ledge.",
+      "locations": [
+        {
+          "location": "Pagoda of Boundless Lust",
+          "spawnSpot": "Archer",
+          "x": 346092.4375,
+          "y": 168936.0,
+          "z": -17170.873047
+        },
+        {
+          "location": "Pagoda of Boundless Lust",
+          "spawnSpot": "Archer",
+          "x": 347086.5625,
+          "y": 170193.75,
+          "z": -17142.951172
+        },
+        {
+          "location": "Pagoda of Boundless Lust",
+          "spawnSpot": "Archer",
+          "x": 343701.09375,
+          "y": 173599.046875,
+          "z": -16278.120117
+        },
+        {
+          "location": "Pagoda of Boundless Lust",
+          "spawnSpot": "Archer",
+          "x": 350862.625,
+          "y": 171506.84375,
+          "z": -17191.871094
+        }
+      ]
+    },
+    {
+      "name": "Beast the Breaker",
+      "id": "Beast the Breaker",
+      "type": "TASKMASTER",
+      "locationDescription": "Spawns in J4 at the Big River. Shares a spawn point with Floki the Tinkerer.",
+      "locations": [
+        {
+          "location": "Exile Camp",
+          "spawnSpot": "Taskmaster",
+          "x": 131140.3125,
+          "y": 202741,
+          "z": -19914.181641
+        }
+      ]
+    },
+    {
+      "name": "Floki the Tinkerer",
+      "id": "Floki the Tinkerer",
+      "type": "TASKMASTER",
+      "locationDescription": "Spawns in J4 at the Big River. Shares a spawn with Beast the Breaker.",
+      "locations": [
+        {
+          "location": "Exile Camp",
+          "spawnSpot": "Taskmaster",
+          "x": 131140.3125,
+          "y": 202741,
+          "z": -19914.181641
+        }
+      ]
+    },
+    {
+      "name": "Berglind",
+      "id": "Berglind",
+      "type": "ARMORER",
+      "locations": [
+        {
+          "location": "Mounds of the Dead",
+          "spawnSpot": "Armorer",
+          "spawnSpotDetail": "Stands in front of the hut.",
+          "x": -230057.109375,
+          "y": -117765.5,
+          "z": -2444.285889
+        },
+        {
+          "location": "Mounds of the Dead",
+          "spawnSpot": "Armorer",
+          "spawnSpotDetail": "Busy working the anvil.",
+          "x": -219712.15625,
+          "y": -122899.203125,
+          "z": -2896.52124
+        }
+      ]
+    },
+    {
+      "name": "Serpa the Gem Cutter",
+      "id": "Serpa the Gem Cutter",
+      "type": "ALCHEMIST",
+      "locationDescription": "Spawns in alchemist spots around Sepermeru.",
+      "locations": [
+        {
+          "location": "Sepermeru",
+          "spawnSpot": "Alchemist",
+          "spawnSpotDetail": "Near the water at a bridge.",
+          "x": -250389.15625,
+          "y": 109424.632813,
+          "z": -4416.668457
+        },
+        {
+          "location": "Sepermeru",
+          "spawnSpot": "Alchemist",
+          "spawnSpotDetail": "Kneeling by a brazier.",
+          "x": -246149.140625,
+          "y": 85640.9375,
+          "z": -3820.612061
+        },
+        {
+          "location": "Sepermeru",
+          "spawnSpot": "Alchemist",
+          "spawnSpotDetail": "Gossiping with alchemists around a brazier.",
+          "x": -257049.453125,
+          "y": 108548.515625,
+          "z": -3983.835693
+        }
+      ]
+    },
+    {
+      "name": "Katla",
+      "id": "Katla",
+      "type": "SMELTER",
+      "locations": []
+    },
+    {
+      "name": "Gabriela the Alchemist",
+      "id": "Gabriela the Alchemist",
+      "type": "ALCHEMIST",
+      "locationDescription": "Spawns in Nordheimer alchemist locations.",
+      "locations": [
+        {
+          "location": "The Wardtowers",
+          "spawnSpot": "Alchemist",
+          "spawnSpotDetail": "Kneeling by the campfire",
+          "x": -148921.625,
+          "y": -48929.667969,
+          "z": 2811.639648
+        },
+        {
+          "location": "New Asgarth",
+          "spawnSpot": "Alchemist",
+          "spawnSpotDetail": "With a second alchemist infront of a hut.",
+          "x": -80970.359375,
+          "y": -51441.800781,
+          "z": 320.245789
+        }
+      ]
+    },
+    {
+      "name": "Ivar the Crafty One",
+      "id": "Ivar the Crafty One",
+      "type": "BLACKSMITH",
+      "locationDescription": "Ivar spawns in various Nordheimer settlements including New Asgarth. Spawns are shared with the blacksmith thralls.",
+      "locations": [
+        {
+          "x": 8768.533203,
+          "y": -20387.482422,
+          "z": 1779.414551,
+          "location": "Freya's Hovel",
+          "spawnSpot": "Blacksmith"
+        },
+        {
+          "source": "TeleportPlayer -39971.699219 -63372.089844 2621.061035",
+          "x": -39971.699219,
+          "y": -63372.089844,
+          "z": 2621.061035,
+          "location": "Meadowwatch",
+          "spawnSpot": "Blacksmith",
+          "spawnSpotDetail": "At the Blacksmith Bench"
+        },
+        {
+          "source": "TeleportPlayer -73266.140625 -66190.148438 2354.510498",
+          "x": -73266.140625,
+          "y": -66190.148438,
+          "z": 2354.510498,
+          "location": "Nordhof",
+          "spawnSpot": "Blacksmith",
+          "spawnSpotDetail": "At the Blacksmith Bench"
+        },
+        {
+          "x": -72772.304688,
+          "y": -41144.503906,
+          "z": 88.618057,
+          "location": "New Asgarth",
+          "spawnSpot": "Blacksmith",
+          "spawnSpotDetail": "Talking with a smelter by the blacksmith bench."
+        }
+      ]
+    },
+    {
+      "name": "Akasuki the Binder",
+      "id": "Akasuki the Binder",
+      "type": "TASKMASTER",
+      "locationDescription": "Akasuki spawns in various Nordheimer settlements including New Asgarth. Spawns are shared with the blacksmith thralls.",
+      "locations": [
+        {
+          "x": 8768.533203,
+          "y": -20387.482422,
+          "z": 1779.414551,
+          "location": "Freya's Hovel",
+          "spawnSpot": "Blacksmith"
+        },
+        {
+          "source": "TeleportPlayer -39971.699219 -63372.089844 2621.061035",
+          "x": -39971.699219,
+          "y": -63372.089844,
+          "z": 2621.061035,
+          "location": "Meadowwatch",
+          "spawnSpot": "Blacksmith",
+          "spawnSpotDetail": "At the blacksmith bench."
+        },
+        {
+          "source": "TeleportPlayer -73266.140625 -66190.148438 2354.510498",
+          "x": -73266.140625,
+          "y": -66190.148438,
+          "z": 2354.510498,
+          "location": "Nordhof",
+          "spawnSpot": "Blacksmith",
+          "spawnSpotDetail": "At the blacksmith bench."
+        },
+        {
+          "x": -72772.304688,
+          "y": -41144.503906,
+          "z": 88.618057,
+          "location": "New Asgarth",
+          "spawnSpot": "Blacksmith",
+          "spawnSpotDetail": "Talking with a smelter by the blacksmith bench."
+        }
+      ]
+    },
+    {
+      "name": "Alfhild",
+      "id": "Alfhild",
+      "type": "BLACKSMITH",
+      "locationDescription": "Alfhild spawns on blacksmith spots around the Black Galleon",
+      "locations": [
+        {
+          "x": 91962.65625,
+          "y": 97032.265625,
+          "z": -7575.723633,
+          "location": "Black Galleon",
+          "spawnSpot": "Random",
+          "spawnSpotDetail": "With 3 others by the brazier."
+        },
+        {
+          "x": 79043.828125,
+          "y": 96757.203125,
+          "z": -7837.125977,
+          "location": "Black Galleon",
+          "spawnSpot": "Blacksmith",
+          "spawnSpotDetail": "Fiddling with the chest on the bench in the back."
+        },
+        {
+          "x": 108952.351563,
+          "y": 95754.085938,
+          "z": -9755.756836,
+          "location": "The Sandpit",
+          "spawnSpot": "Blacksmith",
+          "spawnSpotDetail": "Sitting next to the anvil under the tent"
+        }
+      ]
+    }
+  ]
+
+}

@@ -1,0 +1,131 @@
+{
+  "map_lq": "/sw_assets/sw_map_hq.png",
+  "map_hq": "/sw_assets/sw_map_hq.png",
+  "bounds": {
+    "south": -369398.00000,
+    "west": -342934.00000,
+    "north": 447203.00000,
+    "east":  475140.00000
+  },
+  "data": [
+    {
+      "name": "Viek the Spire",
+      "id": "Viek the Spire",
+      "type": "TASKMASTER",
+      "locationDescription": "Viek the Spire spawns in taskmaster spots around Westwall Prison in Sepermeru.",
+      "locations": []
+    },
+    {
+      "name": "Hekla",
+      "id": "Hekla",
+      "type": "CARPENTER",
+      "locations": []
+    },
+    {
+      "name": "Thorunn",
+      "id": "Thorunn",
+      "type": "ARMORER",
+      "locations": []
+    },
+    {
+      "name": "Talaan",
+      "id": "Talaan",
+      "type": "ARMORER",
+      "locationDescription": "Talaan spawns rather rarely, around Armorer spots by the Black Galleon",
+      "locations": []
+    },
+    {
+      "name": "Lady Elizabeth Killigrew",
+      "id": "Lady Elizabeth Killigrew",
+      "type": "TASKMASTER",
+      "locations": []
+    },
+    {
+      "name": "Julia the Chaste",
+      "id": "Julia the Chaste",
+      "type": "TASKMASTER",
+      "locations": []
+    },
+    {
+      "name": "Queen Julia the Chaste",
+      "id": "Queen Julia the Chaste",
+      "type": "TASKMASTER",
+      "locations": []
+    },
+    {
+      "name": "Fass the Torturer",
+      "id": "Fass the Torturer",
+      "type": "TASKMASTER",
+      "locations": []
+    },
+    {
+      "name": "Landora the Groomer",
+      "id": "Landora the Groomer",
+      "type": "GROOMER",
+      "locationDescription": "Spawns at archer spots at the Pagoda of Boundless Lust, both inside the building and outside at the ledge.",
+      "locations": []
+    },
+    {
+      "name": "Beast the Breaker",
+      "id": "Beast the Breaker",
+      "type": "TASKMASTER",
+      "locationDescription": "Spawns in J4 at the Big River. Shares a spawn point with Floki the Tinkerer.",
+      "locations": []
+    },
+    {
+      "name": "Floki the Tinkerer",
+      "id": "Floki the Tinkerer",
+      "type": "TASKMASTER",
+      "locationDescription": "Spawns in J4 at the Big River. Shares a spawn with Beast the Breaker.",
+      "locations": []
+    },
+    {
+      "name": "Berglind",
+      "id": "Berglind",
+      "type": "ARMORER",
+      "locations": []
+    },
+    {
+      "name": "Serpa the Gem Cutter",
+      "id": "Serpa the Gem Cutter",
+      "type": "ALCHEMIST",
+      "locationDescription": "Spawns in alchemist spots around Sepermeru.",
+      "locations": []
+    },
+    {
+      "name": "Katla",
+      "id": "Katla",
+      "type": "SMELTER",
+      "locations": []
+    },
+    {
+      "name": "Gabriela the Alchemist",
+      "id": "Gabriela the Alchemist",
+      "type": "ALCHEMIST",
+      "locationDescription": "Spawns in Nordheimer alchemist locations.",
+      "locations": []
+    },
+    {
+      "name": "Ivar the Crafty One",
+      "id": "Ivar the Crafty One",
+      "type": "BLACKSMITH",
+      "locationDescription": "Ivar spawns in various Nordheimer settlements including New Asgarth. Spawns are shared with the blacksmith thralls.",
+      "locations": []
+    },
+    {
+      "name": "Akasuki the Binder",
+      "id": "Akasuki the Binder",
+      "type": "TASKMASTER",
+      "locationDescription": "Akasuki spawns in various Nordheimer settlements including New Asgarth. Spawns are shared with the blacksmith thralls.",
+      "locations": []
+    },
+    {
+      "name": "Alfhild",
+      "id": "Alfhild",
+      "type": "BLACKSMITH",
+      "locationDescription": "Alfhild spawns on blacksmith spots around the Black Galleon",
+      "locations": []
+    }
+  ]
+
+}
