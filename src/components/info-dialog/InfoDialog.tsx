@@ -58,6 +58,8 @@ export const InfoDialog = (props: InfoDialogProps) => {
                 Credits
             </div>
             <div>
+                Funcom for Conan Exiles and the map!<br/>
+                Savage Wilds mod for the Savage Wilds map! <br/>
                 Japata for helping me with the locations and general thrall information. 🐍
             </div>
         </div>
