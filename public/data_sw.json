@@ -9,6 +9,7 @@
   },
   "minZoom": -9.1,
   "maxZoom": 0,
+  "contributors": [],
   "data": [
     {
       "name": "Viek the Spire",
@@ -119,40 +120,7 @@
       "id": "Akasuki the Binder",
       "type": "TASKMASTER",
       "locationDescription": "Akasuki spawns in various Nordheimer settlements including New Asgarth. Spawns are shared with the blacksmith thralls.",
-      "locations": [
-        {
-          "location": "Test Spawn",
-          "spawnSpot": "Test Spawn",
-          "spawnSpotDetail": "Test Spawn",
-          "x": -400000.0,
-          "y": -400000.0,
-          "z": -3865.577881
-        },
-        {
-          "location": "Test Spawn",
-          "spawnSpot": "Test Spawn",
-          "spawnSpotDetail": "Test Spawn",
-          "x": -400000.0,
-          "y": 400000.0,
-          "z": -3865.577881
-        },
-        {
-          "location": "Test Spawn",
-          "spawnSpot": "Test Spawn",
-          "spawnSpotDetail": "Test Spawn",
-          "x": 400000.0,
-          "y": -400000.0,
-          "z": -3865.577881
-        },
-        {
-          "location": "Test Spawn",
-          "spawnSpot": "Test Spawn",
-          "spawnSpotDetail": "Test Spawn",
-          "x": 400000.0,
-          "y": 400000.0,
-          "z": -3865.577881
-        }
-      ]
+      "locations": []
     },
     {
       "name": "Alfhild",

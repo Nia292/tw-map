@@ -62,6 +62,12 @@ export const InfoDialog = (props: InfoDialogProps) => {
                 Savage Wilds mod for the Savage Wilds map! <br/>
                 Japata for helping me with the locations and general thrall information. 🐍
             </div>
+            <div className="dialog-subheader">
+                Contributors
+            </div>
+            <div>
+
+            </div>
         </div>
     </div>
 }
