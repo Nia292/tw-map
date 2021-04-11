@@ -139,6 +139,7 @@ export function ThrallMap(props: ThrallMapProps) {
                       zoomDelta={0.1}
                       crs={CRS.Simple}
                       bounds={mapBounds}
+                      maxBounds={mapBounds}
                       zoomControl={false}
                       zoom={zoom}>
             <ZoomControl/>

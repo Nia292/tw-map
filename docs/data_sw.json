@@ -1,13 +1,13 @@
 {
-  "map_lq": "/sw_assets/sw_map.png",
-  "map_hq": "/sw_assets/sw_map.png",
+  "map_lq": "/sw_assets/sw_map_lq.jpg",
+  "map_hq": "/sw_assets/sw_map_hq.png",
   "bounds": {
     "south": 400000.00000,
     "west": -400000.00000,
     "north": -400000.00000,
     "east":  400000.00000
   },
-  "minZoom": -12,
+  "minZoom": -9.1,
   "maxZoom": 0,
   "data": [
     {
