@@ -7,7 +7,7 @@ import {calculateBounds, ceCoordinateToLatLng, findCenter} from "../util/convers
 import {ThrallLocation} from "../model/ThrallLocation";
 import {ZoomCenter} from "../model/ZoomCenter";
 import {SetViewOnClick} from "./thrall-map-utils/SetViewOnClick";
-import {MarkerForLocations} from "./thrall-map-utils/MarkerForLocations";
+import {MarkerForAllThralls, MarkerForSelectedThrall} from "./thrall-map-utils/MarkerForSelectedThrall";
 import {MapEvents} from "./thrall-map-utils/MapEvents";
 import {InfoDialog} from "./info-dialog/InfoDialog";
 import {SettingsDialog} from "./settings-dialog/SettingsDialog";
@@ -147,7 +147,8 @@ export function ThrallMap(props: ThrallMapProps) {
             {useHq && <ImageOverlay url={process.env.PUBLIC_URL + props.mapHq} bounds={mapBounds}/>}
             <MapEvents mapBounds={mapBounds} onZoomCenterChange={setZoomCenter}/>
             <SetViewOnClick location={zoomCenter}/>
-            <MarkerForLocations thrall={selectedThrall} focused={thrallFocused}/>
+            <MarkerForSelectedThrall thrall={selectedThrall} focused={thrallFocused}/>
+            <MarkerForAllThralls thralls={props.data} focused={thrallFocused}/>
         </MapContainer>
         <div className="sidebar-right">
             <ThrallList thralls={props.data}
