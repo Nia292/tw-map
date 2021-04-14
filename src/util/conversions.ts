@@ -2,7 +2,13 @@ import {LatLng, LatLngBounds, LatLngBoundsExpression, LatLngLiteral, Polygon, Po
 import {ThrallLocation} from "../model/ThrallLocation";
 import {MapOffset} from "../model/MapOffset";
 
-export function ceCoordinateToLatLng(ceCoordinate: ThrallLocation): LatLngLiteral {
+export interface CeCoordinateLiteral {
+    x: number;
+    y: number;
+    z: number;
+}
+
+export function ceCoordinateToLatLng(ceCoordinate: CeCoordinateLiteral): LatLngLiteral {
     return {
         // Because coordinates are in pixel space, the y-axis goes from negative (bot) to positive (top),
         // where as in CE it goes from positive(bot) to negative(top)

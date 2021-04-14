@@ -1,5 +1,5 @@
 import {Thrall} from "../../model/Thrall";
-import {Marker, Tooltip, useMap} from "react-leaflet";
+import {Marker, Tooltip} from "react-leaflet";
 import React from "react";
 import {ceCoordinateToLatLng} from "../../util/conversions";
 import {icon, LatLngLiteral} from "leaflet";
@@ -10,17 +10,12 @@ const locationIcon = icon({
     tooltipAnchor: [0, 12],
 });
 
-
 function makeMarkerForLocation(thrall: Thrall, location: LatLngLiteral) {
     return <Marker key={location.lat + '_' + location.lng}
                    icon={locationIcon}
                    position={location}>
         <Tooltip direction="bottom">{thrall.name}</Tooltip>
     </Marker>
-}
-
-function makeMarkersForThrall(thrall: Thrall) {
-    return thrall.locations.map(location => makeMarkerForLocation(thrall, ceCoordinateToLatLng(location)))
 }
 
 export function MarkerForSelectedThrall(props: {thrall?: Thrall, focused: boolean}): any {
@@ -32,16 +27,4 @@ export function MarkerForSelectedThrall(props: {thrall?: Thrall, focused: boolea
         return <React.Fragment/>;
     }
     return thrall.locations.map(location => makeMarkerForLocation(thrall, ceCoordinateToLatLng(location)));
-}
-
-export function MarkerForAllThralls(props: {thralls: Thrall[], focused: boolean}) {
-    if (props.focused) {
-        return <React.Fragment/>;
-    }
-    const data = props.thralls
-        .map(value => makeMarkersForThrall(value))
-        .reduce((previousValue, currentValue) => [...previousValue, ...currentValue], []);
-    return <React.Fragment>
-        {data}
-    </React.Fragment>
 }

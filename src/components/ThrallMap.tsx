@@ -7,11 +7,12 @@ import {calculateBounds, ceCoordinateToLatLng, findCenter} from "../util/convers
 import {ThrallLocation} from "../model/ThrallLocation";
 import {ZoomCenter} from "../model/ZoomCenter";
 import {SetViewOnClick} from "./thrall-map-utils/SetViewOnClick";
-import {MarkerForAllThralls, MarkerForSelectedThrall} from "./thrall-map-utils/MarkerForSelectedThrall";
+import {MarkerForSelectedThrall} from "./thrall-map-utils/MarkerForSelectedThrall";
 import {MapEvents} from "./thrall-map-utils/MapEvents";
 import {InfoDialog} from "./info-dialog/InfoDialog";
 import {SettingsDialog} from "./settings-dialog/SettingsDialog";
 import {MapType} from "../model/MapType";
+import {MarkerForAllThralls} from "./thrall-map-utils/MarkerForAllThralls";
 
 const DEFAULT_ZOOM = -8.7;
 const DEFAULT_CENTER: LatLngLiteral = {lat: 0, lng: 0};
