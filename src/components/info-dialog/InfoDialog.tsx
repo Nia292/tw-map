@@ -2,6 +2,7 @@ import React, {MouseEvent} from "react";
 import './InfoDialog.css'
 
 export interface InfoDialogProps {
+    contributors: string[];
     open: boolean;
     onClose(): void;
 }
@@ -65,8 +66,8 @@ export const InfoDialog = (props: InfoDialogProps) => {
             <div className="dialog-subheader">
                 Contributors
             </div>
-            <div>
-
+            <div className="display-in-column">
+                {props.contributors.map(value => <div key={value}>{value}</div>)}
             </div>
         </div>
     </div>

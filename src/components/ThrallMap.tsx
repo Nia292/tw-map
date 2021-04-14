@@ -46,6 +46,7 @@ interface ThrallMapProps {
     minZoom: number;
     maxZoom: number;
     mapType: MapType;
+    contributors: string[];
 }
 
 export function ThrallMap(props: ThrallMapProps) {
@@ -127,7 +128,7 @@ export function ThrallMap(props: ThrallMapProps) {
         <div id="map-link" className="display-in-center">
             Switch to&nbsp;<a rel="noreferrer" href={otherMapUrl(props.mapType)} >{otherMapName(props.mapType)}</a>
         </div>
-        <InfoDialog open={infoDialogOpen} onClose={() => setInfoDialogOpen(false)}/>
+        <InfoDialog open={infoDialogOpen} onClose={() => setInfoDialogOpen(false)} contributors={props.contributors}/>
         <SettingsDialog open={settingsDialogOpen}
                         offset={offset}
                         onOffsetChange={setOffset}

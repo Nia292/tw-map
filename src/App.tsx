@@ -12,6 +12,7 @@ interface MapData {
     minZoom: number;
     maxZoom: number;
     data: Thrall[];
+    contributors?: string[];
     bounds: {
         south: number,
         west: number,
@@ -97,6 +98,7 @@ export class App extends React.Component<any, AppState> {
                            west={bounds.west}
                            east={bounds.east}
                            south={bounds.south}
+                           contributors={this.state.data.contributors || []}
                 />
             </div>
         );
