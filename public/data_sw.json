@@ -5,11 +5,11 @@
     "south": 400000.00000,
     "west": -400000.00000,
     "north": -400000.00000,
-    "east":  400000.00000
+    "east": 400000.00000
   },
   "minZoom": -9.1,
   "maxZoom": 0,
-  "contributors": [],
+  "contributors": ["Keltten"],
   "data": [
     {
       "name": "Viek the Spire",
@@ -23,56 +23,176 @@
       "id": "Hekla",
       "type": "CARPENTER",
       "locationDescription": "Hekla spawns around Cadwallon and Maelgwyn's Glen",
-      "locations": []
+      "locations": [
+        {
+          "location": "Cadwallon",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 127580.007813,
+          "y": -121055.71875,
+          "z": -14396.253906
+        },
+        {
+          "location": "Maelgwyn's Glen",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 166732.640625,
+          "y": -80022.085938,
+          "z": -13634.641602
+        }
+      ]
     },
     {
       "name": "Thorunn",
       "id": "Thorunn",
       "type": "ARMORER",
       "locationDescription": "Thorunn spawns at Blacksail Guard, Ironpass Post and Red Rock Outpost",
-      "locations": []
+      "locations": [
+        {
+          "location": "Blacksail Guard",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": -136587.1875,
+          "y": 90215.859375,
+          "z": -20615.916016
+        },
+        {
+          "location": "Ironpass Post",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": -114666.445313,
+          "y": 96747.320313,
+          "z": -14871.009766
+        },
+        {
+          "location": "Red Rock Outpost",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": -94011.632813,
+          "y": 107411.109375,
+          "z": -12383.359375
+        }
+      ]
     },
     {
       "name": "Talaan",
       "id": "Talaan",
       "type": "ARMORER",
       "locationDescription": "Talaan spawns at Blacksail Guard, Ironpass Post and Red Rock Outpost",
-      "locations": []
+      "locations": [
+        {
+          "location": "Blacksail Guard",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": -136587.1875,
+          "y": 90215.859375,
+          "z": -20615.916016
+        },
+        {
+          "location": "Ironpass Post",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": -114666.445313,
+          "y": 96747.320313,
+          "z": -14871.009766
+        },
+        {
+          "location": "Red Rock Outpost",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": -94011.632813,
+          "y": 107411.109375,
+          "z": -12383.359375
+        }
+      ]
     },
     {
       "name": "Lady Elizabeth Killigrew",
       "id": "Lady Elizabeth Killigrew",
       "type": "TASKMASTER",
       "locationDescription": "Lady Elizabeth Killigrew spawns in the Last Refuge",
-      "locations": []
+      "locations": [
+        {
+          "location": "Last Refuge",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": -79713.539063,
+          "y": -384755.25,
+          "z": -14199.535156
+        }
+      ]
     },
     {
       "name": "Julia the Chaste",
       "id": "Julia the Chaste",
       "type": "TASKMASTER",
       "locationDescription": "Julia the Chaste spawns at Yog's Feast",
-      "locations": []
+      "locations": [
+        {
+          "location": "Yog's Feast",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": -144807.703125,
+          "y": 185577.171875,
+          "z": -14915.924805
+        }
+      ]
     },
     {
       "name": "Queen Julia the Chaste",
       "id": "Queen Julia the Chaste",
       "type": "TASKMASTER",
       "locationDescription": "Queen Julia the Chaste spawns at Yog's Feast",
-      "locations": []
+      "locations": [
+        {
+          "location": "Yog's Feast",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": -144807.703125,
+          "y": 185577.171875,
+          "z": -14915.924805
+        }
+      ]
     },
     {
       "name": "Fass the Torturer",
       "id": "Fass the Torturer",
       "type": "TASKMASTER",
       "locationDescription": "Fass the Torturer spawns in Vargrheim and Vestfold",
-      "locations": []
+      "locations": [
+        {
+          "location": "Vargrheim",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 70749.195313,
+          "y": -69211.25,
+          "z": -17717.523438
+        },
+        {
+          "location": "Vestfold",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 7868.718262,
+          "y": -88614.578125,
+          "z": -17597.259766
+        }
+      ]
     },
     {
       "name": "Landora the Groomer",
       "id": "Landora the Groomer",
       "type": "GROOMER",
       "locationDescription": "Spawns at archer spots around A6/K2 (Lemurian Archer Spawn)",
-      "locations": []
+      "locations": [
+        {
+          "location": "Unnamed Ruins",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": -208348.453125,
+          "y": -8620.936523,
+          "z": -8167.760254
+        }
+      ]
     },
     {
       "name": "Beast the Breaker",
@@ -93,50 +213,184 @@
       "id": "Berglind",
       "type": "ARMORER",
       "locationDescription": "Berglind spawns arounnd Cadwallon and Maelgwyn's Glen",
-      "locations": []
+      "locations": [
+        {
+          "location": "Cadwallon",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 127580.007813,
+          "y": -121055.71875,
+          "z": -14396.253906
+        },
+        {
+          "location": "Maelgwyn's Glen",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 166732.640625,
+          "y": -80022.085938,
+          "z": -13634.641602
+        }
+      ]
     },
     {
       "name": "Serpa the Gem Cutter",
       "id": "Serpa the Gem Cutter",
       "type": "ALCHEMIST",
       "locationDescription": "Spawns in alchemist spots around Murun and the Last Bastion",
-      "locations": []
+      "locations": [
+        {
+          "location": "Murun",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": -20991.658203,
+          "y": 101926.023438,
+          "z": -8011.739258
+        },
+        {
+          "location": "Last Bastion",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 175939.53125,
+          "y": 166587.1875,
+          "z": -760.868347
+        }
+      ]
     },
     {
       "name": "Katla",
       "id": "Katla",
       "type": "SMELTER",
       "locationDescription": "Katla spawns around Vargrheim and Vestfold.",
-      "locations": []
+      "locations": [
+        {
+          "location": "Vargrheim",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 70749.195313,
+          "y": -69211.25,
+          "z": -17717.523438
+        },
+        {
+          "location": "Vestfold",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 7868.718262,
+          "y": -88614.578125,
+          "z": -17597.259766
+        }
+      ]
     },
     {
       "name": "Gabriela the Alchemist",
       "id": "Gabriela the Alchemist",
       "type": "ALCHEMIST",
       "locationDescription": "Gabreiala spawns around Vargrheim and Vestfold.",
-      "locations": []
+      "locations": [
+        {
+          "location": "Vargrheim",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 70749.195313,
+          "y": -69211.25,
+          "z": -17717.523438
+        },
+        {
+          "location": "Vestfold",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 7868.718262,
+          "y": -88614.578125,
+          "z": -17597.259766
+        }
+      ]
     },
     {
       "name": "Ivar the Crafty One",
       "id": "Ivar the Crafty One",
       "type": "BLACKSMITH",
       "locationDescription": "Ivar spawns in various locations around Vargrheim and Vestfold",
-      "locations": []
+      "locations": [
+        {
+          "location": "Vargrheim",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 70749.195313,
+          "y": -69211.25,
+          "z": -17717.523438
+        },
+        {
+          "location": "Vestfold",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 7868.718262,
+          "y": -88614.578125,
+          "z": -17597.259766
+        }
+      ]
     },
     {
       "name": "Akasuki the Binder",
       "id": "Akasuki the Binder",
       "type": "TASKMASTER",
       "locationDescription": "Akasuki spawns around Vargrheim and Vestfold",
-      "locations": []
+      "locations": [
+        {
+          "location": "Vargrheim",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 70749.195313,
+          "y": -69211.25,
+          "z": -17717.523438
+        },
+        {
+          "location": "Vestfold",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 7868.718262,
+          "y": -88614.578125,
+          "z": -17597.259766
+        }
+      ]
     },
     {
       "name": "Alfhild",
       "id": "Alfhild",
       "type": "BLACKSMITH",
       "locationDescription": "Alfhild spawns around the Last Refuge, Vargrheim, Vestfold and the Watchtower",
-      "locations": []
+      "locations": [
+        {
+          "location": "Last Refuge",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": -79713.539063,
+          "y": -384755.25,
+          "z": -14199.535156
+        },
+        {
+          "location": "Vargrheim",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 70749.195313,
+          "y": -69211.25,
+          "z": -17717.523438
+        },
+        {
+          "location": "Vestfold",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 7868.718262,
+          "y": -88614.578125,
+          "z": -17597.259766
+        },
+        {
+          "location": "Watchtower",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
+          "x": 2719.831787,
+          "y": -83029.429688,
+          "z": -19552.365234
+        }
+      ]
     }
   ]
-
 }
