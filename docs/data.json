@@ -5,11 +5,13 @@
     "south": -369898.0,
     "west": -342684.0,
     "north": 444603.0,
-    "east":  475140.0
+    "east": 475140.0
   },
   "minZoom": -8.7,
   "maxZoom": -4,
-  "contributors": [],
+  "contributors": [
+    "Lugulbanda"
+  ],
   "data": [
     {
       "name": "Viek the Spire",
@@ -116,6 +118,22 @@
           "x": -93053.9375,
           "y": 29743.224609,
           "z": -9313.129883
+        },
+        {
+          "location": "Shrine of the Oracle",
+          "spawnSpot": "Taskmaster",
+          "spawnSpotDetail": "Under an arch",
+          "x": 2649.492432,
+          "y": -190370.421875,
+          "z": 43630.894531
+        },
+        {
+          "location": "Shrine of the Oracle",
+          "spawnSpot": "Taskmaster",
+          "spawnSpotDetail": "With a smelter",
+          "x": 8405.496094,
+          "y": -191402.234375,
+          "z": 44514.816406
         }
       ]
     },
@@ -421,5 +439,4 @@
       ]
     }
   ]
-
 }
