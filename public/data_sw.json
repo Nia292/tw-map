@@ -9,14 +9,31 @@
   },
   "minZoom": -9.1,
   "maxZoom": 0,
-  "contributors": ["Keltten"],
+  "contributors": ["Keltten", "Gabriela"],
   "data": [
     {
       "name": "Viek the Spire",
       "id": "Viek the Spire",
       "type": "TASKMASTER",
       "locationDescription": "Seen but no data yet",
-      "locations": []
+      "locations": [
+        {
+          "location": "Khulan's outpost",
+          "spawnSpot": "Taskmaster",
+          "spawnSpotDetail": "Next to horse stalls / purge?",
+          "x": -192161.6875  ,
+          "y": -56162.242188,
+          "z": -7939.955078
+        },
+        {
+          "location": "Mori",
+          "spawnSpot": "Taskmaster",
+          "spawnSpotDetail": "Mori / purge?",
+          "x": -171753.125    ,
+          "y": -84226.6875,
+          "z": -11726.819336
+        }
+      ]
     },
     {
       "name": "Hekla",
@@ -277,6 +294,14 @@
           "x": 7868.718262,
           "y": -88614.578125,
           "z": -17597.259766
+        },
+        {
+          "location": "Boarhunters Cabin",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "Standing between the house and treasure chest",
+          "x":  -84802.664063  ,
+          "y": -134181.15625,
+          "z": -14502.364258
         }
       ]
     },
