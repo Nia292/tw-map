@@ -54,6 +54,21 @@ function determineDataUrl(): string {
     return process.env.PUBLIC_URL + '/data_sw.json';
 }
 
+function minZoom(): number {
+    const urlParams = new URLSearchParams(window.location.search);
+    const param = urlParams.get('minZoom');
+    if (param) {
+        const res = Number.parseFloat(param);
+        if (res) {
+            return res;
+        } else {
+            console.error("Failed to parse minZoom as float, falling back to default")
+        }
+
+    }
+    return 0.00126984127 * (window.innerWidth - 425) - 10.928;
+}
+
 export class App extends React.Component<any, AppState> {
 
 
@@ -85,6 +100,7 @@ export class App extends React.Component<any, AppState> {
     }
 
     render() {
+
         if (!this.state.loaded) {
             return <div>Map Loading...</div>
         }
@@ -93,7 +109,7 @@ export class App extends React.Component<any, AppState> {
             <div>
                 <ThrallMap data={this.state.data.data}
                            mapType={determineMapType()}
-                           minZoom={this.state.data.minZoom}
+                           minZoom={minZoom()}
                            maxZoom={this.state.data.maxZoom}
                            mapHq={this.state.data.map_hq}
                            mapLq={this.state.data.map_lq}
