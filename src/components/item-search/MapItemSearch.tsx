@@ -1,7 +1,7 @@
 import Autosuggest, {InputProps} from 'react-autosuggest';
 import React, {useState} from 'react';
 import './MapItemSearch.css';
-import {MapItem, MapItemSource} from "../../model/MapItem";
+import {MapItem, MapItemSource, translateSources} from "../../model/MapItem";
 
 
 
@@ -11,24 +11,6 @@ interface MapItemSearchProps {
     itemSelect?(item: MapItem): void;
 }
 
-const translateSource = (source: MapItemSource): string => {
-    switch (source) {
-        case "CUSTOM_LOOT":
-            return "Custom Loot"
-        case "MINE":
-            return "Mined"
-        case "THRALL_CRAFT":
-            return "Thrall-Made"
-        case "TW_MERCHANT":
-            return "Faction Merchant"
-        case "BOSS_LOOT":
-            return "TW Boss Loot"
-    }
-}
-
-const translateSources = (sources: MapItemSource[]): string => {
-    return sources.map(translateSource).join(", ");
-}
 
 export const MapItemSearch = (props: MapItemSearchProps) => {
     const [value, setValue] = useState('');
@@ -46,9 +28,10 @@ export const MapItemSearch = (props: MapItemSearchProps) => {
         setSuggestions(suggestions);
     }
 
-    function onRenderSuggestion(item: MapItem) {
+    function onSuggestionSelected(item: MapItem) {
         if (props.itemSelect) {
             props.itemSelect(item)
+            setValue('')
         }
     }
 
@@ -57,7 +40,7 @@ export const MapItemSearch = (props: MapItemSearchProps) => {
                         inputProps={inputProps}
                         onSuggestionsFetchRequested={request => filterSuggestions(request.value)}
                         onSuggestionsClearRequested={() => setSuggestions([])}
-                        onSuggestionSelected={(event, data) => onRenderSuggestion(data.suggestion)}
+                        onSuggestionSelected={(event, data) => onSuggestionSelected(data.suggestion)}
                         renderSuggestion={suggestion => <div className="single-suggestion">
                             <div>{suggestion.name}</div>
                             <div className="single-suggestion-source">{translateSources(suggestion.source)}</div>

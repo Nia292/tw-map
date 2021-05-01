@@ -15,6 +15,7 @@ import {MapType} from "../model/MapType";
 import {MarkerForAllThralls} from "./thrall-map-utils/MarkerForAllThralls";
 import {MapItemSearch} from "./item-search/MapItemSearch";
 import {MapItem} from "../model/MapItem";
+import {ItemInfoDialog} from "./item-info-dialog/ItemInfoDialog";
 
 const DEFAULT_ZOOM = -8.7;
 const DEFAULT_CENTER: LatLngLiteral = {lat: 0, lng: 0};
@@ -140,6 +141,7 @@ export function ThrallMap(props: ThrallMapProps) {
                         offset={offset}
                         onOffsetChange={setOffset}
                         onClose={() => setSettingsDialogOpen(false)}/>
+        <ItemInfoDialog onDeselectItem={() => setSelectedItem(undefined)} mapItem={selectedItem}/>
         <MapContainer center={center}
                       style={{height: '100vh', width: 'calc(100vw - var(--sidebar-width))'}}
                       minZoom={props.minZoom}
