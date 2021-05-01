@@ -1,0 +1,38 @@
+.map-item-search-input {
+    border: 0;
+    height: 28px;
+    border-radius: 2px;
+    background-color: var(--background-color);
+    color: var(--primary-sidebar-color);
+    padding-left: 8px;
+    padding-right: 8px;
+    outline-width: 0;
+
+    width: 300px;
+    margin-bottom: 1px;
+}
+
+.react-autosuggest__suggestions-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+.single-suggestion {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 8px;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.single-suggestion-source {
+    font-size: 13px;
+}
+
+.react-autosuggest__suggestions-container--open {
+    background-color: var(--background-color);
+    color: var(--primary-sidebar-color);
+}

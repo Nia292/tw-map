@@ -4,6 +4,7 @@ import './css/dialog.css'
 import {ThrallMap} from "./components/ThrallMap";
 import {Thrall} from "./model/Thrall";
 import {MapType} from "./model/MapType";
+import {MapItem} from "./model/MapItem";
 
 
 interface MapData {
@@ -18,7 +19,8 @@ interface MapData {
         west: number,
         north: number,
         east: number
-    }
+    },
+    items: MapItem[],
 }
 
 interface AppState {
@@ -70,7 +72,8 @@ export class App extends React.Component<any, AppState> {
                     north: 0,
                     south: 0,
                     west: 0
-                }
+                },
+                items: []
             }
         }
     }
@@ -99,6 +102,7 @@ export class App extends React.Component<any, AppState> {
                            east={bounds.east}
                            south={bounds.south}
                            contributors={this.state.data.contributors || []}
+                           items={this.state.data.items}
                 />
             </div>
         );

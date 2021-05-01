@@ -2,7 +2,7 @@ import {ImageOverlay, MapContainer, ZoomControl} from "react-leaflet";
 import {CRS, LatLngLiteral,} from "leaflet";
 import {ThrallList} from "./thrall-list/ThrallList";
 import {Thrall} from "../model/Thrall";
-import React, {MouseEvent, useState} from "react";
+import React, {ChangeEvent, useState} from "react";
 import {calculateBounds, ceCoordinateToLatLng, findCenter} from "../util/conversions";
 import {ThrallLocation} from "../model/ThrallLocation";
 import {ZoomCenter} from "../model/ZoomCenter";
@@ -13,6 +13,8 @@ import {InfoDialog} from "./info-dialog/InfoDialog";
 import {SettingsDialog} from "./settings-dialog/SettingsDialog";
 import {MapType} from "../model/MapType";
 import {MarkerForAllThralls} from "./thrall-map-utils/MarkerForAllThralls";
+import {MapItemSearch} from "./item-search/MapItemSearch";
+import {MapItem} from "../model/MapItem";
 
 const DEFAULT_ZOOM = -8.7;
 const DEFAULT_CENTER: LatLngLiteral = {lat: 0, lng: 0};
@@ -47,6 +49,7 @@ interface ThrallMapProps {
     maxZoom: number;
     mapType: MapType;
     contributors: string[];
+    items: MapItem[];
 }
 
 export function ThrallMap(props: ThrallMapProps) {
@@ -64,6 +67,7 @@ export function ThrallMap(props: ThrallMapProps) {
         offsetLeft: 0,
         offsetRight: 0
     });
+    const [selectedItem, setSelectedItem] = useState(undefined as MapItem | undefined);
 
     function handleSelectThrall(thrall: Thrall) {
         let center = findCenter(thrall.locations);
@@ -88,7 +92,7 @@ export function ThrallMap(props: ThrallMapProps) {
         });
     }
 
-    function handleHqClick(event: MouseEvent<HTMLInputElement>) {
+    function handleHqClick(event: ChangeEvent<HTMLInputElement>) {
         let target = event.target as HTMLInputElement;
         setUseHq(target.checked)
     }
@@ -111,6 +115,9 @@ export function ThrallMap(props: ThrallMapProps) {
     const zoom = zoomCenter?.zoom ? zoomCenter.zoom : DEFAULT_ZOOM
     const mapBounds = calculateBounds(props.south, props.west, props.north, props.east, offset);
     return <div className="thrall-map-wrapper">
+        <div id="item-search">
+            <MapItemSearch items={props.items} itemSelect={setSelectedItem}/>
+        </div>
         <div id="info-button" className={"display-in-center"} onClick={() => setInfoDialogOpen(true)}>
             <span className="material-icons" style={{fontSize: '18pt'}}>
                 help_outline
@@ -122,7 +129,7 @@ export function ThrallMap(props: ThrallMapProps) {
             </span>
         </div>
         <div id="hq-checkbox-wrapper" className="display-in-center">
-            <input id="hq-checkbox" type="checkbox" checked={useHq} onClick={handleHqClick}/>
+            <input id="hq-checkbox" type="checkbox" checked={useHq} onChange={handleHqClick}/>
             <label htmlFor="hq-checkbox">HQ Map (11mb)</label>
         </div>
         <div id="map-link" className="display-in-center">
