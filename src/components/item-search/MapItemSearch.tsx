@@ -22,9 +22,13 @@ export const MapItemSearch = (props: MapItemSearchProps) => {
         placeholder: 'Item Search'
     }
 
+    function containsString(value: string, filterValue: string): boolean {
+        return value.toLowerCase().includes(filterValue.toLowerCase());
+    }
+
     function filterSuggestions(filterValue: string) {
-        const suggestions = props.items.filter(item => item.name.toLowerCase().startsWith(filterValue.toLowerCase()));
-        setSuggestions(suggestions);
+        const suggestions = props.items.filter(item => containsString(item.name, filterValue));
+        setSuggestions(suggestions.slice(0, 15));
     }
 
     function onSuggestionSelected(item: MapItem) {
