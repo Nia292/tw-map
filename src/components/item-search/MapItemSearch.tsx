@@ -1,8 +1,7 @@
 import Autosuggest, {InputProps} from 'react-autosuggest';
 import React, {useState} from 'react';
 import './MapItemSearch.css';
-import {MapItem, MapItemSource, translateSources} from "../../model/MapItem";
-
+import {MapItem, translateSources} from "../../model/MapItem";
 
 
 interface MapItemSearchProps {
