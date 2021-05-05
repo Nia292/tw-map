@@ -515,6 +515,7 @@
     {
       "name": "Valor Token of Hathor Ka",
       "source": ["BOSS_LOOT"],
+      "sourceBoss": ["Hathor Ka"],
       "sourceText": "Rewarded for defeating Hathor Ka in hard mode without death."
     },
     {

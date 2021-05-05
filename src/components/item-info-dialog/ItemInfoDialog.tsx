@@ -1,5 +1,5 @@
 import React, {MouseEvent} from "react";
-import {MapItem, MapItemSource, translateSources} from "../../model/MapItem";
+import {MapItem, MapItemSource} from "../../model/MapItem";
 
 export interface ItemInfoDialogProps {
     mapItem?: MapItem;
@@ -15,14 +15,18 @@ const SourceText = (props: {sourceText?: string}) => {
     </div>
 }
 
-const SourceExplained = (props: {source: MapItemSource}) => {
+const SourceExplained = (props: {source: MapItemSource, sourceBoss?: string[]}) => {
+    let bossString = "none known"
+    if (props.sourceBoss && props.sourceBoss.length > 0) {
+        bossString = props.sourceBoss.join(', ');
+    }
     switch (props.source) {
         case "CUSTOM_LOOT":
             return <div>Custom loot. This item has to be set up by the server admins.</div>
         case "MINE":
             return <div>Mined from the Mining Station crafting station.</div>
         case "BOSS_LOOT":
-            return <div>Part of the loot table of a Thrall Wars boss.</div>
+            return <div>Part of the (hardcoded) loot table of the following Thrall Wars bosses: {bossString}</div>
         case "THRALL_CRAFT":
             return <div>Crafted by a Thrall Wars thrall.</div>
         case "TW_MERCHANT":
@@ -53,7 +57,7 @@ export const ItemInfoDialog = (props: ItemInfoDialogProps) => {
             </div>
             <div>
                 <div className="display-in-column">
-                    {props.mapItem.source.map(src => <SourceExplained key={src} source={src}/>)}
+                    {props.mapItem.source.map(src => <SourceExplained key={src} source={src} sourceBoss={props.mapItem?.sourceBoss}/>)}
                 </div>
             </div>
             <div className="dialog-subheader">
