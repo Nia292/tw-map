@@ -26,7 +26,7 @@ jobs:
       - name: Clear old deployment
         run: rm -rf docs
       - name: Build new app
-        run: npm run build
+        run: npm install && npm run build
       - name: Create new docs
         run: mv build docs
       - name: Push new build
