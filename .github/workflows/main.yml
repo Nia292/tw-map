@@ -34,13 +34,9 @@ jobs:
       - name: Create new docs
         run: mv build docs
       - name: Push new build
-        # You may pin to the exact commit or the version.
-        # uses: actions-go/push@7ad7ce209f2a038e7bca929b7a4c92026363f856
-        uses: actions-go/push@v1
-        with:
-          # Instructs to create a commit with changed files
-          create-commit: true
-          # A coma separated list of files to add to commit in addition to already staged ones. If not provided, all tracked files are committed.
-          commit-files: docs
-          # The commit message used when changes needs to be committed
-          commit-message: Automated build by GH Actions
+        run: |
+          git config --global user.name 'Nia292'
+          git config --global user.email 'Nia292@users.noreply.github.com'
+          git add docs
+          git commit -m "Automated deployment by GH Actions"
+          git push

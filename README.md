@@ -41,10 +41,12 @@ Here is what you would do:
 If you do need help on the third step, feel free to let me know!
 
 ## Deploying
+Deployment is done with GH Pages and GH Actions.
 
-For now, it's not automated *at all*. I usually do these steps:
+When pushing to main, GH Actions will 
+1. remove the old ``docs`` folder
+2. Do a CI build of the app
+3. move ``build`` to ``docs``
+4. commit and push the new ``docs`` folder
 
-1. Locally, delete the ``docs`` directory
-2. Run ``npm build``
-3. Rename the ``build`` directory to ``docs``
-4. Commit and push
+Which will then get picked up by GH pages and deployed.
