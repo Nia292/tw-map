@@ -1,0 +1,135 @@
+[
+  {
+    "name": "Lemurian Rune",
+    "source": ["CUSTOM_LOOT"],
+    "sourceText": "Commonly set up as reward from the Thyri bossfight."
+  },
+  {
+    "name": "Thief Rune",
+    "source": ["CUSTOM_LOOT"],
+    "sourceText": "Commonly set up as reward from the Master Gyas bossfight."
+  },
+  {
+    "name": "Valor Token of Ardashir",
+    "source": ["BOSS_LOOT"],
+    "sourceText": "Rewarded for defeating the Minotaur of Ardashi without defeat while not in crafting mode."
+  },
+  {
+    "name": "Valor Token of Hathor Ka",
+    "source": ["BOSS_LOOT"],
+    "sourceBoss": ["Hathor Ka"],
+    "sourceText": "Rewarded for defeating Hathor Ka in hard mode without death."
+  },
+  {
+    "name": "Valor Token of Master Gyas",
+    "source": ["BOSS_LOOT"],
+    "sourceText": "Rewarded for defeating Master Gyas in hard mode without death."
+  },
+  {
+    "name": "Valor Token of Arbanus",
+    "source": ["BOSS_LOOT"],
+    "sourceText": "Rewarded for defeating Arbanus in hard mode without death while not in crafting mode."
+  },
+  {
+    "name": "Shadebreaker Axe Blade",
+    "source": ["BOSS_LOOT"],
+    "sourceText": "Rewarded for defeating Arbanus in crafting mode."
+  },
+  {
+    "name": "Atlantean Powder Rare (Blue)",
+    "source": ["CUSTOM_LOOT"],
+    "sourceText": "Commonly set up as trade-in for the Thrall Wars boss keys."
+  },
+  {
+    "name": "Atlantean Powder Rare (Red)",
+    "source": ["CUSTOM_LOOT"],
+    "sourceText": "Commonly set up as trade-in for the Thrall Wars boss keys."
+  },
+  {
+    "name": "Atlantean Powder",
+    "source": ["CUSTOM_LOOT"],
+    "sourceText": "Commonly set up as trade-in for the Thrall Wars boss keys."
+  },
+  {
+    "name": "Beryllium",
+    "source": ["CUSTOM_LOOT"],
+    "sourceText": "Looted from the bosses mentioned above. Commonly set up as trade in for the Thrall Wars boss keys."
+  },
+  {
+    "name": "Chromium",
+    "source": ["CUSTOM_LOOT"],
+    "sourceText": "Looted from the bosses mentioned above. Commonly set up as trade in for the Thrall Wars boss keys."
+  },
+  {
+    "name": "Mercury",
+    "source": ["CUSTOM_LOOT"],
+    "sourceText": "Looted from the bosses mentioned above. Commonly set up as trade in for the Thrall Wars boss keys."
+  },
+  {
+    "name": "Hair of a Special Redhead",
+    "source": ["CUSTOM_LOOT"],
+    "sourceText": "Commonly set up as reward for the Quest chain from the 'Erik the Red - Log - Page 3' Quest."
+  },
+  {
+    "name": "Erik the Red - Log - Page 3",
+    "source": ["CUSTOM_LOOT"],
+    "sourceText": "Commonly set up as trade-in for the Thrall Wars boss keys."
+  },
+  {
+    "name": "Fur Patch of a Special Redhead",
+    "source": ["CUSTOM_LOOT"],
+    "sourceText": "???"
+  },
+  {
+    "name": "Tainted Pirate Tooth",
+    "source": ["CUSTOM_LOOT"],
+    "sourceText": "Commonly set up as trade-in for the Thrall Wars boss keys."
+  },
+  {
+    "name": "Blue Sapphire",
+    "source": ["CUSTOM_LOOT"],
+    "sourceText": "Looted from the bosses mentioned above. Commonly set up as trade in for the Thrall Wars boss keys."
+  },
+  {
+    "name": "Mud Conslidant",
+    "source": ["CUSTOM_LOOT"],
+    "sourceText": "Commonly set up as trade-in for the Thrall Wars boss keys."
+  },
+  {
+    "name": "Copper",
+    "source": ["CUSTOM_LOOT", "MINE"],
+    "sourceText": "Commonly set up as trade-in for the Thrall Wars boss keys. Also available from the Mine."
+  },
+  {
+    "name": "Shield of Erik the Red",
+    "source": ["THRALL_CRAFT"],
+    "made-by": ["Thorunn", "Berglind"]
+  },
+  {
+    "name": "Aquilonian Womens Tights",
+    "source": ["THRALL_CRAFT"],
+    "made-by": ["Berglind"]
+  },
+  {
+    "name": "Basic Chest Wrap",
+    "source": ["THRALL_CRAFT", "TW_MERCHANT"],
+    "made-by": ["Berglind"],
+    "sold-by": ["Ishildur"]
+  },
+  {
+    "name": "Basic Loincloth",
+    "source": ["THRALL_CRAFT", "TW_MERCHANT"],
+    "made-by": ["Berglind"],
+    "sold-by": ["Ishildur"]
+  },
+  {
+    "name": "Dark Legion Apprentice Pauldron",
+    "source": ["THRALL_CRAFT"],
+    "made-by": ["Berglind", "Talaan"]
+  },
+  {
+    "name": "Flawless Aquilonian Gladiator Chestplate",
+    "source": ["THRALL_CRAFT"],
+    "made-by": ["Berglind", "Talaan"]
+  }
+]

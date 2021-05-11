@@ -16,17 +16,20 @@ const SourceText = (props: {sourceText?: string}) => {
 }
 
 const SourceExplained = (props: {source: MapItemSource, sourceBoss?: string[]}) => {
-    let bossString = "none known"
-    if (props.sourceBoss && props.sourceBoss.length > 0) {
-        bossString = props.sourceBoss.join(', ');
-    }
     switch (props.source) {
         case "CUSTOM_LOOT":
-            return <div>Custom loot. This item has to be set up by the server admins.</div>
+            return <div>This item is commonly set up as custom loot by the server admins, e.g. for trading in Thrall Wars boss keys</div>
         case "MINE":
             return <div>Mined from the Mining Station crafting station.</div>
         case "BOSS_LOOT":
-            return <div>Part of the (hardcoded) loot table of the following Thrall Wars bosses: {bossString}</div>
+            return <div>
+                <div>
+                    This item can be looted from the following Thrall Wars bosses after defeating them:
+                </div>
+                <ul style={{marginTop: '2px', marginBottom:  0}}>
+                    {props.sourceBoss?.map(value => <li key={value}>{value}</li>)}
+                </ul>
+            </div>
         case "THRALL_CRAFT":
             return <div>Crafted by a Thrall Wars thrall.</div>
         case "TW_MERCHANT":
@@ -57,7 +60,10 @@ export const ItemInfoDialog = (props: ItemInfoDialogProps) => {
             </div>
             <div>
                 <div className="display-in-column">
-                    {props.mapItem.source.map(src => <SourceExplained key={src} source={src} sourceBoss={props.mapItem?.sourceBoss}/>)}
+                    {props.mapItem.source.map(src =>
+                        <div key={src} style={{marginBottom: '4px', marginTop: '4px'}}>
+                            <SourceExplained source={src} sourceBoss={props.mapItem?.sourceBoss}/>
+                        </div>)}
                 </div>
             </div>
             <div className="dialog-subheader">
