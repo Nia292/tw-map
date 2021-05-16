@@ -99,37 +99,5 @@
     "name": "Copper",
     "source": ["CUSTOM_LOOT", "MINE"],
     "sourceText": "Commonly set up as trade-in for the Thrall Wars boss keys. Also available from the Mine."
-  },
-  {
-    "name": "Shield of Erik the Red",
-    "source": ["THRALL_CRAFT"],
-    "made-by": ["Thorunn", "Berglind"]
-  },
-  {
-    "name": "Aquilonian Womens Tights",
-    "source": ["THRALL_CRAFT"],
-    "made-by": ["Berglind"]
-  },
-  {
-    "name": "Basic Chest Wrap",
-    "source": ["THRALL_CRAFT", "TW_MERCHANT"],
-    "made-by": ["Berglind"],
-    "sold-by": ["Ishildur"]
-  },
-  {
-    "name": "Basic Loincloth",
-    "source": ["THRALL_CRAFT", "TW_MERCHANT"],
-    "made-by": ["Berglind"],
-    "sold-by": ["Ishildur"]
-  },
-  {
-    "name": "Dark Legion Apprentice Pauldron",
-    "source": ["THRALL_CRAFT"],
-    "made-by": ["Berglind", "Talaan"]
-  },
-  {
-    "name": "Flawless Aquilonian Gladiator Chestplate",
-    "source": ["THRALL_CRAFT"],
-    "made-by": ["Berglind", "Talaan"]
   }
 ]

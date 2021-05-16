@@ -5,6 +5,8 @@ export interface MapItem {
     source: MapItemSource[];
     sourceText?: string;
     sourceBoss?: string[];
+    sourceThrall?: string[];
+    sourceStation?: string;
 }
 
 export const translateSource = (source: MapItemSource): string => {

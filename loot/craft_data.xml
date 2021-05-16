@@ -1,0 +1,75 @@
+<!-- Craft data provided by Zenoa -->
+<data>
+    <thrall name="Gabriela">
+        <station name="cauldron">
+            <Item name="Atlantian Coating"/>
+            <Item name="Black Feather"/>
+            <Item name="Blue Feather"/>
+            <Item name="Sigrid's Magical Coating"/>
+            <Item name="Wood sealant"/>
+            <Item name="Acheronian Slave Collar - Beast of Burden"/>
+            <Item name="Acheronian Slave Collar - Fire Choker"/>
+            <Item name="Acheronian Slave Collar - Holy Choker"/>
+            <Item name="Acheronian Slave Collar - Unholy Choker"/>
+            <Item name="Slave Master's Arcane CHain Harness"/>
+            <Item name="Atlantian Cure"/>
+            <Item name="Atlantian Poison"/>
+            <Item name="Erik's Equalizer"/>
+            <Item name="Lactatiom dry out serum"/>
+            <Item name="Lactatiom Serum"/>
+            <Item name="Tainted Alkahest"/>
+            <Item name="Xotli's Breath"/>
+            <Item name="Ymirs Breath"/>
+        </station>
+    </thrall>
+    <thrall name="Ivar the crafty one">
+        <station name="blacksmith">
+            <Item name="Forged chain"/>
+            <Item name="Forged Ceiling Chain Ring"/>
+            <Item name="Forged Wall Chain Ring"/>
+            <Item name="Lever"/>
+            <Item name="Ardashir Butcher Axe"/>
+            <Item name="Axe of Jhil"/>
+            <Item name="Cao-Polyphya's Revenge"/>
+            <Item name="Chromium Destroyer"/>
+            <Item name="Flanged Bone Breaker"/>
+            <Item name="Fractured Beast Cutter"/>
+            <Item name="Hathor Ka's Ceremonial Khopesh"/>
+            <Item name="Khopesh of Hathor Ka's Honor Guard"/>
+            <Item name="Morning Star of Ardashir"/>
+            <Item name="Oni-slayer Katana"/>
+            <Item name="Pirate Queen Sword"/>
+            <Item name="Runic Battle Axe"/>
+            <Item name="Runic Naginata"/>
+            <Item name="Sharpen: Flawless Turan Soldier Spear"/>
+            <Item name="Stygian Soldier Khopesh"/>
+            <Item name="Sword of Erik the Red"/>
+            <Item name="Turan Soldier Spear"/>
+            <Item name="Wrath of Ka"/>
+            <Item name="Yokai Twin Blades"/>
+        </station>
+    </thrall>
+    <merchant name="Farah">
+        <Item name="Atlantian Powder"/>
+        <Item name="Black Dye"/>
+        <Item name="Gold Coin"/>
+        <Item name="Silver Coin"/>
+        <Item name="White Dye"/>
+        <Item name="Large Personal Chest"/>
+        <Item name="Thyri's Plan for Hathor"/>
+        <Item name="Thyri faction Banner"/>
+        <Item name="Advanced Bareback Riding Saddle"/>
+        <Item name="Bareback Riding Saddle"/>
+        <Item name="Female Gladiator Top"/>
+        <Item name="Flawless Lemurian Thief Mask"/>
+        <Item name="Thyri Soldier Climbing Boots"/>
+        <Item name="Thyri Soldier Climbing Gloves"/>
+        <Item name="Corrupting Brew"/>
+        <Item name="Flame Tonque (Rank 1)"/>
+        <Item name="Legendary Weapon Repair Kit"/>
+        <Item name="Numbling Wraps"/>
+        <Item name="Scroll that teaches how to brew Thyri's tears"/>
+        <Item name="Second Wind (Rank 1)"/>
+        <Item name="True Face (Rank 2)"/>
+    </merchant>
+</data>
