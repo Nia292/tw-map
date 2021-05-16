@@ -1,0 +1,30 @@
+.thrall-details-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.thrall-detail-single-item {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+.thrall-detail-single-item:hover {
+    color: var(--primary-sidebar-color-highlight);
+}
+
+.thrall-item-list-container {
+    margin-top: 16px;
+    font-size: 12pt;
+    display: flex;
+    flex-direction: column;
+}
+
+.thrall-item-list-header {
+    font-size: 16pt;
+}
+
+.thrall-item-list-subheader {
+    font-size: 8pt;
+    margin-bottom: 8px;
+}

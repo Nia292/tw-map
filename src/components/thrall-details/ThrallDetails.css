@@ -1,7 +1,7 @@
 
 .thrall-details-container {
     position: absolute;
-    width: calc(var(--sidebar-width) - 16px);
+    width: var(--sidebar-width);
     right: calc(-400px + 32px);
 }
 
@@ -17,7 +17,7 @@
 
 @keyframes thrall-details-slide-in {
     100% {
-        right: 16px;
+        right: 0px;
     }
 }
 
@@ -28,7 +28,9 @@
 }
 
 .thrall-details {
-    color: var(--primary-sidebar-color)
+    color: var(--primary-sidebar-color);
+    height: 100vh;
+    overflow: auto;
 }
 
 .thrall-location-description {

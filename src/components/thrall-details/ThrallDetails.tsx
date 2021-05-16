@@ -4,12 +4,17 @@ import './ThrallDetails.css';
 import {ThrallHeader} from "../thrall-header/ThrallHeader";
 import {ThrallDetailsLocations} from "./thrall-details-locations/ThrallDetailsLocations";
 import {ThrallLocation} from "../../model/ThrallLocation";
+import {MapItem} from "../../model/MapItem";
+import {ThrallDetailsItems} from "./thrall-details-items/ThrallDetailsItems";
 
 interface ThrallDetailsProps {
     focused: boolean;
     thrall?: Thrall;
+    // The items the thrall makes
+    items: MapItem[];
     onDeSelect(): void;
     onSelectLocation(location: ThrallLocation): void;
+    onSelectItem(item: MapItem): void;
 }
 
 export const ThrallDetails = (props: ThrallDetailsProps) => {
@@ -21,6 +26,7 @@ export const ThrallDetails = (props: ThrallDetailsProps) => {
                 {props.thrall?.locationDescription}
             </div>
             <ThrallDetailsLocations thrall={props.thrall} onSelectLocation={props.onSelectLocation}/>
+            <ThrallDetailsItems items={props.items} onSelectItem={props.onSelectItem}/>
         </div>
     </div>
 }

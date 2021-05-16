@@ -163,6 +163,8 @@ export function ThrallMap(props: ThrallMapProps) {
         </MapContainer>
         <div className="sidebar-right">
             <ThrallList thralls={props.data}
+                        allItems={props.items}
+                        onSelectItem={setSelectedItem}
                         onSelectLocation={handleSelectLocation}
                         selectedThrallFocused={thrallFocused}
                         selectedThrall={selectedThrall}
