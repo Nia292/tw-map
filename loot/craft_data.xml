@@ -1,4 +1,3 @@
-<!-- Craft data provided by Zenoa -->
 <data>
     <thrall name="Gabriela">
         <station name="cauldron">
@@ -49,27 +48,551 @@
             <Item name="Yokai Twin Blades"/>
         </station>
     </thrall>
+    <thrall name="Alfhild">
+        <station name="blacksmith">
+            <Item name="Forged chain"/>
+            <Item name="Forged Slave Cage"/>
+            <Item name="Ardashir Butcher Axe"/>
+            <Item name="Axe of Jhil"/>
+            <Item name="Cao-Polyphya's Revenge"/>
+            <Item name="Chromium Destroyer"/>
+            <Item name="Flanged Bone Breaker"/>
+            <Item name="Fractured Beast Cutter"/>
+            <Item name="Hathor Ka's Ceremonial Khopesh"/>
+            <Item name="Khopesh of Hathor Ka's Honor Guard"/>
+            <Item name="Morning Star of Ardashir"/>
+            <Item name="Oni-slayer Katana"/>
+            <Item name="Pirate Queen Sword"/>
+            <Item name="Runic Battle Axe"/>
+            <Item name="Runic Naginata"/>
+            <Item name="Shadebreaker"/>
+            <Item name="Stygian Soldier Khopesh"/>
+            <Item name="Wrath of Ka"/>
+            <Item name="Yokai Twin Blades"/>
+            <Item name="Nipple rings (Accessory)(female only)"/>
+        </station>
+    </thrall>
+    <thrall name="Thorunn">
+        <station name="armorer">
+            <Item name="Repair Valeria's shield"/>
+            <Item name="Shield of Erik the Red"/>
+            <Item name="Black Widows Boots"/>
+            <Item name="Flawless Buccaneer Boots"/>
+            <Item name="Flawless Buccaneer Chest"/>
+            <Item name="Flawless Buccaneer Hand Jewlery"/>
+            <Item name="Flawless Buccaneer Hat"/>
+            <Item name="Flawless Buccaneer Pants"/>
+            <Item name="Flawless Master Thief Chest"/>
+            <Item name="Flawless Master Thief Pants"/>
+            <Item name="Flawless Zingaran Freeboter Shorts"/>
+            <Item name="Pack of the Mule (Accessory)"/>
+        </station>
+    </thrall>
+    <thrall name="Hekla">
+        <station name="carpenter">
+            <Item name="Combination door"/>
+            <Item name="Combination hatch door"/>
+            <Item name="Hanging Cage on a Beam"/>
+            <Item name="Infiltrator Water trough"/>
+            <Item name="Mini chiller box"/>
+            <Item name="Resource Crate"/>
+            <Item name="Secret Passage"/>
+            <Item name="Stall Building Kit"/>
+            <Item name="Water trough"/>
+            <Item name="Berserker Club"/>
+            <Item name="Paddle"/>
+            <Item name="Paddle with holes"/>
+            <Item name="Planks of shame (female only)"/>
+            <Item name="Milk bottle Mold"/>
+        </station>
+        <station name="artisan">
+            <Item name="Aqualonian Bathtub"/>
+            <Item name="Decoration Bed"/>
+            <Item name="Decoration Bed (with blanket)"/>
+            <Item name="Decoration Bed - double"/>
+            <Item name="Decoration Folded Bed"/>
+            <Item name="Decoration Stygian Bed"/>
+            <Item name="Decoration Wooden Stygian Bed"/>
+        </station>
+    </thrall>
+    <thrall name="Viek the Spire">
+        <station name="torturer">
+            <Item name="Dead Tree Thrall cross"/>
+            <Item name="Emoter - Arms crossed (F)"/>
+            <Item name="Emoter - Arms crossed (M)"/>
+            <Item name="Emoter - Belly dance"/>
+            <Item name="Emoter - Ponder (F)"/>
+            <Item name="Emoter - Ponder (M)"/>
+            <Item name="Emoter - Seduce"/>
+            <Item name="Emoter - Slow Belly dance"/>
+            <Item name="Emoter - Submissive"/>
+            <Item name="Emoter - Human chair"/>
+            <Item name="Milking station (NPC)"/>
+            <Item name="Thrall cross"/>
+            <Item name="Thrall cross dark"/>
+            <Item name="Blindfold"/>
+            <Item name="Forged Hand cuffs"/>
+            <Item name="Forged Hand cuffs (with chain)"/>
+            <Item name="Forged Leg cuffs"/>
+            <Item name="Forged Leg cuffs (Restrictive)"/>
+            <Item name="Forged Slave Collar"/>
+            <Item name="Leather Collar"/>
+            <Item name="Leather Slave Collar"/>
+            <Item name="Brand - Circled S for Slave"/>
+            <Item name="Brand - Circled S for Slave (Inner thigh)"/>
+            <Item name="Brand - S for Slave"/>
+            <Item name="Bruises - Spanking"/>
+            <Item name="Bruises - Spanking Light (female only)"/>
+            <Item name="Bruises - Whipping Heavy (female only)"/>
+            <Item name="Bruises - Whipping Light Ass"/>
+            <Item name="Bruises - Whipping Light Back"/>
+            <Item name="Bruises - Whipping Light Both (female only)"/>
+        </station>
+    </thrall>
+    <thrall name="Lady Elizabeth Killigrew">
+        <station name="torturer">
+            <Item name="Slave Master's Chain"/>
+            <Item name="Slave Master's Keys"/>
+            <Item name="Hanging Cage (Player)"/>
+            <Item name="Hanging Rack (Player)"/>
+            <Item name="Male Milking station (Player)"/>
+            <Item name="Milking station (Player)"/>
+            <Item name="Pillory (Player)"/>
+            <Item name="Slave Master's Cage"/>
+            <Item name="Slave Master's Iron Bar Door"/>
+            <Item name="Slaver Master's Chain ring"/>
+            <Item name="Small Cage (Player)"/>
+            <Item name="Thrall cross (Player)"/>
+            <Item name="Thrall corss dark (Player)"/>
+            <Item name="Blindfold"/>
+            <Item name="Forged Hand cuffs"/>
+            <Item name="Forged Hand cuffs (with chain)"/>
+            <Item name="Forged Leg cuffs"/>
+            <Item name="Forged Leg cuffs (Restrictive)"/>
+            <Item name="Forged Slave Collar"/>
+            <Item name="Leather choker with a heart"/>
+            <Item name="Leather choker with ring"/>
+            <Item name="Leather Collar"/>
+            <Item name="Leather Slave Collar"/>
+            <Item name="Leather Strap Harness"/>
+            <Item name="Leather Strap panel gag"/>
+            <Item name="Leather Strap thong"/>
+            <Item name="Lemurian Ankle Cuffs"/>
+            <Item name="Lemurian Wrist Cuffs"/>
+            <Item name="Metal Hooves Cuffs"/>
+            <Item name="Metal Hooves Cuffs with chain"/>
+            <Item name="Slave Masters Servant Cuffs"/>
+            <Item name="Slave Masters Servant Cuffs with Tray (female only)"/>
+            <Item name="Spiked Collar"/>
+        </station>
+    </thrall>
+    <thrall name="Julia the Chaste">
+        <station name="torturer">
+            <Item name="Slave Master's Chain"/>
+            <Item name="Slave Master's Keys"/>
+            <Item name="Hanging Cage (Player)"/>
+            <Item name="Pillory (Player)"/>
+            <Item name="Slave Master's Chain ring (Ceiling)"/>
+            <Item name="Slave Master's Chain ring (Floor)"/>
+            <Item name="Slave Master's Chain ring (Wall)"/>
+            <Item name="Slave Master's Iron Bar Door"/>
+            <Item name="Slave Master's Iron Bars Hatch"/>
+            <Item name="Slave Master's Chain ring"/>
+            <Item name="Small Cage (Player)"/>
+            <Item name="Wooden Horse (Player)"/>
+            <Item name="Braided whip"/>
+            <Item name="Slave Master's Truncheon"/>
+            <Item name="Acheronian Slave Collar"/>
+            <Item name="Blindfold"/>
+            <Item name="Forged Hand cuffs"/>
+            <Item name="Forged Hand cuffs (with chain)"/>
+            <Item name="Forged Leg cuffs"/>
+            <Item name="Forged Leg cuffs (Restrictive)"/>
+            <Item name="Forged Slave Collar"/>
+            <Item name="Leather choker with a heart"/>
+            <Item name="Leather choker with ring"/>
+            <Item name="Leather Collar"/>
+            <Item name="Leather Slave Collar"/>
+            <Item name="Leather Strap Harness"/>
+            <Item name="Leather Strap panel gag"/>
+            <Item name="Leather Strap thong"/>
+            <Item name="Lemurian Ankle Cuffs"/>
+            <Item name="Lemurian Wrist Cuffs"/>
+            <Item name="Slave Master's Chain Harness"/>
+            <Item name="Slave Master's Chastity Belt"/>
+            <Item name="Slave Master's Chastity Belt (Accessory)"/>
+            <Item name="Slave Master's Strapon"/>
+            <Item name="Slave Masters Chain Bikini (Gold)"/>
+            <Item name="Slave Masters Chain Bikini (Red)"/>
+            <Item name="Spiked Collar"/>
+            <Item name="Brand - Circled S for Slave"/>
+            <Item name="Brand - Circled S for Slave (Inner thigh)"/>
+            <Item name="Brand - S for Slave"/>
+        </station>
+    </thrall>
+    <thrall name="Queen Julia the Chaste">
+        <station name="torturer">
+            <Item name="Legendary Slave Master's Chain"/>
+            <Item name="Slave Master's Chain"/>
+            <Item name="Slave Master's Keys"/>
+            <Item name="Hanging Cage (Player)"/>
+            <Item name="Hanging Rack (Player)"/>
+            <Item name="Pillory (Player)"/>
+            <Item name="Slave Master's Chain ring (Ceiling)"/>
+            <Item name="Slave Master's Chain ring (Floor)"/>
+            <Item name="Slave Master's Chain ring (Wall)"/>
+            <Item name="Slave Master's Iron Bar Door"/>
+            <Item name="Slave Master's Iron Bars Hatch"/>
+            <Item name="Small Cage (Player)"/>
+            <Item name="Wooden Horse (Player)"/>
+            <Item name="Blunted Arrows"/>
+            <Item name="Braided whip"/>
+            <Item name="Queen Julia's Lovetap"/>
+            <Item name="Slave Master's Truncheon"/>
+            <Item name="Acheronian Slave Collar"/>
+            <Item name="Blindfold"/>
+            <Item name="Flawless Slave Master's Chain Harness"/>
+            <Item name="Forged Hand cuffs"/>
+            <Item name="Forged Hand cuffs (with chain)"/>
+            <Item name="Forged Leg cuffs"/>
+            <Item name="Forged Leg cuffs (Restrictive)"/>
+            <Item name="Forged Slave Collar"/>
+            <Item name="Leather choker with a heart"/>
+            <Item name="Leather choker with ring"/>
+            <Item name="Leather Collar"/>
+            <Item name="Leather Slave Collar"/>
+            <Item name="Leather Strap Harness"/>
+            <Item name="Leather Strap panel gag"/>
+            <Item name="Leather Strap thong"/>
+            <Item name="Lemurian Ankle Cuffs"/>
+            <Item name="Lemurian Wrist Cuffs"/>
+            <Item name="Metal mitten cuffs"/>
+            <Item name="Metal mitten cuffs with chain"/>
+            <Item name="Muzzle"/>
+            <Item name="Muzzle (Special attach)"/>
+            <Item name="Slave Master's Chastity Belt"/>
+            <Item name="Slave Master's Chastity Belt (Accessory)"/>
+            <Item name="Slave Master's Strapon"/>
+            <Item name="Slave Masters Chain Bikini (Gold)"/>
+            <Item name="Slave Masters Chain Bikini (Red)"/>
+            <Item name="Spiked Collar"/>
+            <Item name="Wood Bit Gag"/>
+            <Item name="Wood Bit Gag (Special attach)"/>
+            <Item name="Wood Bit Gag with top band"/>
+            <Item name="Wood Bit Gag with top band (Special attach)"/>
+            <Item name="Zamoran Dance Collar"/>
+            <Item name="Brand - Circled S for Slave"/>
+            <Item name="Brand - Circled S for Slave (Inner thigh)"/>
+            <Item name="Brand - S for Slave"/>
+        </station>
+    </thrall>
+    <thrall name="Fass The Torturer">
+        <station name="torturer">
+            <Item name="Legendary Slave Master's Chain"/>
+            <Item name="Hanging Rack (Player)"/>
+            <Item name="Male Milking station (Player)"/>
+            <Item name="Milking station (Player)"/>
+            <Item name="Slave Master's Cage"/>
+            <Item name="Wooden Horse (Player)"/>
+            <Item name="Blunted Arrows"/>
+            <Item name="Braided whip"/>
+            <Item name="Forged Slave Bell Collar (Special attach)"/>
+            <Item name="Forged Slave Brass Bell Collar (Special attach)"/>
+            <Item name="Forged Slave Collar"/>
+            <Item name="Forged Slave Collar (Special attach)"/>
+            <Item name="Leather choker with a heart"/>
+            <Item name="Leather choker with ring"/>
+            <Item name="Leather Cowbell Collar"/>
+            <Item name="Leather Cowbell Collar"/>
+            <Item name="Leather Strap Harness"/>
+            <Item name="Leather Strap panel gag"/>
+            <Item name="Leather Strap thong"/>
+            <Item name="Metal mitten cuffs"/>
+            <Item name="Metal mitten cuffs with chain"/>
+            <Item name="Nose ring of the cursed"/>
+            <Item name="Rune Collar"/>
+            <Item name="Rusty Steel Cowbell Collar"/>
+            <Item name="Slame mark - Back (female)"/>
+            <Item name="Slave mark - Back 2 (female)"/>
+            <Item name="Slave mark - Back and mound (female)"/>
+            <Item name="Slave mark - Cheek (female)"/>
+            <Item name="Slave mark - Chest (female)"/>
+            <Item name="Slave mark - Chest2 (female)"/>
+            <Item name="Slave mark - Forehead (female)"/>
+            <Item name="Slave mark - Forehead 2 (female)"/>
+            <Item name="Slave Master's Armbinder"/>
+            <Item name="Slave Master's Leather blindfold"/>
+            <Item name="Slave Master's Leather gag"/>
+            <Item name="Slave Master's Yoke"/>
+            <Item name="Small Nose ring of the cursed"/>
+            <Item name="Steel Cowbell Collar"/>
+            <Item name="Bruises - Spanking"/>
+            <Item name="Bruises - Spanking Light (female only)"/>
+            <Item name="Bruises - Whipping Heavy (female only)"/>
+            <Item name="Bruises - Whipping Light Ass"/>
+            <Item name="Bruises - Whipping Light Back"/>
+            <Item name="Bruises - Whipping Light Both (female only)"/>
+        </station>
+    </thrall>
+    <thrall name="Landora the Groomer">
+        <station name="artisan">
+            <Item name="Barber Knife"/>
+            <Item name="Pubic pigment remover"/>
+            <Item name="Trimmer"/>
+            <Item name="Buccaneer Earrings"/>
+            <Item name="Eye Patch"/>
+            <Item name="Navel piercing"/>
+            <Item name="Vanir Earring"/>
+            <Item name="Dark pubic hair pigment"/>
+            <Item name="Dark pubic hair pigment"/>
+            <Item name="Light pubic hair pigment"/>
+            <Item name="Perfect pubic match"/>
+            <Item name="Pubic hair growth serum"/>
+            <Item name="Red pubic hair pigment"/>
+        </station>
+    </thrall>
+    <thrall name="Beast the Breaker">
+        <station name="torturer">
+            <Item name="Legendary Slave Master's Chain"/>
+            <Item name="Male Milking station (Player)"/>
+            <Item name="Milking station (Player)"/>
+            <Item name="Slave Master's Chain ring (Ceiling)"/>
+            <Item name="Slave Master's Chain ring (Floor)"/>
+            <Item name="Slave Master's Chain ring (Wall)"/>
+            <Item name="Blindfold"/>
+            <Item name="Blindfold (Non restricting)"/>
+            <Item name="Blindfold (Restricting)"/>
+            <Item name="Blindfold sheer (Restricting>"/>
+            <Item name="Forged Slave Bell Collar (Special attach)"/>
+            <Item name="Forged Slave Brass Bell Collar (Special attach)"/>
+            <Item name="Forged Slave Collar (Special attach)"/>
+            <Item name="Leather choker with a heart"/>
+            <Item name="Leather choker with ring"/>
+            <Item name="Leather Cowbell Collar"/>
+            <Item name="Leather Cowbell Collar"/>
+            <Item name="Leather Strap Harness"/>
+            <Item name="Leather Strap panel gag"/>
+            <Item name="Leather Strap thong"/>
+            <Item name="Metal Hooves Cuffs"/>
+            <Item name="Metal Hooves Cuffs with chain"/>
+            <Item name="Muzzle"/>
+            <Item name="Muzzle (Special attach)"/>
+            <Item name="Nose ring of the cursed"/>
+            <Item name="Rusty Steel Cowbell Collar"/>
+            <Item name="Septum ring"/>
+            <Item name="Slave Master's Armbinder"/>
+            <Item name="Slave Master's Chain Harness (Accessory)"/>
+            <Item name="Slave Master's Cloth gag"/>
+            <Item name="Slave Master's Leather blindfold"/>
+            <Item name="Slave Master's Leather gag"/>
+            <Item name="Slave Master's Yoke"/>
+            <Item name="Slave Masters Servant Cuffs"/>
+            <Item name="Slave Masters Servant Cuffs with Tray (female only)"/>
+            <Item name="Small Nose ring of the cursed"/>
+            <Item name="Steel Cowbell Collar"/>
+            <Item name="Stygian Butt Plug"/>
+            <Item name="Wood Bit Gag"/>
+            <Item name="Wood Bit Gag (Special attach)"/>
+            <Item name="Wood Bit Gag with top band"/>
+            <Item name="Wood Bit Gag with top band (Special attach)"/>
+        </station>
+    </thrall>
+    <thrall name="Floki the Tinkerer">
+        <station name="tinker">
+            <Item name="Mechanical Gear"/>
+            <Item name="Bear Trap (Player)"/>
+            <Item name="Exploding Large Chest"/>
+            <Item name="Exploding Wooden Box"/>
+            <Item name="Fling trap"/>
+            <Item name="Purple Lotus Trap"/>
+            <Item name="Animal cargo handling whistle"/>
+            <Item name="Animal mounting whistle"/>
+            <Item name="Crowbar"/>
+            <Item name="Flute of the Dunes"/>
+            <Item name="Flute of the Forest"/>
+            <Item name="Lock picking tools"/>
+            <Item name="Coin girl collar"/>
+            <Item name="Jarl's Mantle"/>
+            <Item name="Spyglass Goggles"/>
+        </station>
+    </thrall>
+    <thrall name="Berglind">
+        <station name="armorer">
+            <Item name="Shield of Erik the Red"/>
+            <Item name="Aquilonian Womens Tights"/>
+            <Item name="Basic Chest Wrap"/>
+            <Item name="Basic Loincloth"/>
+            <Item name="Dark Legion Apprentice Pauldron"/>
+            <Item name="Flawless Aquilonian Gladiator Chestplate"/>
+            <Item name="Flawless Cimmerian Steel Top (for women)"/>
+            <Item name="Flawless Hyena-fur shorts"/>
+            <Item name="Flawless Hyrkanian Raider Brigandine"/>
+            <Item name="Flawless Kambujan Shaman Chestpiece"/>
+            <Item name="Flawless Vanir Settler Bra"/>
+            <Item name="Flawless Zamorian Thief Hood"/>
+            <Item name="Leather Apron skirt"/>
+        </station>
+    </thrall>
+    <thrall name="Serpa the gem cutter">
+        <station name="cauldron">
+            <Item name="Blessed Gem of Silver Burden"/>
+            <Item name="Blessed Gem of Silver Precision"/>
+            <Item name="Chaos Gem of Silver Might"/>
+            <Item name="Divine Gem of Silver Falls"/>
+            <Item name="Divine Gem of Silver Harmony"/>
+            <Item name="Eldritch Gem of Silver Burden"/>
+            <Item name="Eldritch Gem of Silver Haze"/>
+            <Item name="Hyperborean Gem of the Cobra"/>
+            <Item name="Hyperborean Gem of the Octopus"/>
+            <Item name="Jötun Gem of Chilled Breath"/>
+            <Item name="Jötun Gem of Chilled Naturallity"/>
+            <Item name="Nergal Gem of Corruption"/>
+            <Item name="Nergal Gem of Protection"/>
+            <Item name="Occult Gem of Silver Mist"/>
+            <Item name="Xotli Gem of Demonic Flames"/>
+            <Item name="Xotli Gem of Eternal Flames"/>
+        </station>
+    </thrall>
+    <thrall name="Talaan">
+        <station name="armorer">
+            <Item name="Aqualonian Mini skirt"/>
+            <Item name="Dark Legion Apprentice Pauldron"/>
+            <Item name="Flawless Buccaneer Boots"/>
+            <Item name="Flawless Hyrkanian Raider Brigandine"/>
+            <Item name="Pictish Chieftan's Helmet"/>
+            <Item name="Zamorian Climbing Gloves"/>
+        </station>
+    </thrall>
+    <thrall name="Akasuki the Binder">
+        <station name="torturer">
+            <Item name="Gabriela's Embrace (female only)"/>
+            <Item name="Muzzle"/>
+            <Item name="Muzzle (Special attach)"/>
+            <Item name="Rope Collar (Accessory)"/>
+            <Item name="Rope Harness"/>
+            <Item name="Rope Harness (Accessory)"/>
+            <Item name="Slave Master's Armbinder"/>
+            <Item name="Strong Rope Hand Cuffs (with rope in between)"/>
+            <Item name="Strong Rope Leg Cuffs (with rope in between)"/>
+            <Item name="Wood Bit Gag"/>
+            <Item name="Wood Bit Gag (Special attach)"/>
+            <Item name="Wood Bit Gag with top band"/>
+            <Item name="Wood Bit Gag with top band (Special attach)"/>
+            <Item name="Wood Cane"/>
+            <Item name="Dark reddned breasts for Gabriela's Embrace (female only)"/>
+            <Item name="Light reddned breasts for Gabriela's Embrace (female only)"/>
+            <Item name="Medium reddned breasts for Gabriela's Embrace (female only)"/>
+        </station>
+    </thrall>
     <merchant name="Farah">
-        <Item name="Atlantian Powder"/>
-        <Item name="Black Dye"/>
-        <Item name="Gold Coin"/>
-        <Item name="Silver Coin"/>
-        <Item name="White Dye"/>
-        <Item name="Large Personal Chest"/>
-        <Item name="Thyri's Plan for Hathor"/>
-        <Item name="Thyri faction Banner"/>
-        <Item name="Advanced Bareback Riding Saddle"/>
-        <Item name="Bareback Riding Saddle"/>
-        <Item name="Female Gladiator Top"/>
-        <Item name="Flawless Lemurian Thief Mask"/>
-        <Item name="Thyri Soldier Climbing Boots"/>
-        <Item name="Thyri Soldier Climbing Gloves"/>
-        <Item name="Corrupting Brew"/>
-        <Item name="Flame Tonque (Rank 1)"/>
-        <Item name="Legendary Weapon Repair Kit"/>
-        <Item name="Numbling Wraps"/>
-        <Item name="Scroll that teaches how to brew Thyri's tears"/>
-        <Item name="Second Wind (Rank 1)"/>
-        <Item name="True Face (Rank 2)"/>
+        <station name="merchant">
+            <Item name="Atlantian Powder"/>
+            <Item name="Black Dye"/>
+            <Item name="Gold Coin"/>
+            <Item name="Silver Coin"/>
+            <Item name="White Dye"/>
+            <Item name="Large Personal Chest"/>
+            <Item name="Thyri's Plan for Hathor"/>
+            <Item name="Thyri faction Banner"/>
+            <Item name="Advanced Bareback Riding Saddle"/>
+            <Item name="Bareback Riding Saddle"/>
+            <Item name="Female Gladiator Top"/>
+            <Item name="Flawless Lemurian Thief Mask"/>
+            <Item name="Thyri Soldier Climbing Boots"/>
+            <Item name="Thyri Soldier Climbing Gloves"/>
+            <Item name="Corrupting Brew"/>
+            <Item name="Flame Tonque (Rank 1)"/>
+            <Item name="Legendary Weapon Repair Kit"/>
+            <Item name="Numbling Wraps"/>
+            <Item name="Scroll that teaches how to brew Thyri's tears"/>
+            <Item name="Second Wind (Rank 1)"/>
+            <Item name="True Face (Rank 2)"/>
+        </station>
     </merchant>
+    <merchant name="Safiya">
+        <station name="merchant">
+            <Item name="Gold Coin"/>
+            <Item name="Silver Coin"/>
+            <Item name="Hathors Plan for Thyri"/>
+            <Item name="Hathor Ka faction Banner"/>
+            <Item name="Zingarian Noble's Rapier"/>
+            <Item name="Flawless Stygian Thief Mask"/>
+            <Item name="Stygian Maid Chest"/>
+            <Item name="Corrupting Brew"/>
+            <Item name="Desert Fools Berry Pulp"/>
+            <Item name="Hathors teachings on fools pulp"/>
+            <Item name="Highland Fools Berry Pulp"/>
+            <Item name="Lactation dry out serum"/>
+            <Item name="Lactation Serum"/>
+            <Item name="Lift of Set (Rank 1)"/>
+            <Item name="Scroll that teaches how to brew Hathors re-focusing potion"/>
+            <Item name="Stygian Potion of Forgetness"/>
+            <Item name="Word of Command (Rank 1)"/>
+        </station>
+    </merchant>
+    <merchant name="Ishildur">
+        <station name="merchant">
+            <Item name="Eldritch Gem of Burden"/>
+            <Item name="Gold Coin"/>
+            <Item name="Key to Kylikki's secret"/>
+            <Item name="Silver Coin"/>
+            <Item name="Slave Master's Chain"/>
+            <Item name="Erik's Plan for Shabam Girls"/>
+            <Item name="Legendary Armor Patch Kit"/>
+            <Item name="Legendary Armor Restoration Kit"/>
+            <Item name="Legendary Weapon Restoration Kit"/>
+            <Item name="Raven Cage"/>
+            <Item name="Erik The Red faction Banner"/>
+            <Item name="Basic Chest Wrap"/>
+            <Item name="Basic Loincloth"/>
+            <Item name="Insulated Legendary Hyena-fur Gloves"/>
+            <Item name="Brand - S for Slave"/>
+            <Item name="Corrupting Brew"/>
+            <Item name="Erik's advice on sore udders"/>
+            <Item name="Erik's Equalizer"/>
+            <Item name="Plant the Burning Standard"/>
+            <Item name="Plant the Restoring Standard"/>
+            <Item name="Resolve Spell (Rank I)"/>
+            <Item name="Resolve Spell (Rank II)"/>
+            <Item name="Scroll that teaches how to make Nordheimer fur West"/>
+            <Item name="Silence Heng (Ability)"/>
+            <Item name="Silence Neesa (Ability)"/>
+            <Item name="Xotli's Breath"/>
+            <Item name="Ymirs Breath"/>
+            <Item name="Thrall War Dice"/>
+        </station>
+    </merchant>
+    <recipes>
+        <station name="cauldron">
+            <Item name="Hathors re-focusing potion"
+                  unlockedBy="Scroll that teaches how to brew Hathors re-focusing potion"/>
+            <Item name="Thyri's tears" unlockedBy="Scroll that teaches how to brew Thyri's tears"/>
+            <Item name="Witch-fire Orb" unlockedBy="Scroll that teaches how to make Witch-fire Orb"/>
+            <Item name="Desert Fools Berry Pulp" unlockedBy="Hathors teachings on fools pulp"/>
+            <Item name="Highland Fools Berry Pulp" unlockedBy="Hathors teachings on fools pulp"/>
+            <Item name="Júgursmyrsl" unlockedBy="Erik's advice on sore udders"/>
+        </station>
+        <station name="blacksmith">
+            <Item name="Kyllikki's Axe" unlockedBy="Scroll that teaches how to build Kyllikki's axe"/>
+            <Item name="Ikkily's war fork" unlockedBy="Scroll that teaches how to make Ikkily's war fork"/>
+            <Item name="Great Khan's Katana" unlockedBy="Scroll that teaches how to make Great Khan's Katana"/>
+            <Item name="Flawless Sword of Erik the Red"
+                  unlockedBy="Scroll that teaches how to make Flawless Sword of Erik the Red"/>
+        </station>
+        <station name="armorer">
+            <Item name="Repair Berserker Shield"
+                  unlockedBy="Scroll that teaches how to repair Repair Berserker Shield"/>
+            <Item name="Legendary Cimmerian Steel Tasset"
+                  unlockedBy="Scroll that teaches how to make Legendary Cimmerian Steel Tasset"/>
+            <Item name="Nordheimer fur Vest" unlockedBy="Scroll that teaches how to make Nordheimer fur Vest"/>
+            <Item name="Legendary Aquilonian Gladiator Chestplate"
+                  unlockedBy="Scroll that teaches how to make Legendary Aquilonian Gladiator Chestplate"/>
+            <Item name="Dark Legion Pauldron" unlockedBy="Scroll that teaches how to make Dark Legion Pauldron"/>
+        </station>
+        <station name="carpenter">
+            <Item name="Flat log ramp" unlockedBy="Scroll that teaches log wood working"/>
+            <Item name="Log Bridge" unlockedBy="Scroll that teaches log wood working"/>
+            <Item name="Log ladder" unlockedBy="Scroll that teaches log wood working"/>
+        </station>
+    </recipes>
 </data>

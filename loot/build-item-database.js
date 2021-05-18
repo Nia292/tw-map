@@ -106,12 +106,32 @@ function mergeAllBossLootIntoDatafile(data, boss, loot) {
 
 const thrallNameToId = {
     'Gabriela': 'Gabriela the Alchemist',
-    'Ivar the crafty one': 'Ivar the Crafty One'
+    'Ivar the crafty one': 'Ivar the Crafty One',
+    'Alfhild': 'Alfhild',
+    'Thorunn': 'Thorunn',
+    'Hekla': 'Hekla',
+    'Viek the Spire': 'Viek the Spire',
+    'Lady Elizabeth Killigrew': 'Lady Elizabeth Killigrew',
+    'Julia the Chaste': 'Julia the Chaste',
+    'Queen Julia the Chaste': 'Queen Julia the Chaste',
+    'Fass The Torturer': 'Fass the Torturer',
+    'Landora the Groomer': 'Landora the Groomer',
+    'Beast the Breaker': 'Beast the Breaker',
+    'Floki the Tinkerer': 'Floki the Tinkerer',
+    'Berglind': 'Berglind',
+    'Serpa the gem cutter': 'Serpa the Gem Cutter',
+    'Talaan': 'Talaan',
+    'Akasuki the Binder': 'Akasuki the Binder',
 }
 
 const stationToStationName = {
     'cauldron': 'Firebowl Cauldron',
-    'blacksmith': 'Blacksmith Bench',
+    'blacksmith': 'Blacksmith\'s Bench',
+    'armorer': 'Armorer\'s Bench',
+    'carpenter': 'Carpenter\'s Bench',
+    'artisan': 'Artisan Table',
+    'torturer': 'Torturer\'s Worktable',
+    'tinker': 'Tinker\'s Bench',
 }
 
 /**
