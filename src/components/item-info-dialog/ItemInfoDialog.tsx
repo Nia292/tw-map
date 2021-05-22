@@ -14,11 +14,13 @@ export interface ItemInfoDialogProps {
 }
 
 const InfoText = (props: { mapItem: MapItem, onSelectItem(name: string): void }) => {
-    return <div style={{width: '100%'}}>
-        {props.mapItem.sourceText && <div>
-            {props.mapItem.sourceText}
-        </div>}
-        {props.mapItem.unlockedBy && <div
+    const fragments = [];
+    if (props.mapItem.sourceText) {
+        fragments.push(<div key="st">{props.mapItem.sourceText}</div>);
+    }
+    if (props.mapItem.unlockedBy) {
+        fragments.push(<div
+            key="ub"
             style={{width: '100%'}}>
             This item is unlocked by:
             <ul>
@@ -26,9 +28,17 @@ const InfoText = (props: { mapItem: MapItem, onSelectItem(name: string): void })
                                                           onClick={() => props.onSelectItem(item)}
                                                           className="clickable-thrall">{props.mapItem.unlockedBy}</li>)}
             </ul>
-        </div>
-        }
-    </div>
+        </div>)
+    }
+    const base = window.location.origin;
+    const url = `${base}/tw-map?map=exiled-lands&item=${escape(props.mapItem.name)}`;
+    fragments.push(<div key="share" style={{width: '100%'}}>
+        Share Link<br/>
+        <input value={url} disabled={true} style={{width: '100%'}}/>
+    </div>)
+    return <React.Fragment>
+        {fragments.map(frag => frag)}
+    </React.Fragment>
 }
 
 const SourceExplained = (props: { source: MapItemSource, item?: MapItem, thrallClick: (id: string) => void }) => {

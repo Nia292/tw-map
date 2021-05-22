@@ -2,7 +2,7 @@ import {ImageOverlay, MapContainer, ZoomControl} from "react-leaflet";
 import {CRS, LatLngLiteral,} from "leaflet";
 import {ThrallList} from "./thrall-list/ThrallList";
 import {Thrall} from "../model/Thrall";
-import React, {ChangeEvent, useState} from "react";
+import React, {ChangeEvent, useEffect, useState} from "react";
 import {calculateBounds, ceCoordinateToLatLng, findCenter} from "../util/conversions";
 import {ThrallLocation} from "../model/ThrallLocation";
 import {ZoomCenter} from "../model/ZoomCenter";
@@ -72,6 +72,18 @@ export function ThrallMap(props: ThrallMapProps) {
     const [selectedItem, setSelectedItem] = useState(undefined as MapItem | undefined);
     const [guideOpen, setGuideOpen] = useState(false);
 
+    useEffect(() => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const itemFromQuery = urlParams.get('item');
+        if (itemFromQuery) {
+            const nameLower = itemFromQuery.toLowerCase();
+            const item = props.items.find(value => value.name.toLowerCase() === nameLower);
+            if (item) {
+                setSelectedItem(item);
+            }
+        }
+    }, [props, setSelectedItem])
+
     function handleSelectThrall(thrall: Thrall) {
         let center = findCenter(thrall.locations);
         if (center) {
@@ -122,14 +134,9 @@ export function ThrallMap(props: ThrallMapProps) {
         }
     }
 
-    const handleClickItem = (name: string): void => {
-        console.log(name);
+    const searchAndSelectItemByName = (name: string) => {
         const nameLower = name.toLowerCase();
-        const item = props.items.find(value => {
-            console.log(value.name);
-            return value.name.toLowerCase() === nameLower
-        });
-        console.log({name, item, items: props.items})
+        const item = props.items.find(value => value.name.toLowerCase() === nameLower);
         if (item) {
             setSelectedItem(item);
         }
@@ -170,7 +177,7 @@ export function ThrallMap(props: ThrallMapProps) {
                         onOffsetChange={setOffset}
                         onClose={() => setSettingsDialogOpen(false)}/>
         <ItemInfoDialog onDeselectItem={() => setSelectedItem(undefined)}
-                        onSelectItem={name => handleClickItem(name)}
+                        onSelectItem={name => searchAndSelectItemByName(name)}
                         onClickThrall={handleClickThrall}
                         mapItem={selectedItem}/>
         <MapContainer center={center}
