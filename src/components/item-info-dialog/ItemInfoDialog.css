@@ -1,0 +1,7 @@
+.clickable-thrall {
+    cursor: pointer;
+}
+
+.clickable-thrall:hover {
+    color: var(--primary-sidebar-color-highlight);
+}

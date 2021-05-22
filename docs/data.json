@@ -674,7 +674,8 @@
         "Julia the Chaste",
         "Queen Julia the Chaste",
         "Beast the Breaker"
-      ]
+      ],
+      "sourceStation": "Torturer's Worktable"
     },
     {
       "name": "Resonating Shard of Arbanus",
@@ -730,7 +731,8 @@
       "sourceText": "Can be looted from the boss(es) mentioned above.",
       "sourceThrall": [
         "Beast the Breaker"
-      ]
+      ],
+      "sourceStation": "Torturer's Worktable"
     },
     {
       "name": "Standard of Set (Lance)",
@@ -4182,6 +4184,186 @@
       ],
       "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
       "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Hathors re-focusing potion",
+      "unlockedBy": [
+        "Scroll that teaches how to brew Hathors re-focusing potion"
+      ],
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Thyri's tears",
+      "unlockedBy": [
+        "Scroll that teaches how to brew Thyri's tears"
+      ],
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Witch-fire Orb",
+      "unlockedBy": [
+        "Scroll that teaches how to make Witch-fire Orb"
+      ],
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Desert Fools Berry Pulp",
+      "unlockedBy": [
+        "Hathors teachings on fools pulp"
+      ],
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Highland Fools Berry Pulp",
+      "unlockedBy": [
+        "Hathors teachings on fools pulp"
+      ],
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Júgursmyrsl",
+      "unlockedBy": [
+        "Erik's advice on sore udders"
+      ],
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Kyllikki's Axe",
+      "unlockedBy": [
+        "Scroll that teaches how to build Kyllikki's axe"
+      ],
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Ikkily's war fork",
+      "unlockedBy": [
+        "Scroll that teaches how to make Ikkily's war fork"
+      ],
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Great Khan's Katana",
+      "unlockedBy": [
+        "Scroll that teaches how to make Great Khan's Katana"
+      ],
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Flawless Sword of Erik the Red",
+      "unlockedBy": [
+        "Scroll that teaches how to make Flawless Sword of Erik the Red"
+      ],
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Repair Berserker Shield",
+      "unlockedBy": [
+        "Scroll that teaches how to repair Repair Berserker Shield"
+      ],
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Legendary Cimmerian Steel Tasset",
+      "unlockedBy": [
+        "Scroll that teaches how to make Legendary Cimmerian Steel Tasset"
+      ],
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Nordheimer fur Vest",
+      "unlockedBy": [
+        "Scroll that teaches how to make Nordheimer fur Vest"
+      ],
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Legendary Aquilonian Gladiator Chestplate",
+      "unlockedBy": [
+        "Scroll that teaches how to make Legendary Aquilonian Gladiator Chestplate"
+      ],
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Dark Legion Pauldron",
+      "unlockedBy": [
+        "Scroll that teaches how to make Dark Legion Pauldron"
+      ],
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Flat log ramp",
+      "unlockedBy": [
+        "Scroll that teaches log wood working"
+      ],
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Log Bridge",
+      "unlockedBy": [
+        "Scroll that teaches log wood working"
+      ],
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Log ladder",
+      "unlockedBy": [
+        "Scroll that teaches log wood working"
+      ],
+      "sourceStation": "Carpenter's Bench"
     }
   ]
 }

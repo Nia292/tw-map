@@ -142,10 +142,10 @@ const stationToStationName = {
 function mergeCraftItemIntoData(data, item) {
     // Find item in data list
     const dataItem = data.find(value => value.name === item.itemName);
-    console.log("item", item.stationName);
     if (dataItem) {
         dataItem.source = ensureArrayContains(dataItem.source, "THRALL_CRAFT");
         dataItem.sourceThrall = ensureArrayContains(dataItem.sourceThrall, item.thrallName);
+        dataItem.sourceStation = stationToStationName[item.stationName];
     } else {
         // Simplest case. Item was not yet added, create a new one!
         data.push({
@@ -153,6 +153,28 @@ function mergeCraftItemIntoData(data, item) {
             source: ["THRALL_CRAFT"],
             sourceThrall: [item.thrallName],
             sourceText: "This item can be crafted by one of the Thrall Wars thralls.",
+            sourceStation: stationToStationName[item.stationName]
+        })
+    }
+}
+
+/**
+ *
+ * @param data {Array<{name: string, source: Array<string>, sourceThrall: Array<string>, sourceText: string}>}
+ * @param item {{itemName: string, unlockedBy: string, stationName: string}}
+ */
+function mergeRecipeItemIntoData(data, item) {
+    const dataItem = data.find(value => value.name === item.itemName);
+    if (dataItem) {
+        dataItem.source = ensureArrayContains(dataItem.source, 'CRAFT')
+        dataItem.unlockedBy = ensureArrayContains(dataItem.unlockedBy, item.unlockedBy);
+        dataItem.sourceStation = stationToStationName[item.stationName]
+    } else {
+        // Simplest case. Item was not yet added, create a new one!
+        data.push({
+            source: ['CRAFT'],
+            name: item.itemName,
+            unlockedBy: [item.unlockedBy],
             sourceStation: stationToStationName[item.stationName]
         })
     }
@@ -166,6 +188,15 @@ function mergeCraftItemIntoData(data, item) {
  */
 function mergeCraftItemsIntoData(data, craftItems) {
     return craftItems.forEach(value => mergeCraftItemIntoData(data, value))
+}
+
+/**
+ *
+ * @param data {Array<{name: string, source: Array<string>, sourceThrall: Array<string>, sourceText: string}>}
+ * @param recipeItems {Array<{itemName: string, unlockedBy: string, stationName: string}>}
+ */
+function mergeRecipeItemsIntoData(data, recipeItems) {
+    return recipeItems.forEach(value => mergeRecipeItemIntoData(data, value))
 }
 
 async function parseCraftData() {
@@ -198,6 +229,16 @@ async function parseCraftData() {
         .reduce((prev, curr) => [...prev, ...curr], [])
 }
 
+async function parseRecipeData()  {
+    const xmlContent = fs.readFileSync(craftDataFilePath).toString("UTF-8");
+    const data = await require('xml2js').parseStringPromise(xmlContent);
+    return data.data.recipes[0].station.map(stationEntry => {
+        const stationName = stationEntry.$.name;
+        return stationEntry.Item
+            .map(itemEntry => ({itemName: itemEntry.$.name, unlockedBy: itemEntry.$.unlockedBy, stationName}));
+    }).reduce((prev, curr) => [...prev, ...curr], [])
+}
+
 /**
  * Reads a markdown file and merges it's loot data into the datafile path
  */
@@ -219,6 +260,9 @@ async function reBuildItemDatabase() {
     // Add craftable stuff to the database
     const craftData = await parseCraftData();
     mergeCraftItemsIntoData(database.items, craftData);
+
+    const recipeData = await parseRecipeData();
+    mergeRecipeItemsIntoData(database.items, recipeData);
 
     const databaseJSON = JSON.stringify(database, 2, 2);
     fs.writeFileSync(datafilePath, databaseJSON, {encoding: "UTF-8"});

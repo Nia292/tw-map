@@ -1,9 +1,12 @@
 import React, {MouseEvent} from "react";
 import {MapItem, MapItemSource} from "../../model/MapItem";
+import './ItemInfoDialog.css';
+
 
 export interface ItemInfoDialogProps {
     mapItem?: MapItem;
     onDeselectItem(): void;
+    onClickThrall(id: string): void;
 }
 
 const SourceText = (props: {sourceText?: string}) => {
@@ -15,7 +18,13 @@ const SourceText = (props: {sourceText?: string}) => {
     </div>
 }
 
-const SourceExplained = (props: {source: MapItemSource, item?: MapItem}) => {
+const SourceExplained = (props: {source: MapItemSource, item?: MapItem, thrallClick: (id: string) => void}) => {
+
+    function makeClickableThrall(id: string) {
+        return <li className="clickable-thrall"
+                   key={id} onClick={() => props.thrallClick(id)}>{id}</li>
+    }
+
     if (!props.item) {
         throw new Error('No item provided');
     }
@@ -39,11 +48,13 @@ const SourceExplained = (props: {source: MapItemSource, item?: MapItem}) => {
                     This item is crafted by the following thrall(s) at the {props.item.sourceStation}:
                 </div>
                 <ul style={{marginTop: '2px', marginBottom:  0}}>
-                    {props.item.sourceThrall?.map(value => <li key={value}>{value}</li>)}
+                    {props.item.sourceThrall?.map(value => makeClickableThrall(value))}
                 </ul>
             </div>
         case "TW_MERCHANT":
             return <div>Sold by one of the faction merchants.</div>
+        case "CRAFT":
+            return <div>This item can be made by a player after unlocking it's recipe. It is made at the {props.item.sourceStation}.</div>
     }
 }
 
@@ -72,7 +83,7 @@ export const ItemInfoDialog = (props: ItemInfoDialogProps) => {
                 <div className="display-in-column">
                     {props.mapItem.source.map(src =>
                         <div key={src} style={{marginBottom: '4px', marginTop: '4px'}}>
-                            <SourceExplained source={src} item={props.mapItem}/>
+                            <SourceExplained source={src} item={props.mapItem} thrallClick={props.onClickThrall}/>
                         </div>)}
                 </div>
             </div>

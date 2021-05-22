@@ -1,4 +1,4 @@
-export type MapItemSource = 'CUSTOM_LOOT' | 'MINE' | 'BOSS_LOOT' | 'THRALL_CRAFT' | 'TW_MERCHANT';
+export type MapItemSource = 'CUSTOM_LOOT' | 'MINE' | 'BOSS_LOOT' | 'THRALL_CRAFT' | 'CRAFT' | 'TW_MERCHANT';
 
 export interface MapItem {
     name: string;
@@ -21,6 +21,8 @@ export const translateSource = (source: MapItemSource): string => {
             return "Faction Merchant"
         case "BOSS_LOOT":
             return "TW Boss Loot"
+        case "CRAFT":
+            return 'Player-Made'
     }
 }
 

@@ -16,6 +16,7 @@ import {MarkerForAllThralls} from "./thrall-map-utils/MarkerForAllThralls";
 import {MapItemSearch} from "./item-search/MapItemSearch";
 import {MapItem} from "../model/MapItem";
 import {ItemInfoDialog} from "./item-info-dialog/ItemInfoDialog";
+import {TwGuide} from "./tw-guide/TwGuide";
 
 const DEFAULT_ZOOM = -8.7;
 const DEFAULT_CENTER: LatLngLiteral = {lat: 0, lng: 0};
@@ -69,6 +70,7 @@ export function ThrallMap(props: ThrallMapProps) {
         offsetRight: 0
     });
     const [selectedItem, setSelectedItem] = useState(undefined as MapItem | undefined);
+    const [guideOpen, setGuideOpen] = useState(false);
 
     function handleSelectThrall(thrall: Thrall) {
         let center = findCenter(thrall.locations);
@@ -112,12 +114,25 @@ export function ThrallMap(props: ThrallMapProps) {
         return "Exiled Lands"
     }
 
+    const handleClickThrall = (id: string): void => {
+        const thrall = props.data.find(value => value.id === id);
+        if (thrall) {
+            handleSelectThrall(thrall);
+            setSelectedItem(undefined);
+        }
+    }
+
     const center = zoomCenter?.center ? zoomCenter.center : DEFAULT_CENTER;
     const zoom = zoomCenter?.zoom ? zoomCenter.zoom : DEFAULT_ZOOM
     const mapBounds = calculateBounds(props.south, props.west, props.north, props.east, offset);
     return <div className="thrall-map-wrapper">
         <div id="item-search">
             <MapItemSearch items={props.items} itemSelect={setSelectedItem}/>
+        </div>
+        <div id="guide-button" className={"display-in-center"} onClick={() => setGuideOpen(true)}>
+            <span className="material-icons" style={{fontSize: '18pt'}}>
+                article
+            </span>
         </div>
         <div id="info-button" className={"display-in-center"} onClick={() => setInfoDialogOpen(true)}>
             <span className="material-icons" style={{fontSize: '18pt'}}>
@@ -141,7 +156,9 @@ export function ThrallMap(props: ThrallMapProps) {
                         offset={offset}
                         onOffsetChange={setOffset}
                         onClose={() => setSettingsDialogOpen(false)}/>
-        <ItemInfoDialog onDeselectItem={() => setSelectedItem(undefined)} mapItem={selectedItem}/>
+        <ItemInfoDialog onDeselectItem={() => setSelectedItem(undefined)}
+                        onClickThrall={handleClickThrall}
+                        mapItem={selectedItem}/>
         <MapContainer center={center}
                       style={{height: '100vh', width: 'calc(100vw - var(--sidebar-width))'}}
                       minZoom={props.minZoom}
@@ -160,6 +177,7 @@ export function ThrallMap(props: ThrallMapProps) {
             <SetViewOnClick location={zoomCenter}/>
             <MarkerForSelectedThrall thrall={selectedThrall} focused={thrallFocused}/>
             <MarkerForAllThralls thralls={props.data} focused={thrallFocused}/>
+            <TwGuide open={guideOpen} onClose={() => setGuideOpen(false)}/>
         </MapContainer>
         <div className="sidebar-right">
             <ThrallList thralls={props.data}

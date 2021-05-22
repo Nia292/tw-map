@@ -66,12 +66,25 @@ body {
     color: var(--primary-sidebar-color);
 }
 
-#settings-button {
+#guide-button {
     position: absolute;
     border-radius: 2px;
     z-index: 800;
     left: 10px;
     top: 103px;
+    width: 30px;
+    height: 30px;
+    border-top: 1px solid var(--primary-sidebar-color);
+    background-color: var(--background-color);
+    color: var(--primary-sidebar-color);
+}
+
+#settings-button {
+    position: absolute;
+    border-radius: 2px;
+    z-index: 800;
+    left: 10px;
+    top: 133px;
     width: 30px;
     height: 30px;
     border-top: 1px solid var(--primary-sidebar-color);
@@ -100,6 +113,11 @@ body {
 }
 
 #info-button:hover {
+    color: var(--background-color-lighter);
+    cursor: pointer;
+}
+
+#guide-button:hover {
     color: var(--background-color-lighter);
     cursor: pointer;
 }
