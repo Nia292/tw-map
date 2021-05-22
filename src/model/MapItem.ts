@@ -7,6 +7,7 @@ export interface MapItem {
     sourceBoss?: string[];
     sourceThrall?: string[];
     sourceStation?: string;
+    unlockedBy?: string[];
 }
 
 export const translateSource = (source: MapItemSource): string => {

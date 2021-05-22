@@ -5,20 +5,33 @@ import './ItemInfoDialog.css';
 
 export interface ItemInfoDialogProps {
     mapItem?: MapItem;
+
     onDeselectItem(): void;
+
+    onSelectItem(name: string): void;
+
     onClickThrall(id: string): void;
 }
 
-const SourceText = (props: {sourceText?: string}) => {
-    if (!props.sourceText) {
-        return <React.Fragment/>
-    }
-    return <div>
-        {props.sourceText}
+const InfoText = (props: { mapItem: MapItem, onSelectItem(name: string): void }) => {
+    return <div style={{width: '100%'}}>
+        {props.mapItem.sourceText && <div>
+            {props.mapItem.sourceText}
+        </div>}
+        {props.mapItem.unlockedBy && <div
+            style={{width: '100%'}}>
+            This item is unlocked by:
+            <ul>
+                {props.mapItem.unlockedBy.map(item => <li key={item}
+                                                          onClick={() => props.onSelectItem(item)}
+                                                          className="clickable-thrall">{props.mapItem.unlockedBy}</li>)}
+            </ul>
+        </div>
+        }
     </div>
 }
 
-const SourceExplained = (props: {source: MapItemSource, item?: MapItem, thrallClick: (id: string) => void}) => {
+const SourceExplained = (props: { source: MapItemSource, item?: MapItem, thrallClick: (id: string) => void }) => {
 
     function makeClickableThrall(id: string) {
         return <li className="clickable-thrall"
@@ -30,7 +43,8 @@ const SourceExplained = (props: {source: MapItemSource, item?: MapItem, thrallCl
     }
     switch (props.source) {
         case "CUSTOM_LOOT":
-            return <div>This item is commonly set up as custom loot by the server admins, e.g. for trading in Thrall Wars boss keys</div>
+            return <div>This item is commonly set up as custom loot by the server admins, e.g. for trading in Thrall
+                Wars boss keys</div>
         case "MINE":
             return <div>Mined from the Mining Station crafting station.</div>
         case "BOSS_LOOT":
@@ -38,7 +52,7 @@ const SourceExplained = (props: {source: MapItemSource, item?: MapItem, thrallCl
                 <div>
                     This item can be looted from the following Thrall Wars bosses after defeating them:
                 </div>
-                <ul style={{marginTop: '2px', marginBottom:  0}}>
+                <ul style={{marginTop: '2px', marginBottom: 0}}>
                     {props.item.sourceBoss?.map(value => <li key={value}>{value}</li>)}
                 </ul>
             </div>
@@ -47,14 +61,15 @@ const SourceExplained = (props: {source: MapItemSource, item?: MapItem, thrallCl
                 <div>
                     This item is crafted by the following thrall(s) at the {props.item.sourceStation}:
                 </div>
-                <ul style={{marginTop: '2px', marginBottom:  0}}>
+                <ul style={{marginTop: '2px', marginBottom: 0}}>
                     {props.item.sourceThrall?.map(value => makeClickableThrall(value))}
                 </ul>
             </div>
         case "TW_MERCHANT":
             return <div>Sold by one of the faction merchants.</div>
         case "CRAFT":
-            return <div>This item can be made by a player after unlocking it's recipe. It is made at the {props.item.sourceStation}.</div>
+            return <div>This item can be made by a player after unlocking it's recipe. It is made at
+                the {props.item.sourceStation}.</div>
     }
 }
 
@@ -90,7 +105,7 @@ export const ItemInfoDialog = (props: ItemInfoDialogProps) => {
             <div className="dialog-subheader">
                 Info
             </div>
-            <SourceText sourceText={props.mapItem.sourceText}/>
+            <InfoText mapItem={props.mapItem} onSelectItem={props.onSelectItem}/>
         </div>
     </div>
 }

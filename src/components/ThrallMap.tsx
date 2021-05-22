@@ -122,6 +122,19 @@ export function ThrallMap(props: ThrallMapProps) {
         }
     }
 
+    const handleClickItem = (name: string): void => {
+        console.log(name);
+        const nameLower = name.toLowerCase();
+        const item = props.items.find(value => {
+            console.log(value.name);
+            return value.name.toLowerCase() === nameLower
+        });
+        console.log({name, item, items: props.items})
+        if (item) {
+            setSelectedItem(item);
+        }
+    }
+
     const center = zoomCenter?.center ? zoomCenter.center : DEFAULT_CENTER;
     const zoom = zoomCenter?.zoom ? zoomCenter.zoom : DEFAULT_ZOOM
     const mapBounds = calculateBounds(props.south, props.west, props.north, props.east, offset);
@@ -157,6 +170,7 @@ export function ThrallMap(props: ThrallMapProps) {
                         onOffsetChange={setOffset}
                         onClose={() => setSettingsDialogOpen(false)}/>
         <ItemInfoDialog onDeselectItem={() => setSelectedItem(undefined)}
+                        onSelectItem={name => handleClickItem(name)}
                         onClickThrall={handleClickThrall}
                         mapItem={selectedItem}/>
         <MapContainer center={center}
