@@ -9,7 +9,10 @@
   },
   "minZoom": -9.1,
   "maxZoom": 0,
-  "contributors": ["Keltten", "Gabriela"],
+  "contributors": [
+    "Keltten",
+    "Gabriela"
+  ],
   "data": [
     {
       "name": "Viek the Spire",
@@ -20,16 +23,16 @@
         {
           "location": "Khulan's outpost",
           "spawnSpot": "Taskmaster",
-          "spawnSpotDetail": "Next to horse stalls / purge?",
-          "x": -192161.6875  ,
+          "spawnSpotDetail": "Next to horse stalls",
+          "x": -192161.6875,
           "y": -56162.242188,
           "z": -7939.955078
         },
         {
           "location": "Mori",
           "spawnSpot": "Taskmaster",
-          "spawnSpotDetail": "Mori / purge?",
-          "x": -171753.125    ,
+          "spawnSpotDetail": "Mori",
+          "x": -171753.125,
           "y": -84226.6875,
           "z": -11726.819336
         }
@@ -39,7 +42,7 @@
       "name": "Hekla",
       "id": "Hekla",
       "type": "CARPENTER",
-      "locationDescription": "Hekla spawns around Cadwallon and Maelgwyn's Glen",
+      "locationDescription": "Hekla spawns around Cadwallon and Maelgwyn's Glen in carpenter spots.",
       "locations": [
         {
           "location": "Cadwallon",
@@ -51,11 +54,11 @@
         },
         {
           "location": "Maelgwyn's Glen",
-          "spawnSpot": "???",
-          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
-          "x": 166732.640625,
-          "y": -80022.085938,
-          "z": -13634.641602
+          "spawnSpot": "Carpenter",
+          "spawnSpotDetail": "Kneeling by two crates in front of the building",
+          "x": 168082.859375,
+          "y": -85322.5625,
+          "z": -14347.487305
         }
       ]
     },
@@ -95,7 +98,7 @@
       "name": "Talaan",
       "id": "Talaan",
       "type": "ARMORER",
-      "locationDescription": "Talaan spawns at Blacksail Guard, Ironpass Post and Red Rock Outpost",
+      "locationDescription": "Talaan spawns at Blacksail Guard, Ironpass Post and Red Rock Outpost.",
       "locations": [
         {
           "location": "Blacksail Guard",
@@ -107,11 +110,11 @@
         },
         {
           "location": "Ironpass Post",
-          "spawnSpot": "???",
-          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
-          "x": -114666.445313,
-          "y": 96747.320313,
-          "z": -14871.009766
+          "spawnSpot": "radnom",
+          "spawnSpotDetail": "Sitting with another random thrall at the campfire.",
+          "x": -114253.046875,
+          "y": 9102429.039063,
+          "z": -13954.050781
         },
         {
           "location": "Red Rock Outpost",
@@ -202,12 +205,12 @@
       "locationDescription": "Spawns at archer spots around A6/K2 (Lemurian Archer Spawn)",
       "locations": [
         {
-          "location": "Unnamed Ruins",
-          "spawnSpot": "???",
-          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
-          "x": -208348.453125,
-          "y": -8620.936523,
-          "z": -8167.760254
+          "location": "Temple Ruins",
+          "spawnSpot": "Archer",
+          "spawnSpotDetail": "Various archer spots within that ruin",
+          "x": 166019.96875,
+          "y": 207121.109375,
+          "z": -7403.208496
         }
       ]
     },
@@ -215,8 +218,17 @@
       "name": "Beast the Breaker",
       "id": "Beast the Breaker",
       "type": "TASKMASTER",
-      "locationDescription": "Does not have a Savage Wilds spawn yet.",
-      "locations": []
+      "locationDescription": "Spawns at the Last Refuge. Last Refuge is outside of the map bounds, so the location represents the Last Refuge entrance.",
+      "locations": [
+        {
+          "location": "Last Refuge",
+          "spawnSpot": "Taskmaster",
+          "spawnSpotDetail": "By the two fermentation barrels inside Last Refuge.",
+          "x": -79641.875,
+          "y": -384546.4375,
+          "z": -14203.943359
+        }
+      ]
     },
     {
       "name": "Floki the Tinkerer",
@@ -281,11 +293,11 @@
       "locations": [
         {
           "location": "Vargrheim",
-          "spawnSpot": "???",
-          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
-          "x": 70749.195313,
-          "y": -69211.25,
-          "z": -17717.523438
+          "spawnSpot": "smelter",
+          "spawnSpotDetail": "Kneeling by the smelter",
+          "x": 58679.058594,
+          "y": -76720.984375,
+          "z": -16403.296875
         },
         {
           "location": "Vestfold",
@@ -299,7 +311,7 @@
           "location": "Boarhunters Cabin",
           "spawnSpot": "???",
           "spawnSpotDetail": "Standing between the house and treasure chest",
-          "x":  -84802.664063  ,
+          "x": -84802.664063,
           "y": -134181.15625,
           "z": -14502.364258
         }
