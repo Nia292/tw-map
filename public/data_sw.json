@@ -182,11 +182,19 @@
       "locations": [
         {
           "location": "Vargrheim",
-          "spawnSpot": "???",
-          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
-          "x": 70749.195313,
-          "y": -69211.25,
-          "z": -17717.523438
+          "spawnSpot": "taskmaster",
+          "spawnSpotDetail": "Kneeling in front of the saddler's bench.",
+          "x": 74320.132813,
+          "y": -89513.78125,
+          "z": -14642.352539
+        },
+        {
+          "location": "Vargrheim",
+          "spawnSpot": "taskmaster/entertainer",
+          "spawnSpotDetail": "Standing inside the hut with dried meat.",
+          "x": 64589.003906,
+          "y": -66719.898438,
+          "z": -17352.208984
         },
         {
           "location": "Vestfold",
@@ -300,6 +308,14 @@
           "z": -16403.296875
         },
         {
+          "location": "Vargrheim",
+          "spawnSpot": "smelter/taskmaster/entertainer",
+          "spawnSpotDetail": "Sitting at the entrance of the hut.",
+          "x": 70807.3125,
+          "y": -88201.59375,
+          "z": -14542.449219
+        },
+        {
           "location": "Vestfold",
           "spawnSpot": "???",
           "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
@@ -333,11 +349,11 @@
         },
         {
           "location": "Vestfold",
-          "spawnSpot": "???",
-          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
-          "x": 7868.718262,
-          "y": -88614.578125,
-          "z": -17597.259766
+          "spawnSpot": "alchemist",
+          "spawnSpotDetail": "Kneeling next to a bench and some jugs inside the round house.",
+          "x": -44244.390625,
+          "y": -114100.828125,
+          "z": -20526.769531
         }
       ]
     },
@@ -349,11 +365,11 @@
       "locations": [
         {
           "location": "Vargrheim",
-          "spawnSpot": "???",
-          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
-          "x": 70749.195313,
-          "y": -69211.25,
-          "z": -17717.523438
+          "spawnSpot": "smelter/priest",
+          "spawnSpotDetail": "Standing on a road by the tree, speaking with another NPC.",
+          "x": 71156.21875,
+          "y": -90441.296875,
+          "z": -14548.655273
         },
         {
           "location": "Vestfold",
@@ -373,19 +389,27 @@
       "locations": [
         {
           "location": "Vargrheim",
-          "spawnSpot": "???",
-          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
-          "x": 70749.195313,
-          "y": -69211.25,
-          "z": -17717.523438
+          "spawnSpot": "blacksmith",
+          "spawnSpotDetail": "Working at the blacksmithing bench inside the house.",
+          "x": 58903.523438,
+          "y": -75881.476563,
+          "z": -16402.974609
+        },
+        {
+          "location": "Vargrheim",
+          "spawnSpot": "smelter/priest",
+          "spawnSpotDetail": "Standing on a road by the tree, speaking with another NPC.",
+          "x": 71132.046875,
+          "y": -90145.625,
+          "z": -14552.167969
         },
         {
           "location": "Vestfold",
-          "spawnSpot": "???",
-          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
-          "x": 7868.718262,
-          "y": -88614.578125,
-          "z": -17597.259766
+          "spawnSpot": "blacksmith",
+          "spawnSpotDetail": "Working outside at the blacksmithing bench behind the round house.",
+          "x": -47837.25,
+          "y": -116983.179688,
+          "z": -20492.328125
         }
       ]
     },
