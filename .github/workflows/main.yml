@@ -34,7 +34,7 @@ jobs:
       - name: Create new docs
         run: mv build docs
       - name: Push new build
-        uses: actions-x/commit@v2
+        uses: actions-x/commit@v6
         with:
           # The committer's email address
           email: Nia292@users.noreply.github.com
