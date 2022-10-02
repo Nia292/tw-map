@@ -5,6 +5,7 @@ import {ThrallDetails} from "../thrall-details/ThrallDetails";
 import './ThrallList.css';
 import {ThrallLocation} from "../../model/ThrallLocation";
 import {MapItem} from "../../model/MapItem";
+import {HoveredThrallLocation} from "../../model/HoveredThrallLocation";
 
 export interface ThrallListProps {
     selectedThrall?: Thrall;
@@ -12,6 +13,9 @@ export interface ThrallListProps {
     selectedThrallFocused: boolean;
     thralls: Thrall[];
     allItems: MapItem[];
+    // For marking the thrall that is hovered in the map
+    hoveredLocation?: HoveredThrallLocation;
+
     onSelectThrall(thrall: Thrall): void;
     onDeselectThrall(): void;
     onSelectItem(item: MapItem): void;
@@ -32,6 +36,7 @@ export const ThrallList = (props: ThrallListProps) => {
     return <React.Fragment>
         <ThrallDetails focused={props.selectedThrallFocused}
                        onSelectLocation={props.onSelectLocation}
+                       hoveredLocation={props.hoveredLocation}
                        items={craftedBySelectedThrall}
                        thrall={props.selectedThrall}
                        onSelectItem={props.onSelectItem}

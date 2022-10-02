@@ -11,7 +11,8 @@
   "maxZoom": 0,
   "contributors": [
     "Keltten",
-    "Gabriela"
+    "Gabriela",
+    "Tiress"
   ],
   "data": [
     {
@@ -341,11 +342,27 @@
       "locations": [
         {
           "location": "Vargrheim",
-          "spawnSpot": "???",
-          "spawnSpotDetail": "Not an exact location. Indicator is for the rough area.",
-          "x": 70749.195313,
-          "y": -69211.25,
-          "z": -17717.523438
+          "spawnSpot": "Alchemist",
+          "spawnSpotDetail": "Kneeling infront of a firebowl cauldron",
+          "x": 64590.417969 ,
+          "y": -71460.601563,
+          "z": -17372.548828
+        },
+        {
+          "location": "Vargrheim",
+          "spawnSpot": "Alchemist",
+          "spawnSpotDetail": "Infront of the alchemist worktable in a small hut",
+          "x": 72426.265625,
+          "y": -90029.289063,
+          "z": -14602.15625
+        },
+        {
+          "location": "Vargrheim",
+          "spawnSpot": "Alchemist",
+          "spawnSpotDetail": "In the hut by the barrles",
+          "x": 62933.382813,
+          "y": -66939.773438,
+          "z": -17349.978516
         },
         {
           "location": "Vestfold",

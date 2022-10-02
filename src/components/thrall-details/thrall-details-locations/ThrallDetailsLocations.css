@@ -13,6 +13,10 @@
     color: var(--primary-sidebar-color-highlight);
 }
 
+.thrall-details-single-location__highlight {
+    color: var(--primary-sidebar-color-highlight);
+}
+
 .thrall-location-list-container {
     margin-top: 16px;
     font-size: 12pt;

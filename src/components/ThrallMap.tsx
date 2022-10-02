@@ -17,6 +17,7 @@ import {MapItemSearch} from "./item-search/MapItemSearch";
 import {MapItem} from "../model/MapItem";
 import {ItemInfoDialog} from "./item-info-dialog/ItemInfoDialog";
 import {TwGuide} from "./tw-guide/TwGuide";
+import {HoveredThrallLocation} from "../model/HoveredThrallLocation";
 
 const DEFAULT_ZOOM = -8.7;
 const DEFAULT_CENTER: LatLngLiteral = {lat: 0, lng: 0};
@@ -54,6 +55,8 @@ interface ThrallMapProps {
     items: MapItem[];
 }
 
+
+
 export function ThrallMap(props: ThrallMapProps) {
     const [selectedThrall, setSelectedThrall] = useState(undefined as unknown as Thrall | undefined);
     // Use a separate focus flag to control whether the detail display or the list display is used
@@ -71,6 +74,7 @@ export function ThrallMap(props: ThrallMapProps) {
     });
     const [selectedItem, setSelectedItem] = useState(undefined as MapItem | undefined);
     const [guideOpen, setGuideOpen] = useState(false);
+    const [hoveredLocation, setHoveredLocation] = useState(undefined as unknown as (HoveredThrallLocation | undefined));
 
     useEffect(() => {
         const urlParams = new URLSearchParams(window.location.search);
@@ -196,7 +200,7 @@ export function ThrallMap(props: ThrallMapProps) {
             {useHq && <ImageOverlay url={process.env.PUBLIC_URL + props.mapHq} bounds={mapBounds}/>}
             <MapEvents mapBounds={mapBounds} onZoomCenterChange={setZoomCenter}/>
             <SetViewOnClick location={zoomCenter}/>
-            <MarkerForSelectedThrall thrall={selectedThrall} focused={thrallFocused}/>
+            <MarkerForSelectedThrall thrall={selectedThrall} focused={thrallFocused} onHoveredChange={setHoveredLocation}/>
             <MarkerForAllThralls thralls={props.data} focused={thrallFocused}/>
             <TwGuide open={guideOpen} onClose={() => setGuideOpen(false)}/>
         </MapContainer>
@@ -207,6 +211,7 @@ export function ThrallMap(props: ThrallMapProps) {
                         onSelectLocation={handleSelectLocation}
                         selectedThrallFocused={thrallFocused}
                         selectedThrall={selectedThrall}
+                        hoveredLocation={hoveredLocation}
                         onDeselectThrall={handleDeselectThrall}
                         onSelectThrall={handleSelectThrall}/>
         </div>
