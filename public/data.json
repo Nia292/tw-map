@@ -17,6 +17,7 @@
       "name": "Viek the Spire",
       "id": "Viek the Spire",
       "type": "TASKMASTER",
+      "funcomId": "Relic_Hunter_Taskmaster_4_Viek",
       "locationDescription": "Viek the Spire spawns in taskmaster spots around Westwall Prison in Sepermeru.",
       "locations": [
         {
@@ -57,6 +58,7 @@
       "name": "Hekla",
       "id": "Hekla",
       "type": "CARPENTER",
+      "funcomId": "Forgotten_Tribe_Carpenter_4_CimmerianH",
       "locations": [
         {
           "location": "Mounds of the Dead",
@@ -72,12 +74,14 @@
       "name": "Thorunn",
       "id": "Thorunn",
       "type": "ARMORER",
+      "funcomId": "Black_Hand_Armorer_3_ZamorianH",
       "locations": []
     },
     {
       "name": "Talaan",
       "id": "Talaan",
       "type": "ARMORER",
+      "funcomId": "Slavewars_Armorer_Talaan",
       "locationDescription": "Talaan spawns rather rarely, around Armorer spots by the Black Galleon",
       "locations": [
         {
@@ -110,6 +114,7 @@
       "name": "Lady Elizabeth Killigrew",
       "id": "Lady Elizabeth Killigrew",
       "type": "TASKMASTER",
+      "funcomId": "SlaveWars_Elizabeth",
       "locations": [
         {
           "location": "The Den",
@@ -141,6 +146,7 @@
       "name": "Julia the Chaste",
       "id": "Julia the Chaste",
       "type": "TASKMASTER",
+      "funcomId": "SlaveWars_Julia - SlaveWars_FlawlessJulia",
       "locations": [
         {
           "location": "The Den",
@@ -156,6 +162,7 @@
       "name": "Queen Julia the Chaste",
       "id": "Queen Julia the Chaste",
       "type": "TASKMASTER",
+      "funcomId": "Slavewars_TaskmasterT5_QueenJulia",
       "locations": [
         {
           "location": "Spinebreaker's Flank",
@@ -170,6 +177,7 @@
     {
       "name": "Fass the Torturer",
       "id": "Fass the Torturer",
+      "funcomId": "Slavewars_TaskmasterT5_FassTheTorturer",
       "type": "TASKMASTER",
       "locations": []
     },
@@ -177,6 +185,7 @@
       "name": "Landora the Groomer",
       "id": "Landora the Groomer",
       "type": "GROOMER",
+      "funcomId": "Slavewars_GroomerT5_Landora",
       "locationDescription": "Spawns at archer spots at the Pagoda of Boundless Lust, both inside the building and outside at the ledge.",
       "locations": [
         {
@@ -213,6 +222,7 @@
       "name": "Beast the Breaker",
       "id": "Beast the Breaker",
       "type": "TASKMASTER",
+      "funcomId": "Slavewars_Taskmaster_Beast",
       "locationDescription": "Spawns in J4 at the Big River. Shares a spawn point with Floki the Tinkerer.",
       "locations": [
         {
@@ -228,6 +238,7 @@
       "name": "Floki the Tinkerer",
       "id": "Floki the Tinkerer",
       "type": "TASKMASTER",
+      "funcomId": "Slavewars_GroomerT5_FlokiTheTinkerer",
       "locationDescription": "Spawns in J4 at the Big River. Shares a spawn with Beast the Breaker.",
       "locations": [
         {
@@ -243,6 +254,7 @@
       "name": "Berglind",
       "id": "Berglind",
       "type": "ARMORER",
+      "funcomId": "Slavewars_ArmorerT5_Berglind,Slavewars_ArmorerT5_Berglind2",
       "locations": [
         {
           "location": "Mounds of the Dead",
@@ -267,6 +279,7 @@
       "id": "Serpa the Gem Cutter",
       "type": "ALCHEMIST",
       "locationDescription": "Spawns in alchemist spots around Sepermeru.",
+      "funcomId": "Slavewars_AlchemistT5_Serpa",
       "locations": [
         {
           "location": "Sepermeru",
@@ -298,12 +311,14 @@
       "name": "Katla",
       "id": "Katla",
       "type": "SMELTER",
+      "funcomId": "Slavewars_smelter_Katla",
       "locations": []
     },
     {
       "name": "Gabriela the Alchemist",
       "id": "Gabriela the Alchemist",
       "type": "ALCHEMIST",
+      "funcomId": "Heirs_of_the_North_Alchemist_4_NordheimerG",
       "locationDescription": "Spawns in Nordheimer alchemist locations.",
       "locations": [
         {
@@ -328,6 +343,7 @@
       "name": "Ivar the Crafty One",
       "id": "Ivar the Crafty One",
       "type": "BLACKSMITH",
+      "funcomId": "Heirs_of_the_North_Blacksmith_4_NordheimerI",
       "locationDescription": "Ivar spawns in various Nordheimer settlements including New Asgarth. Spawns are shared with the blacksmith thralls.",
       "locations": [
         {
@@ -369,6 +385,7 @@
       "name": "Akasuki the Binder",
       "id": "Akasuki the Binder",
       "type": "TASKMASTER",
+      "funcomId": "Slavewars_TaskmasterT5_AkasukiTheBinder",
       "locationDescription": "Akasuki spawns in various Nordheimer settlements including New Asgarth. Spawns are shared with the blacksmith thralls.",
       "locations": [
         {
@@ -410,6 +427,7 @@
       "name": "Alfhild",
       "id": "Alfhild",
       "type": "BLACKSMITH",
+      "funcomId": "Black_Hand_Blacksmith_4_CimmerianG",
       "locationDescription": "Alfhild spawns on blacksmith spots around the Black Galleon",
       "locations": [
         {

@@ -16,6 +16,9 @@ export const ThrallHeader = (props: ThrallHeaderProps) => {
             <div className="thrall-header-type">
                 {props.thrall.type}
             </div>
+            <div className="thrall-header-type">
+                {props.thrall.funcomId}
+            </div>
         </div>
         <div style={{marginLeft: 'auto', marginRight: '16px'}}>
             <span className="material-icons" style={{fontSize: '20pt'}}>{props.icon}</span>

@@ -4,6 +4,7 @@ export interface Thrall {
     id: string;
     name: string;
     type: ThrallType;
+    funcomId: string;
     locationDescription?: string;
     locations: ThrallLocation[];
 }

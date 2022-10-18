@@ -24,7 +24,7 @@ export const ThrallDetails = (props: ThrallDetailsProps) => {
     const slideAnimationClass = props.focused ? 'thrall-details-sliding-in' : 'thrall-details-sliding-out'
     return <div className={"thrall-details-container " + slideAnimationClass}>
         <div className="thrall-details">
-            <ThrallHeader thrall={props.thrall || {locations: [],name: '',type: ThrallType.ALCHEMIST, id: 'ada'}} icon={"chevron_left"} onSelect={props.onDeSelect}/>
+            <ThrallHeader thrall={props.thrall || {locations: [],name: '',type: ThrallType.ALCHEMIST, id: 'ada', funcomId: ''}} icon={"chevron_left"} onSelect={props.onDeSelect}/>
             <div className="thrall-location-description">
                 {props.thrall?.locationDescription}
             </div>

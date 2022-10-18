@@ -194,7 +194,8 @@ export function ThrallMap(props: ThrallMapProps) {
                       bounds={mapBounds}
                       maxBounds={mapBounds}
                       zoomControl={false}
-                      zoom={zoom}>
+                      zoom={zoom}
+        >
             <ZoomControl/>
             {!useHq && <ImageOverlay url={process.env.PUBLIC_URL + props.mapLq} bounds={mapBounds} />}
             {useHq && <ImageOverlay url={process.env.PUBLIC_URL + props.mapHq} bounds={mapBounds}/>}
@@ -202,7 +203,7 @@ export function ThrallMap(props: ThrallMapProps) {
             <SetViewOnClick location={zoomCenter}/>
             <MarkerForSelectedThrall thrall={selectedThrall} focused={thrallFocused} onHoveredChange={setHoveredLocation}/>
             <MarkerForAllThralls thralls={props.data} focused={thrallFocused}/>
-            <TwGuide open={guideOpen} onClose={() => setGuideOpen(false)}/>
+            <TwGuide allItems={props.items} open={guideOpen} onClose={() => setGuideOpen(false)}/>
         </MapContainer>
         <div className="sidebar-right">
             <ThrallList thralls={props.data}
