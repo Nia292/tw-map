@@ -398,6 +398,14 @@
           "z": -20463.673828
         },
         {
+          "location": "Vestfold",
+          "spawnSpot": "???",
+          "spawnSpotDetail": "by the shelf with 3 swords",
+          "x": -46362.472656,
+          "y": -117569.039063,
+          "z": -20477.388672
+        },
+        {
           "location": "Snowhearth",
           "spawnSpot": "Blacksmith",
           "spawnSpotDetail": "By the blacksmith bench",
