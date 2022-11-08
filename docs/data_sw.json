@@ -244,8 +244,17 @@
       "name": "Floki the Tinkerer",
       "id": "Floki the Tinkerer",
       "type": "TASKMASTER",
-      "locationDescription": "Does not have a Savage Wilds spawn yet.",
-      "locations": []
+      "locationDescription": "Can spawn in Taskmaster spots in Khulan and Mori",
+      "locations": [
+        {
+          "location": "Khulan",
+          "spawnSpot": "Taskmaster",
+          "spawnSpotDetail": "Near the cage",
+          "x": -192735.046875,
+          "y": -55773.433594,
+          "z": -7940.299805
+        }
+      ]
     },
     {
       "name": "Berglind",
