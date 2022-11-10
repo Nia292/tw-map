@@ -37,6 +37,14 @@
           "x": -171753.125,
           "y": -84226.6875,
           "z": -11726.819336
+        },
+        {
+          "location": "Murun",
+          "spawnSpot": "Taskmaster",
+          "spawnSpotDetail": "chatting with the other taskmaster by the animal pen",
+          "x": -22072.021484,
+          "y": 95560.195313,
+          "z": -8007.194336
         }
       ]
     },
