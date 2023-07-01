@@ -1,5 +1,5 @@
 import {ImageOverlay, MapContainer, ZoomControl} from "react-leaflet";
-import {CRS, LatLngLiteral,} from "leaflet";
+import {CRS, LatLngLiteral} from "leaflet";
 import {ThrallList} from "./thrall-list/ThrallList";
 import {Thrall} from "../model/Thrall";
 import React, {ChangeEvent, useEffect, useState} from "react";
@@ -55,6 +55,10 @@ interface ThrallMapProps {
     items: MapItem[];
 }
 
+interface OtherMapInfo {
+    url: string;
+    name: string;
+}
 
 
 export function ThrallMap(props: ThrallMapProps) {
@@ -116,18 +120,26 @@ export function ThrallMap(props: ThrallMapProps) {
         setUseHq(target.checked)
     }
 
-    function otherMapUrl(mapType: MapType): string {
-        if (mapType === 'exiled-lands') {
-            return process.env.PUBLIC_URL + '?map=savage-wilds'
+    function otherMapInfos(mapType: MapType): OtherMapInfo[] {
+        const SW: OtherMapInfo = {
+            name: "Savage Wilds",
+            url: process.env.PUBLIC_URL + '?map=savage-wilds'
         }
-        return process.env.PUBLIC_URL + '?map=exiled-lands'
-    }
-
-    function otherMapName(mapType: MapType): string {
+        const EL: OtherMapInfo = {
+            name: "Exiled Lands",
+            url: process.env.PUBLIC_URL + '?map=exiled-lands'
+        }
+        const IOW: OtherMapInfo = {
+            name: "Isle of Women",
+            url: process.env.PUBLIC_URL + '?map=iow'
+        }
         if (mapType === "exiled-lands") {
-            return "Savage Wilds"
+            return [SW, IOW]
         }
-        return "Exiled Lands"
+        if (mapType === "iow") {
+            return [SW, EL]
+        }
+        return [EL, IOW]
     }
 
     const handleClickThrall = (id: string): void => {
@@ -173,7 +185,8 @@ export function ThrallMap(props: ThrallMapProps) {
             <label htmlFor="hq-checkbox">HQ Map (11mb)</label>
         </div>
         <div id="map-link" className="display-in-center">
-            Switch to&nbsp;<a rel="noreferrer" href={otherMapUrl(props.mapType)} >{otherMapName(props.mapType)}</a>
+            Switch to&nbsp;
+            {otherMapInfos(props.mapType).map(other => <span key={other.name}><a rel="noreferrer" href={other.url} >{other.name}</a>&nbsp;</span>)}
         </div>
         <InfoDialog open={infoDialogOpen} onClose={() => setInfoDialogOpen(false)} contributors={props.contributors}/>
         <SettingsDialog open={settingsDialogOpen}

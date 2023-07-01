@@ -1,1 +1,1 @@
-export type MapType = 'savage-wilds' | 'exiled-lands';
+export type MapType = 'savage-wilds' | 'exiled-lands' | 'iow';

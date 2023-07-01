@@ -38,6 +38,9 @@ function determineMapType(): MapType {
     if (mapParam && mapParam === 'exiled-lands') {
         return 'exiled-lands'
     }
+    if (mapParam && mapParam === 'iow') {
+        return 'iow'
+    }
     if (!mapParam) {
         const newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + `?map=exiled-lands`;
         window.history.pushState({path: newUrl}, '', newUrl);
@@ -50,6 +53,9 @@ function determineDataUrl(): string {
     console.log(process.env.PUBLIC_URL)
     if (mapType === "exiled-lands") {
         return process.env.PUBLIC_URL + '/data.json';
+    }
+    if (mapType === "iow") {
+        return process.env.PUBLIC_URL + '/data_iow.json';
     }
     return process.env.PUBLIC_URL + '/data_sw.json';
 }

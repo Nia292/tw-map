@@ -1,0 +1,4069 @@
+{
+  "map_lq": "/iwo_assets/iwo_map_hq.png",
+  "map_hq": "/iwo_assets/iwo_map_hq.png",
+  "bounds": {
+    "south": 404000.00000,
+    "west": -404000.00000,
+    "north": -404000.00000,
+    "east": 404000.00000
+  },
+  "minZoom": -9.1,
+  "maxZoom": 0,
+  "contributors": [],
+  "data": [
+    {
+      "name": "Viek the Spire",
+      "id": "Viek the Spire",
+      "type": "TASKMASTER",
+      "locationDescription": "",
+      "locations": []
+    },
+    {
+      "name": "Hekla",
+      "id": "Hekla",
+      "type": "CARPENTER",
+      "locationDescription": "",
+      "locations": []
+    },
+    {
+      "name": "Thorunn",
+      "id": "Thorunn",
+      "type": "ARMORER",
+      "locationDescription": "",
+      "locations": []
+
+    },
+    {
+      "name": "Talaan",
+      "id": "Talaan",
+      "type": "ARMORER",
+      "locationDescription": "",
+      "locations": []
+    },
+    {
+      "name": "Lady Elizabeth Killigrew",
+      "id": "Lady Elizabeth Killigrew",
+      "type": "TASKMASTER",
+      "locationDescription": "",
+      "locations": []
+    },
+    {
+      "name": "Julia the Chaste",
+      "id": "Julia the Chaste",
+      "type": "TASKMASTER",
+      "locationDescription": "",
+      "locations": []
+    },
+    {
+      "name": "Queen Julia the Chaste",
+      "id": "Queen Julia the Chaste",
+      "type": "TASKMASTER",
+      "locationDescription": "",
+      "locations": []
+    },
+    {
+      "name": "Fass the Torturer",
+      "id": "Fass the Torturer",
+      "type": "TASKMASTER",
+      "locationDescription": "",
+      "locations": []
+    },
+    {
+      "name": "Landora the Groomer",
+      "id": "Landora the Groomer",
+      "type": "GROOMER",
+      "locationDescription": "",
+      "locations": []
+    },
+    {
+      "name": "Beast the Breaker",
+      "id": "Beast the Breaker",
+      "type": "TASKMASTER",
+      "locationDescription": "",
+      "locations": []
+    },
+    {
+      "name": "Floki the Tinkerer",
+      "id": "Floki the Tinkerer",
+      "type": "TASKMASTER",
+      "locationDescription": "",
+      "locations": []
+    },
+    {
+      "name": "Berglind",
+      "id": "Berglind",
+      "type": "ARMORER",
+      "locationDescription": "",
+      "locations": []
+    },
+    {
+      "name": "Serpa the Gem Cutter",
+      "id": "Serpa the Gem Cutter",
+      "type": "ALCHEMIST",
+      "locationDescription": "",
+      "locations": []
+    },
+    {
+      "name": "Katla",
+      "id": "Katla",
+      "type": "SMELTER",
+      "locationDescription": "",
+      "locations": []
+    },
+    {
+      "name": "Gabriela the Alchemist",
+      "id": "Gabriela the Alchemist",
+      "type": "ALCHEMIST",
+      "locationDescription": "",
+      "locations": []
+    },
+    {
+      "name": "Ivar the Crafty One",
+      "id": "Ivar the Crafty One",
+      "type": "BLACKSMITH",
+      "locationDescription": "",
+      "locations": []
+    },
+    {
+      "name": "Akasuki the Binder",
+      "id": "Akasuki the Binder",
+      "type": "TASKMASTER",
+      "locationDescription": "",
+      "locations": []
+    },
+    {
+      "name": "Alfhild",
+      "id": "Alfhild",
+      "type": "BLACKSMITH",
+      "locationDescription": "",
+      "locations": []
+    }
+  ],
+  "items": [
+    {
+      "name": "Lemurian Rune",
+      "source": [
+        "CUSTOM_LOOT"
+      ],
+      "sourceText": "Commonly set up as reward from the Thyri bossfight."
+    },
+    {
+      "name": "Thief Rune",
+      "source": [
+        "CUSTOM_LOOT"
+      ],
+      "sourceText": "Commonly set up as reward from the Master Gyas bossfight."
+    },
+    {
+      "name": "Valor Token of Ardashir",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceText": "Rewarded for defeating the Minotaur of Ardashi without defeat while not in crafting mode."
+    },
+    {
+      "name": "Valor Token of Hathor Ka",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Hathor Ka"
+      ],
+      "sourceText": "Rewarded for defeating Hathor Ka in hard mode without death."
+    },
+    {
+      "name": "Valor Token of Master Gyas",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceText": "Rewarded for defeating Master Gyas in hard mode without death."
+    },
+    {
+      "name": "Valor Token of Arbanus",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceText": "Rewarded for defeating Arbanus in hard mode without death while not in crafting mode."
+    },
+    {
+      "name": "Shadebreaker Axe Blade",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceText": "Rewarded for defeating Arbanus in crafting mode."
+    },
+    {
+      "name": "Atlantean Powder Rare (Blue)",
+      "source": [
+        "CUSTOM_LOOT"
+      ],
+      "sourceText": "Commonly set up as trade-in for the Thrall Wars boss keys."
+    },
+    {
+      "name": "Atlantean Powder Rare (Red)",
+      "source": [
+        "CUSTOM_LOOT"
+      ],
+      "sourceText": "Commonly set up as trade-in for the Thrall Wars boss keys."
+    },
+    {
+      "name": "Atlantean Powder",
+      "source": [
+        "CUSTOM_LOOT"
+      ],
+      "sourceText": "Commonly set up as trade-in for the Thrall Wars boss keys."
+    },
+    {
+      "name": "Beryllium",
+      "source": [
+        "CUSTOM_LOOT"
+      ],
+      "sourceText": "Looted from the bosses mentioned above. Commonly set up as trade in for the Thrall Wars boss keys."
+    },
+    {
+      "name": "Chromium",
+      "source": [
+        "CUSTOM_LOOT",
+        "BOSS_LOOT"
+      ],
+      "sourceText": "Looted from the bosses mentioned above. Commonly set up as trade in for the Thrall Wars boss keys.",
+      "sourceBoss": [
+        "Arbanus",
+        "Heng",
+        "Neesa",
+        "Ikkily",
+        "Minotaur of Ardashir",
+        "Torgrimur"
+      ]
+    },
+    {
+      "name": "Mercury",
+      "source": [
+        "CUSTOM_LOOT",
+        "BOSS_LOOT"
+      ],
+      "sourceText": "Looted from the bosses mentioned above. Commonly set up as trade in for the Thrall Wars boss keys.",
+      "sourceBoss": [
+        "Arbanus",
+        "Heng",
+        "Neesa",
+        "Ikkily",
+        "Minotaur of Ardashir",
+        "Torgrimur"
+      ]
+    },
+    {
+      "name": "Hair of a Special Redhead",
+      "source": [
+        "CUSTOM_LOOT"
+      ],
+      "sourceText": "Commonly set up as reward for the Quest chain from the 'Erik the Red - Log - Page 3' Quest."
+    },
+    {
+      "name": "Erik the Red - Log - Page 3",
+      "source": [
+        "CUSTOM_LOOT"
+      ],
+      "sourceText": "Commonly set up as trade-in for the Thrall Wars boss keys."
+    },
+    {
+      "name": "Fur Patch of a Special Redhead",
+      "source": [
+        "CUSTOM_LOOT"
+      ],
+      "sourceText": "???"
+    },
+    {
+      "name": "Tainted Pirate Tooth",
+      "source": [
+        "CUSTOM_LOOT"
+      ],
+      "sourceText": "Commonly set up as trade-in for the Thrall Wars boss keys."
+    },
+    {
+      "name": "Blue Sapphire",
+      "source": [
+        "CUSTOM_LOOT",
+        "BOSS_LOOT"
+      ],
+      "sourceText": "Looted from the bosses mentioned above. Commonly set up as trade in for the Thrall Wars boss keys.",
+      "sourceBoss": [
+        "Arbanus",
+        "Heng",
+        "Neesa",
+        "Ikkily",
+        "Kylikki",
+        "Minotaur of Ardashir",
+        "Torgrimur"
+      ]
+    },
+    {
+      "name": "Mud Conslidant",
+      "source": [
+        "CUSTOM_LOOT"
+      ],
+      "sourceText": "Commonly set up as trade-in for the Thrall Wars boss keys."
+    },
+    {
+      "name": "Copper",
+      "source": [
+        "CUSTOM_LOOT",
+        "MINE"
+      ],
+      "sourceText": "Commonly set up as trade-in for the Thrall Wars boss keys. Also available from the Mine."
+    },
+    {
+      "name": "Stygian Treasure Key",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Arbanus"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Stolen Oriental Weapon Handle",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Arbanus"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Veteran Token",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Arbanus",
+        "Heng",
+        "Neesa",
+        "Ikkily",
+        "Kylikki",
+        "Minotaur of Ardashir",
+        "Torgrimur"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Steel Reinforcement",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Arbanus",
+        "Minotaur of Ardashir"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Slave Master's Chain ring (Wall)",
+      "source": [
+        "BOSS_LOOT",
+        "THRALL_CRAFT"
+      ],
+      "sourceBoss": [
+        "Arbanus",
+        "Minotaur of Ardashir"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above.",
+      "sourceThrall": [
+        "Julia the Chaste",
+        "Queen Julia the Chaste",
+        "Beast the Breaker"
+      ],
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Resonating Shard of Arbanus",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Arbanus"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Divine Gem of Golden Balance",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Arbanus",
+        "Minotaur of Ardashir",
+        "Torgrimur"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Occult Gem of Golden Precision",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Arbanus"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Onslaught Gem of Golden Might",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Arbanus"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Stygian Butt Plug",
+      "source": [
+        "BOSS_LOOT",
+        "THRALL_CRAFT"
+      ],
+      "sourceBoss": [
+        "Arbanus"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above.",
+      "sourceThrall": [
+        "Beast the Breaker"
+      ],
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Standard of Set (Lance)",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Arbanus"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Master Gyas Key",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Master Gyas"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Hathor Ka's Key",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Hathor Ka"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Stygian Khopesh Hilt Piece",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Hathor Ka"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Heng's Key",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Heng"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Legendary Buccaneer Chest",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Heng"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Legendary Buccaneer Hat",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Heng"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Legendary Buccaneer Pants",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Heng"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Legendary Buccaneer Boots",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Heng"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Crude Flanged Bone Breaker",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Heng"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Heng's Mask",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Heng"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Divine Gem of Golden Twilight",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Heng"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Neesa's Key",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Neesa"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Spiked heavy metal ball",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Neesa"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Legendary Buccaneer Hand Jewlery",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Neesa"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Neesa's hat",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Neesa"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Blessed Gem of Golden Haze",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Neesa"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Ikkily's Key",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Ikkily"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Scroll that teaches how to make Witch-fire orbs",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Ikkily"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Ikkily's wrist cuffs",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Ikkily"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Scroll that teaches how to make Legendary Cimmerian Steel Tasset",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Ikkily"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Scroll that teaches how to make Ikkily's war fork",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Ikkily"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Scroll that teaches how to repair Berserker Shield",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Ikkily",
+        "Torgrimur"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Ikkily's Tonque",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Ikkily"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Legendary Slave Master's Chain Harness",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Ikkily"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Chaos Gem of Golden Haze",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Ikkily",
+        "Minotaur of Ardashir"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Blessed Gem of Golden Precision",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Ikkily",
+        "Minotaur of Ardashir"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Kyllikki's Key",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Kylikki"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Kyllikki's top",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Kylikki"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Scroll that teaches how to build Kylikki's axe",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Kylikki"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Leather Slave Collar for Kyllikki's slaves",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Kylikki"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Legendary Kambujan Scholar Chestpiece",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Kylikki"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Key to Kylikki's secret",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Kylikki"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Occult Gem of Golden Might",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Kylikki"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Eldritch Gem of Golden Brute",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Kylikki"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Ardashir Treasure Key",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Minotaur of Ardashir"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Ardashir Shield",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Minotaur of Ardashir"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Ardashir Butcher Axe Head",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Minotaur of Ardashir"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Mantle of the Mad Bull",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Minotaur of Ardashir"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Legendary Zamorian Climbing Gloves",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Minotaur of Ardashir"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Occult Gem of Golden Resilence",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Minotaur of Ardashir"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Thyri's key",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Thyri"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Torgrimur Skald's Key",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Torgrimur"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Flawless Zamurian Dancer Collar",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Torgrimur"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Scroll that teaches how to make Legendary Aquilonian Gladiator Chestplate",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Torgrimur"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Legendary Vanir Settler Bra",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Torgrimur"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Legendary Cimmerian Steel Top (for women)",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Torgrimur"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Scroll that teaches how to make Great Khan's Katana",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Torgrimur"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Scroll that teaches how to make Flawless Sword of Erik the Red",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Torgrimur"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Slave Master's Chain Harness With Nipple Rings",
+      "source": [
+        "BOSS_LOOT"
+      ],
+      "sourceBoss": [
+        "Torgrimur"
+      ],
+      "sourceText": "Can be looted from the boss(es) mentioned above."
+    },
+    {
+      "name": "Atlantian Coating",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Black Feather",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Blue Feather",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Sigrid's Magical Coating",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Wood sealant",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Acheronian Slave Collar - Beast of Burden",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Acheronian Slave Collar - Fire Choker",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Acheronian Slave Collar - Holy Choker",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Acheronian Slave Collar - Unholy Choker",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Slave Master's Arcane CHain Harness",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Atlantian Cure",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Atlantian Poison",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Erik's Equalizer",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Lactatiom dry out serum",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Lactatiom Serum",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Tainted Alkahest",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Xotli's Breath",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Ymirs Breath",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Gabriela the Alchemist"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Forged chain",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One",
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Forged Ceiling Chain Ring",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Forged Wall Chain Ring",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Lever",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Ardashir Butcher Axe",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One",
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Axe of Jhil",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One",
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Cao-Polyphya's Revenge",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One",
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Chromium Destroyer",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One",
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Flanged Bone Breaker",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One",
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Fractured Beast Cutter",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One",
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Hathor Ka's Ceremonial Khopesh",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One",
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Khopesh of Hathor Ka's Honor Guard",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One",
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Morning Star of Ardashir",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One",
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Oni-slayer Katana",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One",
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Pirate Queen Sword",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One",
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Runic Battle Axe",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One",
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Runic Naginata",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One",
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Sharpen: Flawless Turan Soldier Spear",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Stygian Soldier Khopesh",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One",
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Sword of Erik the Red",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Turan Soldier Spear",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Wrath of Ka",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One",
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Yokai Twin Blades",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Ivar the Crafty One",
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Forged Slave Cage",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Shadebreaker",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Nipple rings (Accessory)(female only)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Alfhild"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "name": "Repair Valeria's shield",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Thorunn"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Shield of Erik the Red",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Thorunn",
+        "Berglind"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Black Widows Boots",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Thorunn"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Flawless Buccaneer Boots",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Thorunn",
+        "Talaan"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Flawless Buccaneer Chest",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Thorunn"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Flawless Buccaneer Hand Jewlery",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Thorunn"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Flawless Buccaneer Hat",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Thorunn"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Flawless Buccaneer Pants",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Thorunn"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Flawless Master Thief Chest",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Thorunn"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Flawless Master Thief Pants",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Thorunn"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Flawless Zingaran Freeboter Shorts",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Thorunn"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Pack of the Mule (Accessory)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Thorunn"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Combination door",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "name": "Combination hatch door",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "name": "Hanging Cage on a Beam",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "name": "Infiltrator Water trough",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "name": "Mini chiller box",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "name": "Resource Crate",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "name": "Secret Passage",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "name": "Stall Building Kit",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "name": "Water trough",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "name": "Berserker Club",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "name": "Paddle",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "name": "Paddle with holes",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "name": "Planks of shame (female only)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "name": "Milk bottle Mold",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "name": "Aqualonian Bathtub",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Decoration Bed",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Decoration Bed (with blanket)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Decoration Bed - double",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Decoration Folded Bed",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Decoration Stygian Bed",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Decoration Wooden Stygian Bed",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Hekla"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Dead Tree Thrall cross",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Emoter - Arms crossed (F)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Emoter - Arms crossed (M)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Emoter - Belly dance",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Emoter - Ponder (F)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Emoter - Ponder (M)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Emoter - Seduce",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Emoter - Slow Belly dance",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Emoter - Submissive",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Emoter - Human chair",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Milking station (NPC)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Thrall cross",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Thrall cross dark",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Blindfold",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire",
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Forged Hand cuffs",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire",
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Forged Hand cuffs (with chain)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire",
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Forged Leg cuffs",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire",
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Forged Leg cuffs (Restrictive)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire",
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Forged Slave Collar",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire",
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste",
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Leather Collar",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire",
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Leather Slave Collar",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire",
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Brand - Circled S for Slave",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Brand - Circled S for Slave (Inner thigh)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Brand - S for Slave",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Bruises - Spanking",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire",
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Bruises - Spanking Light (female only)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire",
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Bruises - Whipping Heavy (female only)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire",
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Bruises - Whipping Light Ass",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire",
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Bruises - Whipping Light Back",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire",
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Bruises - Whipping Light Both (female only)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Viek the Spire",
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Chain",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Keys",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Hanging Cage (Player)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Hanging Rack (Player)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Queen Julia the Chaste",
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Male Milking station (Player)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Milking station (Player)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Pillory (Player)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Cage",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Iron Bar Door",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slaver Master's Chain ring",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Small Cage (Player)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Thrall cross (Player)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Thrall corss dark (Player)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Leather choker with a heart",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste",
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Leather choker with ring",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste",
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Leather Strap Harness",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste",
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Leather Strap panel gag",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste",
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Leather Strap thong",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste",
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Lemurian Ankle Cuffs",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Lemurian Wrist Cuffs",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Metal Hooves Cuffs",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Metal Hooves Cuffs with chain",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Masters Servant Cuffs",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Masters Servant Cuffs with Tray (female only)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Spiked Collar",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Lady Elizabeth Killigrew",
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Chain ring (Ceiling)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Julia the Chaste",
+        "Queen Julia the Chaste",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Chain ring (Floor)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Julia the Chaste",
+        "Queen Julia the Chaste",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Iron Bars Hatch",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Chain ring",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Wooden Horse (Player)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Julia the Chaste",
+        "Queen Julia the Chaste",
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Braided whip",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Julia the Chaste",
+        "Queen Julia the Chaste",
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Truncheon",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Acheronian Slave Collar",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Chain Harness",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Chastity Belt",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Chastity Belt (Accessory)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Strapon",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Masters Chain Bikini (Gold)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Masters Chain Bikini (Red)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Julia the Chaste",
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Legendary Slave Master's Chain",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Queen Julia the Chaste",
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Blunted Arrows",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Queen Julia the Chaste",
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Queen Julia's Lovetap",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Flawless Slave Master's Chain Harness",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Metal mitten cuffs",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Queen Julia the Chaste",
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Metal mitten cuffs with chain",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Queen Julia the Chaste",
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Muzzle",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Queen Julia the Chaste",
+        "Beast the Breaker",
+        "Akasuki the Binder"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Muzzle (Special attach)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Queen Julia the Chaste",
+        "Beast the Breaker",
+        "Akasuki the Binder"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Wood Bit Gag",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Queen Julia the Chaste",
+        "Beast the Breaker",
+        "Akasuki the Binder"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Wood Bit Gag (Special attach)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Queen Julia the Chaste",
+        "Beast the Breaker",
+        "Akasuki the Binder"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Wood Bit Gag with top band",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Queen Julia the Chaste",
+        "Beast the Breaker",
+        "Akasuki the Binder"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Wood Bit Gag with top band (Special attach)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Queen Julia the Chaste",
+        "Beast the Breaker",
+        "Akasuki the Binder"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Zamoran Dance Collar",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Queen Julia the Chaste"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Forged Slave Bell Collar (Special attach)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Forged Slave Brass Bell Collar (Special attach)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Forged Slave Collar (Special attach)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Leather Cowbell Collar",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Nose ring of the cursed",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Rune Collar",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Rusty Steel Cowbell Collar",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slame mark - Back (female)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave mark - Back 2 (female)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave mark - Back and mound (female)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave mark - Cheek (female)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave mark - Chest (female)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave mark - Chest2 (female)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave mark - Forehead (female)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave mark - Forehead 2 (female)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Armbinder",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer",
+        "Beast the Breaker",
+        "Akasuki the Binder"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Leather blindfold",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Leather gag",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Yoke",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Small Nose ring of the cursed",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Steel Cowbell Collar",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Fass the Torturer",
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Barber Knife",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Landora the Groomer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Pubic pigment remover",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Landora the Groomer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Trimmer",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Landora the Groomer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Buccaneer Earrings",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Landora the Groomer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Eye Patch",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Landora the Groomer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Navel piercing",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Landora the Groomer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Vanir Earring",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Landora the Groomer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Dark pubic hair pigment",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Landora the Groomer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Light pubic hair pigment",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Landora the Groomer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Perfect pubic match",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Landora the Groomer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Pubic hair growth serum",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Landora the Groomer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Red pubic hair pigment",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Landora the Groomer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Artisan Table"
+    },
+    {
+      "name": "Blindfold (Non restricting)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Blindfold (Restricting)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Blindfold sheer (Restricting>",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Septum ring",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Chain Harness (Accessory)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Slave Master's Cloth gag",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Beast the Breaker"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Mechanical Gear",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Floki the Tinkerer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Tinker's Bench"
+    },
+    {
+      "name": "Bear Trap (Player)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Floki the Tinkerer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Tinker's Bench"
+    },
+    {
+      "name": "Exploding Large Chest",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Floki the Tinkerer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Tinker's Bench"
+    },
+    {
+      "name": "Exploding Wooden Box",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Floki the Tinkerer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Tinker's Bench"
+    },
+    {
+      "name": "Fling trap",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Floki the Tinkerer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Tinker's Bench"
+    },
+    {
+      "name": "Purple Lotus Trap",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Floki the Tinkerer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Tinker's Bench"
+    },
+    {
+      "name": "Animal cargo handling whistle",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Floki the Tinkerer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Tinker's Bench"
+    },
+    {
+      "name": "Animal mounting whistle",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Floki the Tinkerer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Tinker's Bench"
+    },
+    {
+      "name": "Crowbar",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Floki the Tinkerer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Tinker's Bench"
+    },
+    {
+      "name": "Flute of the Dunes",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Floki the Tinkerer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Tinker's Bench"
+    },
+    {
+      "name": "Flute of the Forest",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Floki the Tinkerer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Tinker's Bench"
+    },
+    {
+      "name": "Lock picking tools",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Floki the Tinkerer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Tinker's Bench"
+    },
+    {
+      "name": "Coin girl collar",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Floki the Tinkerer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Tinker's Bench"
+    },
+    {
+      "name": "Jarl's Mantle",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Floki the Tinkerer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Tinker's Bench"
+    },
+    {
+      "name": "Spyglass Goggles",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Floki the Tinkerer"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Tinker's Bench"
+    },
+    {
+      "name": "Aquilonian Womens Tights",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Berglind"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Basic Chest Wrap",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Berglind"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Basic Loincloth",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Berglind"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Dark Legion Apprentice Pauldron",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Berglind",
+        "Talaan"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Flawless Aquilonian Gladiator Chestplate",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Berglind"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Flawless Cimmerian Steel Top (for women)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Berglind"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Flawless Hyena-fur shorts",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Berglind"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Flawless Hyrkanian Raider Brigandine",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Berglind",
+        "Talaan"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Flawless Kambujan Shaman Chestpiece",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Berglind"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Flawless Vanir Settler Bra",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Berglind"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Flawless Zamorian Thief Hood",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Berglind"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Leather Apron skirt",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Berglind"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Blessed Gem of Silver Burden",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Serpa the Gem Cutter"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Blessed Gem of Silver Precision",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Serpa the Gem Cutter"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Chaos Gem of Silver Might",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Serpa the Gem Cutter"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Divine Gem of Silver Falls",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Serpa the Gem Cutter"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Divine Gem of Silver Harmony",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Serpa the Gem Cutter"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Eldritch Gem of Silver Burden",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Serpa the Gem Cutter"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Eldritch Gem of Silver Haze",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Serpa the Gem Cutter"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Hyperborean Gem of the Cobra",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Serpa the Gem Cutter"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Hyperborean Gem of the Octopus",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Serpa the Gem Cutter"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Jötun Gem of Chilled Breath",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Serpa the Gem Cutter"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Jötun Gem of Chilled Naturallity",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Serpa the Gem Cutter"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Nergal Gem of Corruption",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Serpa the Gem Cutter"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Nergal Gem of Protection",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Serpa the Gem Cutter"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Occult Gem of Silver Mist",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Serpa the Gem Cutter"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Xotli Gem of Demonic Flames",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Serpa the Gem Cutter"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Xotli Gem of Eternal Flames",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Serpa the Gem Cutter"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "name": "Aqualonian Mini skirt",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Talaan"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Pictish Chieftan's Helmet",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Talaan"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Zamorian Climbing Gloves",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Talaan"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "name": "Gabriela's Embrace (female only)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Akasuki the Binder"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Rope Collar (Accessory)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Akasuki the Binder"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Rope Harness",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Akasuki the Binder"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Rope Harness (Accessory)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Akasuki the Binder"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Strong Rope Hand Cuffs (with rope in between)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Akasuki the Binder"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Strong Rope Leg Cuffs (with rope in between)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Akasuki the Binder"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Wood Cane",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Akasuki the Binder"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Dark reddned breasts for Gabriela's Embrace (female only)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Akasuki the Binder"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Light reddned breasts for Gabriela's Embrace (female only)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Akasuki the Binder"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "name": "Medium reddned breasts for Gabriela's Embrace (female only)",
+      "source": [
+        "THRALL_CRAFT"
+      ],
+      "sourceThrall": [
+        "Akasuki the Binder"
+      ],
+      "sourceText": "This item can be crafted by one of the Thrall Wars thralls.",
+      "sourceStation": "Torturer's Worktable"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Hathors re-focusing potion",
+      "unlockedBy": [
+        "Scroll that teaches how to brew Hathors re-focusing potion"
+      ],
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Thyri's tears",
+      "unlockedBy": [
+        "Scroll that teaches how to brew Thyri's tears"
+      ],
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Witch-fire Orb",
+      "unlockedBy": [
+        "Scroll that teaches how to make Witch-fire Orb"
+      ],
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Desert Fools Berry Pulp",
+      "unlockedBy": [
+        "Hathors teachings on fools pulp"
+      ],
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Highland Fools Berry Pulp",
+      "unlockedBy": [
+        "Hathors teachings on fools pulp"
+      ],
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Júgursmyrsl",
+      "unlockedBy": [
+        "Erik's advice on sore udders"
+      ],
+      "sourceStation": "Firebowl Cauldron"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Kyllikki's Axe",
+      "unlockedBy": [
+        "Scroll that teaches how to build Kyllikki's axe"
+      ],
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Ikkily's war fork",
+      "unlockedBy": [
+        "Scroll that teaches how to make Ikkily's war fork"
+      ],
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Great Khan's Katana",
+      "unlockedBy": [
+        "Scroll that teaches how to make Great Khan's Katana"
+      ],
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Flawless Sword of Erik the Red",
+      "unlockedBy": [
+        "Scroll that teaches how to make Flawless Sword of Erik the Red"
+      ],
+      "sourceStation": "Blacksmith's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Repair Berserker Shield",
+      "unlockedBy": [
+        "Scroll that teaches how to repair Repair Berserker Shield"
+      ],
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Legendary Cimmerian Steel Tasset",
+      "unlockedBy": [
+        "Scroll that teaches how to make Legendary Cimmerian Steel Tasset"
+      ],
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Nordheimer fur Vest",
+      "unlockedBy": [
+        "Scroll that teaches how to make Nordheimer fur Vest"
+      ],
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Legendary Aquilonian Gladiator Chestplate",
+      "unlockedBy": [
+        "Scroll that teaches how to make Legendary Aquilonian Gladiator Chestplate"
+      ],
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Dark Legion Pauldron",
+      "unlockedBy": [
+        "Scroll that teaches how to make Dark Legion Pauldron"
+      ],
+      "sourceStation": "Armorer's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Flat log ramp",
+      "unlockedBy": [
+        "Scroll that teaches log wood working"
+      ],
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Log Bridge",
+      "unlockedBy": [
+        "Scroll that teaches log wood working"
+      ],
+      "sourceStation": "Carpenter's Bench"
+    },
+    {
+      "source": [
+        "CRAFT"
+      ],
+      "name": "Log ladder",
+      "unlockedBy": [
+        "Scroll that teaches log wood working"
+      ],
+      "sourceStation": "Carpenter's Bench"
+    }
+  ]
+}
